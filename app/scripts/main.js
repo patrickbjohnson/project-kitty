@@ -1,5 +1,5 @@
 'use strict';
-
+/* global skrollr */
 $(document).ready(function(){
 	console.log('ready');
 	var s = skrollr.init({

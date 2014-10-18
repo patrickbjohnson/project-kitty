@@ -4,6 +4,7 @@
 body {
 	font-family: $helvetica;
 	font-weight: $light;
+	line-height: 1.5;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -13,4 +14,15 @@ h1,h2,h3,h4,h5,h6 {
 	line-height: 1.5;
 }
 
-p {}
+h1 {
+	font-size: em(34px);
+}
+
+h2 {
+	font-family: $helvetica;
+	font-weight: $light;
+}
+
+p {
+	font-size: em(16px);
+}
