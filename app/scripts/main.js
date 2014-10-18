@@ -5,6 +5,7 @@ $(document).ready(function(){
 	var s = skrollr.init({
 		render: function(data){
 			$('.main-nav').text(data.curTop);
-		}
+		}, 
+		
 	});
 });
