@@ -10,3 +10,15 @@
     font-style: $font-style;
   }
 }
+
+// use this wherever you'd normally use "&:hover" for more thorough/accessible styling
+// .link {
+//    color:blue;
+//    @include alt-state { color: red; }
+//  }
+
+@mixin alt-state() {
+  &:hover, &:focus, &:active {
+    @content;
+  }
+}
