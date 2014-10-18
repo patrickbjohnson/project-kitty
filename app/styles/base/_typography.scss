@@ -1,0 +1,16 @@
+
+@include font-face(lubalin-light, '../../fonts/lubalin/lubalingraphstd-book-webfont', 300, normal);
+@include font-face(lubalin-heavy, '../../fonts/lubalin/lubalingraphstd-demi-webfont', 600, normal);
+body {
+	font-family: $helvetica;
+	font-weight: $light;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $lubalin-heavy;
+	margin: 0; 
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+p {}
