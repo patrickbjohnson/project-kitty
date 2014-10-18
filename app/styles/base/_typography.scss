@@ -20,6 +20,11 @@ h1, %huge {
   margin:.5em 0;
 }
 
+h2, %big {
+  font-size: em(20px);
+  margin-bottom: .5em;
+}
+
 strong, %bold {
   font-family: $lubalin-heavy;
   font-weight: 300;
@@ -38,5 +43,6 @@ strong, %bold {
   strong {
     font-family: inherit;
     font-size:2.5em;
+    display:inline;
   }
 }
