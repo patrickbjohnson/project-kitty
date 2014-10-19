@@ -1,8 +1,18 @@
 .section-grid {
 	overflow: hidden;
+	text-align: center;
 }
 .col-3 {
 	float: left;
-	width: 300px;
+	// arbitary amount for now
+	width: 200px;
 	text-align: center;
+}
+
+.icon-holder {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: red;
+	display: inline-block;
 }

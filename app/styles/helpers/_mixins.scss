@@ -10,3 +10,55 @@
     font-style: $font-style;
   }
 }
+
+// i'm not sure if we even have hovers but if we do
+// use this wherever you'd normally use "&:hover" for more thorough/accessible styling
+// .link {
+//    color:blue;
+//    @include alt-state { color: red; }
+//  }
+
+@mixin alt-state() {
+  &:hover, &:focus, &:active {
+    @content;
+  }
+}
+
+// Since we'll probably be positioning a lot of shit...
+// .absolute-thing { @include abs(20px 0 90px 90px); }
+// .relative-thing { @include rel(20px 0 90px 90px); }
+
+@mixin pos($coordinates: 0 0 0 0) {
+  $top: nth($coordinates, 1);
+  $right: nth($coordinates, 2);
+  $bottom: nth($coordinates, 3);
+  $left: nth($coordinates, 4);
+
+  @if not(unitless($top)) { top: $top; }
+  @if not(unitless($right)) {right: $right; }
+  @if not(unitless($bottom)) {bottom: $bottom; }
+  @if not(unitless($left)) {left: $left; }
+}
+
+@mixin abs($coordinates: 0 0 0 0) {
+  @include pos($coordinates);
+  position: absolute;
+}
+
+@mixin rel($coordinates: 0 0 0 0) {
+  @include pos($coordinates);
+  position: relative;
+}
+
+// Circles!
+// .round-thing { @include circle(100px); }
+
+@mixin circle($diameter:null, $overflow:null) {
+  @if($diameter) {
+    height: $diameter;
+    width: $diameter;
+  }
+  border-radius: 50%;
+  @if( $overflow ) { overflow: $overflow; }
+  @else { overflow: hidden; }
+}
