@@ -1,18 +1,17 @@
 .section-grid {
-	overflow: hidden;
+	@include clear; // see mixins.scss
 	text-align: center;
 }
 .col-3 {
 	float: left;
+  width: 33%;
 	// arbitary amount for now
-	width: 200px;
-	text-align: center;
+	// width: 200px;
+	// text-align: center; -- redundant
 }
 
 .icon-holder {
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	background: red;
-	display: inline-block;
+  @include circle(150px); // see mixins.scss
+  background: #888;
+  margin: auto;
 }
