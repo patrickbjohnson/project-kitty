@@ -1,22 +1,22 @@
 // blocks, maybe this gets moved into page-layout or something later
 
-%invert {
-  background: black;
-  * { color: white; }
-}
+.block, %block { display:block; }
 
-.light {
-    background: #ccc;
-}
 
 .fact-block {
   padding: 1em;
   border-radius: 30px;
   display: inline-block;
   text-align: center;
+  margin-top:1em;
+  margin-bottom:1em;
 
   &.dark {
     @extend %invert;
+  }
+
+  &.light {
+    background: #ccc;
   }
 
   &.right {
@@ -26,7 +26,5 @@
   .globe & {
     width: 30%;
     display: block;
-    margin-top:1em;
-    margin-bottom:1em;
   }
 }

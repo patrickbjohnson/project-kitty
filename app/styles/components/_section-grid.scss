@@ -5,13 +5,11 @@
 .col-3 {
 	float: left;
   width: 33%;
-	// arbitary amount for now
-	// width: 200px;
-	// text-align: center; -- redundant
+  padding: 2em;
 }
 
 .icon-holder {
   @include circle(150px); // see mixins.scss
   background: #888;
-  margin: auto;
+  margin: 1em auto;
 }

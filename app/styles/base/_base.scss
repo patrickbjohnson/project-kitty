@@ -1,19 +1,12 @@
 body {
   background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $helvetica;
   color: #333;
 }
 
 .container {
 	width: 1024px;
 	margin: auto;
-}
-	
-// just so we can see which sections are which. 
-// Not usre how we want to handle this displaying on mobile 
-// since it isn't responsive. 
-.section {
-	overflow: hidden;
 }
 
 
