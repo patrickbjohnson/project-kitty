@@ -25,6 +25,7 @@
       <![endif]-->
 
       <nav class="main-nav"></nav>
+
       <section class="section intro">
         <div class="container">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -42,142 +43,307 @@
             c10.9,0,19-7.9,19-7.9H69.8z M166,109.6v7.9h40v-7.9H166z M227.2,109.6l2.8,7.9h0.5l2.8-7.9H227.2z M254,109.6v7.9h40.5v-7.9H254z"
             />
           </svg>
+
           <div class="intro-copy">
-            <h1>This is a section</h1>
-            <h2 class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eius tempore aut nulla rerum sapiente perspiciatis.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eveniet veritatis, sequi veniam eaque facilis! Ut totam iste voluptate veritatis soluta saepe deleniti mollitia, neque molestiae obcaecati in, suscipit, labore.</p>
+            <h1>A new Vision for Big Data Computation</h1>
+            <h2 class="copy">Speeding Up Innovation Through Data-Centric Design</h2>
+            <p>Limitations in traditional computing are slowing progress in business and society.
+            A new approach to computer design is needed that will accelerate the pace
+            of innovation to benefit organizations and individuals alike.</p>
           </div>
+
           <div class="start">
-            <span>scroll to begin</span>
-            <!-- could use a psuedo element for the start or an svg or whatever -->
+            <span class="label">Scroll to begin</span>
+            <a class="icon-down circle invert block">⌄</a>
           </div>
+
         </div>
       </section>
       <!-- /intro -->
-      <section class="section resources">
-        <div class="container">
-          <div class="sun"></div>
-          <div class="timer"></div>
 
-          <div class="resources-copy copy">
-          <h1>Big Data, The New Natural Resource</h1>
-          <p>Every day society generates <span class="stat"><strong>2.5</strong>
-          billion
-          gigabytes</span>of data in organizations, via the <strong>Internet of Things</strong> and as a result of our personal digital activities.</p>
-          </div>
-        </div>
-      </section>
-      <section class="section globe">
+
+      <section class="section resources">
+
+        <!-- sharing; once we sort the markup for this we'll just duplicate it where it's needed -->
+        <aside class="sharing">
+          <a class="share-trigger">&lt;:</a>
+          <menu class="share-icons">
+            <span class="label">Share this section</span>
+            <button class="share icon-fb" title="Share on Facebook">f</button>
+            <button class="share icon-fb" title="Share on Twitter">t</button>
+            <button class="share icon-fb" title="Share on ???">x</button>
+         </aside>
+         <!-- /sharing -->
+
+
         <div class="container">
-          <h1>GLOBE IMAGE NO HEADER</h1>
+
+          <div class="rising-dots"
+              data-anim="slide-in"
+              data-origin="bottom">• • • <i>(dots)</i></div>
+
+          <div class="sun circle"><i>Sun graphic (maybe bg image?)</i></div>
+
+          <div class="timer circle"
+            data-anim="custom-svg"><i>Timer</i></div>
+
+          <div class="resources-copy copy"
+            data-anim="slide-in"
+            data-origin="right">
+
+            <h1>Big Data, The New Natural Resource</h1>
+
+            <p>Every day society generates
+              <span class="stat stacked-text"><strong>2.5</strong>
+              billion
+              gigabytes</span>of data in organizations, via the <strong>Internet of Things</strong> and as a result of our personal digital activities.
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <section class="section globe">
+
+        <div class="globe-graphic"
+          data-anim="custom-svg">globe</div>
+
+        <div class="container">
+
           <div class="fact-block dark right">
-            <p>Something something something <strong>Dark Data –</strong></p>
+            <p>This super-abundance
+            of information has created
+            a phenomenon known as
+            <strong>Dark Data –</strong></p>
           </div>
+
           <div class="fact-block dark left">
-            <p>information something something <strong>but don't capitalize on</strong></p>
+            <p>information we gather
+            <strong>but don't capitalize on.</strong></p>
           </div>
-          <div class="yay-business-man"></div>
-          <div class="globe-copy-right">
-             <span class="stat"><strong>1%</strong></span>
-            <p><strong>Less than one percent</strong> of the data generated every day...</p>
+
+          <div class="globe-stat">
+          <i>businessman icon</i>
+             <span class="stat"><strong>1%⬇</strong></span>
+            <p><strong>Less than one percent</strong>
+            of the data generated every day
+            is mined for valuable insights.</p>
+
           </div>
         </div>
       </section>
+
       <section class="section computation">
         <div class="container">
-          <div class="computation-left">
+
+          <div class="computation-left"
+          data-anim="slide-in"
+          data-origin="left">
           <h1>But the current approach to computing has a shelf-life</h1>
-            <p>For decades computer... sit amet, consectetur adipisicing elit. Iste, facere deserunt, </p>
+            <p>For decades computer scientists have taken
+            advantage of advances in silicon chips to rapidly
+            expand the capabilities of computers.</p>
           </div>
-          <div class="computation-right">
-            <p>Now, limitations in traditional... ipsum dolor sit amet, consectetur adipisicing elit. Iste, facere deserunt, </p>
+
+          <div class="computation-right"
+          data-anim="slide-in"
+          data-origin="right">
+            <p>Now, limitations in traditional computer and chip
+            design are slowing progress – and that's even
+            before you consider the big data phenomenon.</p>
           </div>
+
         </div>
       </section>
-      <section class="section new-computation">
-        <div class="container">
-          <div class="connection"></div>
-          <div class="microchip"></div>
-          <div class="server"></div>
-          <div class="monitor"></div>
 
-          <div class="new-computation-description">
+
+      <section class="section new-computation">
+
+        <div class="container">
+
+        <div class="whats-needed fact-block"
+            data-anim="slide-in"
+            data-origin="right">
             <h1>What's Needed is a New Vision for Computing</h1>
-            <div class="fact-block light">
+            <p>Traditional computing is processor centric – meaning all the data
+            has to be transported repeatedly to a central processor chip.
+            <strong>That's a huge waste of time and energy.</strong></p>
+      </div>
+
+          <figure class="server-illustration">
+            <div class="connection circle"><i>connection icon</i></div>
+            <div class="microchip circle"><i>microchip</i></div>
+            <div class="server circle"><i>server</i></div>
+            <div class="monitor square"><i>monitor</i></div>
+
+           <figcaption class="new-computation-description fact-block light"
+            data-anim="slide-in"
+            data-origin="bottom">
+
               <p><strong>The new approach, data-centric design</strong>
               moves much of the processing to the places where the data is stored, whether that's within a single computing system in a network of computers, or far away in sensors tracking the weather or monitoring an energy pipeline.</p>
-            </div>
+
+          </figcaption>
+
+        </figure>
+
+
+        <div class="server-lg"></div>
+      </div>
+    </section>
+
+    <section class="section new-vision">
+      <div class="container">
+
+        <div class="section-grid fact-block light">
+          <h1>This New Vision Will Take Hold first in Supercomputing</h1>
+          <p>Scientific laboratories, universities and businesses use high-performance computers to crunch vast quantities of numerical data.
+          But increasingly, in the big data era, they're tapping other kinds of data too.</p>
+
+          <div class="col-3">
+            <h2>Laboratories</h2>
+            <div class="icon-holder" data-anim="fade-in"></div>
+            <!-- svg here for icons -->
           </div>
-          <div class="server-lg"></div>
-        </div>
-      </section>
-      <section class="section new-vision">
-        <div class="container">
-          <div class="section-grid fact-block light">
-            <h1>This New Vision Will Take Hold first in Supercomputing</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus molestiae, fugiat nobis a delectus dolorem repudiandae dignissimos. Debitis maiores deserunt eligendi optio minus, maxime nemo saepe necessitatibus ea dolore harum.</p>
-            <div class="col-3">
-              <h2>Laboratories</h2>
-              <div class="icon-holder"></div>
-              <!-- svg here for icons -->
-            </div>
-            <div class="col-3">
-              <h2>Universities</h2>
-              <div class="icon-holder"></div>
-              <!-- svg here for icons -->
-            </div>
-            <div class="col-3">
-              <h2>Businesses</h2>
-              <div class="icon-holder"></div>
-              <!-- svg here for icons -->
-            </div>
-            <div class="server-row"></div>
+          <div class="col-3">
+            <h2>Universities</h2>
+            <div class="icon-holder" data-anim="fade-in"></div>
+            <!-- svg here for icons -->
           </div>
-          <div class="new-vision-comment fact-block light">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ipsam voluptatum voluptatibus itaque eveniet iste nobis odit saepe beatae. Laboriosam nulla consectetur officiis voluptatem? Eos animi at pariatur id rerum.</p>
+          <div class="col-3">
+            <h2>Businesses</h2>
+            <div class="icon-holder" data-anim="fade-in"></div>
+            <!-- svg here for icons -->
           </div>
-        </div>
-      </section>
-      <section class="section insight">
-        <div class="container">
-          <h1>This is a section for the brains to collide</h1>
+
+        </div><!-- /section-grid -->
+
+        <div class="server-row" data-anim="custom-svg"><i>servers</i></div>
+
+        <div class="new-vision-comment fact-block light"
+        data-anim="slide-in"
+        data-origin="bottom">
+          <p>So they need computing systems that are designed specifically
+          to handle these new tasks. Data-centric design enables computer
+          scientists to engineer systems that are optimized for specific jobs
+          – improving the speed and quality of insights.</p>
         </div>
 
-      </section>
+        <figure class="computing-data-insights">
+          <div class="diagram-half computing circle"
+          data-anim="slide-in"
+          data-origin="left">Computing</div>
+
+          <div class="diagram-half data circle"
+          data-anim="slide-in"
+          data-origin="right">Data</div>
+
+          <div class="diagram-result insights circle"
+          data-anim="slide-in"
+          data-origin="bottom">Insights</div>
+        </figure>
+
+      </div>
+    </section>
+
       <section class="section new-approach">
         <div class="container">
 
           <div class="section-grid fact-block light">
             <h1>The New Approach Creates a New World of Possibilities</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus molestiae, fugiat nobis a delectus dolorem repudiandae dignissimos. Debitis maiores deserunt eligendi optio minus, maxime nemo saepe necessitatibus ea dolore harum.</p>
+
             <div class="col-3">
-              <h2>Healthcare</h2>
-              <div class="icon-holder"></div>
+              <div class="icon-holder" data-anim="fade-in"></div>
+              <h2 data-anim="slide-in fade-in"
+                  data-origin="bottom">Healthcare</h2>
               <!-- svg here for icons -->
-              <p>Copy about healthcare</p>
+              <p data-anim="slide-in fade-in"
+                  data-origin="bottom">
+                  Simulating the interactions of
+                  molecules to help identify patterns
+                  that will help pharmaceutical
+                  companies develop drugs
+                  to target specific cells.</p>
             </div>
+
             <div class="col-3">
-              <h2>Energy</h2>
-              <div class="icon-holder"></div>
+              <div class="icon-holder" data-anim="fade-in"></div>
+              <h2 data-anim="slide-in fade-in"
+                  data-origin="bottom">Energy</h2>
               <!-- svg here for icons -->
-              <p>Copy about energy</p>
+              <p data-anim="slide-in fade-in"
+                  data-origin="bottom">
+                  Increasing the use of wind energy
+                  by designing efficient wind turbines
+                  that can withstand the elements
+                  in geographic regions known for
+                  inclement weather.</p>
             </div>
+
             <div class="col-3">
-              <h2>Air Travel</h2>
-              <div class="icon-holder"></div>
+              <div class="icon-holder" data-anim="fade-in"></div>
+              <h2 data-anim="slide-in fade-in"
+                  data-origin="bottom">Air Travel</h2>
               <!-- svg here for icons -->
-              <p>Copy about air travel</p>
+              <p data-anim="slide-in fade-in"
+                  data-origin="bottom">
+                  Designing and building better jet
+                  engines to withstand heat and
+                  other pressures, for faster,
+                  efficient air travel.</p>
             </div>
-          </div>
+
+          </div><!-- section-grid -->
+
         </div>
       </section>
 
-    <section class="finale">
-      <!-- could use psuedo for the up arrow in this section -->
-      <h1>Data-Centric Design Will Become Pervasive</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium minus excepturi dolorum esse eius illum, repellendus in sint culpa soluta, quia neque autem ea quos officiis consequuntur accusantium vel omnis.</p>
-    </section>
-    <footer class="footer">footer</footer>
+      <section class="finale center">
+        <span class="icon-up icon-holder invert">⌃ </span>
+        <!-- could use psuedo for the up arrow in this section -->
+        <h1>Data-Centric Design Will Become Pervasive</h1>
+        <p>This approach will spread rapidly to other realms of computing. Social neworking
+        websites gather and move vast amounts of data. That's a job for data-centric design.
+        Ditto, e-commerce. Eventually, the new approach will transform
+        the computers on your desk, and in your hand. In the new era of computing,
+        they'll work faster and smarter – and use less energy.</p>
+      </section>
+
+
+      <footer class="footer invert">
+
+        <div class="footer-branding">
+          IBM
+          <header class="bold block">A New Vision for Big Data Computing</header>
+          <small>Speeding Up Innovation Through Data-Centric Design</small>
+        </div>
+
+        <div class="footer-meta">
+          <p><strong>Sources:</strong> Gardner, IBM</p>
+
+          <div class="footer-social">
+            <a class="share icon-holder icon-fb" title="Facebook likes"> fb </a>1
+            <a class="share icon-holder icon-twitter" title="Tweets:"> tw </a>1
+            <a class="share icon-holder icon-googleplus" title="Google Plus shares:">g+</a>1
+          </div>
+
+          <nav class="footer-links">
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Cookie Prefernces</a></li>
+              <li><a href="#">[+] Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+
+
+    </div>
 
 
     <!-- build:js(.) scripts/vendor.js -->
