@@ -1,4 +1,32 @@
 .center {text-align: center;}
+%invert, .invert {
+  background: black;
+  * { color: white; }
+}
+
+// temporary class for prototyping
+.circle {
+  @include circle;
+  background: #ddd;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1em;
+  height: 10em; width: 10em;
+  display: inline-block;
+  border: 3px dotted #aaa;
+}
+
+// so's this one
+i {
+  background: #ddd;
+  color: #666;
+  padding: 5px;
+  border: 1px dotted #aaa;
+  margin: 5px auto;
+  display:inline-block;
+  font-style: italic;
+}
+
 .is-active {
   @include vendor-prefix(transition, all 400ms ease);
   opacity: 1;
