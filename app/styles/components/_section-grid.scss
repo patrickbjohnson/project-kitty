@@ -1,5 +1,6 @@
 .section-grid {
 	@include clear; // see mixins.scss
+	margin: auto;
 	text-align: center;
 }
 .col-3 {
@@ -12,4 +13,11 @@
   @include circle(150px); // see mixins.scss
   background: #888;
   margin: 1em auto;
+}
+
+
+.section-grid.grid-lg {
+	display: block;
+	margin: auto;
+	width: 850px;
 }

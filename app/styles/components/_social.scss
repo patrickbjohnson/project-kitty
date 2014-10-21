@@ -1,0 +1,26 @@
+// this is me fucking around
+// i dont know what the hell i'm doing. 
+
+.sharing {
+	position: fixed;
+	top: 200px;
+	display: block;
+	background: #000;
+	&:hover > .share-icons{
+		color: #fff;
+		left: 200px;
+	}
+}
+
+
+// .share-trigger.ss-icon {
+// 	color: #fff;
+// }
+
+// .share-icons li {display: inline-block;}
+// .share-icons a {
+// 	display: block;
+// 	position: relative;
+// 	color: #000;
+// 	text-decoration: none;
+// }

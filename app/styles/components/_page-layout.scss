@@ -3,39 +3,11 @@
 	height: 1100px;
 }
 
-.intro 				{
-	height: 600px;
-	background-color: rgba(random(255), random(255), random(255), random(1));
-}
-.resources 			{
-	height: 500px;
-	background-color: rgba(random(255), random(255), random(255), random(1));
-}
-
-.globe {
-	background-color: rgba(random(255), random(255), random(255), random(1));
-}
-.computation 		{
-	height: 650px;
-	background-color: rgba(random(255), random(255), random(255), random(1));
-}
-.new-computation {
-	background-color: rgba(random(255), random(255), random(255), random(1));
-}
-.new-vision 				{
-	height: 950px;
-	background-color: rgba(random(255), random(255), random(255), random(1));
-}
-.insight 				{
-	height: 620px;
-	background-color: rgba(random(255), random(255), random(255), random(1));
-}
-.new-approach 	{
-	height: 795px;
-	background-color: rgba(random(255), random(255), random(255), random(1));
-}
-.finale 				{
-	height: 560px;
-	background-color: rgba(random(255), random(255), random(255), random(1));
-}
+.intro 			{height: 600px;}
+.resources 		{height: 500px;}
+.computation 	{height: 650px;}
+.new-vision 	{height: 950px;}
+.insight 			{height: 620px;}
+.new-approach {height: 795px;}
+.finale 			{height: 560px;}
 
