@@ -24,6 +24,11 @@
   }
 }
 
+
+// this isn't working....
+// not exactly sure why not
+// also didn't try to debug so I can do that too. 
+
 // Since we'll probably be positioning a lot of shit...
 // .absolute-thing { @include abs(20px 0 90px 90px); }
 // .relative-thing { @include rel(20px 0 90px 90px); }

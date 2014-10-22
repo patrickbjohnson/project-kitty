@@ -1,13 +1,20 @@
-.globe,
-.new-computation {
-	height: 1100px;
-}
+// In some instances I'm using margin-bottom for spacing
+// I'm sure this may conflict later
+// but figured it'd help us get a quick layout
+// that we can then refine pre-production
 
-.intro 			{height: 600px;}
-.resources 		{height: 500px;}
-.computation 	{height: 650px;}
-.new-vision 	{height: 950px;}
-.insight 			{height: 620px;}
-.new-approach {height: 795px;}
-.finale 			{height: 560px;}
+
+// .globe,
+// .new-computation {
+// 	height: 1100px;
+// }
+
+// .intro 			{height: 600px;}
+.resources 		{height: 540px;}
+.globe			{height: 950px; margin-bottom: 250px}
+.computation 	{height: 460px; margin-bottom: 75px;}
+// .new-vision 	{height: 950px;}
+// .insight 			{height: 620px;}
+// .new-approach {height: 795px;}
+// .finale 			{height: 560px;}
 

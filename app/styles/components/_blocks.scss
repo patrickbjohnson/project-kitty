@@ -1,5 +1,9 @@
 // blocks, maybe this gets moved into page-layout or something later
 
+%rel {position: relative;}
+%abs {position: absolute;}
+%inbl {display: inline-block;}
+
 .block, %block { display:block; }
 
 
@@ -28,12 +32,6 @@
     display: block;
   }
 }
-
-// various gray blocks that have a variety of size
-// for now, i'm sizing them 
-// but i'm sure we can come up with a better system tomorrow.
-// starting to think there is a better way to do this... 
-.globe-comment {width: 225px;}
 
 .new-computation-comment {width: 360px;}
 

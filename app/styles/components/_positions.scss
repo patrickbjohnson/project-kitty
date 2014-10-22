@@ -1,0 +1,62 @@
+// Soem of the widths some a little snug
+// That is because they used font sizes life 14px for the p tags
+
+
+
+// First Section 
+.sun {
+	@include abs(20px 0 0 85px); 
+	@extend %inbl;
+	// for some reason the width is set to 0?
+	width: 190px;
+}
+
+.timer {
+	@include abs(95px 0 0 210px);
+	@extend  %inbl;
+	&-svg {
+		width: 270px;	
+	}
+}
+
+.resources-copy {
+	@include abs(0 210px 0 0);
+	@extend %inbl;
+}
+
+.globe-graphic {
+	position: relative;
+	display: block;
+	width: 870px;
+	margin: 3em auto 0;
+}
+
+.globe {
+	.fact-block.right {
+		@include abs(295px 275px 0 0);
+	}
+	.fact-block.left {
+		@include abs(465px 0 0 200px)
+	}
+}
+
+.globe-desk {
+	@include abs(0 0 50px 265px);
+	&-svg {
+		width: 255px;
+	}
+}
+.globe-stat {
+	@include abs(0 285px 110px 0);
+	width: 225px;
+}
+
+.computation-left {
+	@include abs(0 0 0 125px);
+	width: 360px;
+}
+
+.computation-right {
+	@include abs(215px 130px 0 0);
+	width: 270px;
+}

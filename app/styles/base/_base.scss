@@ -4,7 +4,15 @@ body {
   color: #333;
 }
 
+section {
+	position: relative;
+	border: 1px dotted gray;
+	// padding: 2em;
+}
+
+
 .container {
+	position: relative;
 	width: 1024px;
 	margin: auto;
 }

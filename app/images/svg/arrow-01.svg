@@ -4,9 +4,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 103.256 99.732" style="enable-background:new 0 0 103.256 99.732;" xml:space="preserve">
 <g id="arrow">
-	<g>
-		<path d="M51.628,99.732l51.628-53.531H73.037L72.843,0H27.524c0,0,0.047,40.912,0.047,46.201H0L51.628,99.732z"/>
-	</g>
+	<path d="M51.628,99.732l51.628-53.531H73.037L72.843,0H27.524c0,0,0.047,40.912,0.047,46.201H0L51.628,99.732z"/>
 </g>
 <g id="Layer_1">
 </g>
