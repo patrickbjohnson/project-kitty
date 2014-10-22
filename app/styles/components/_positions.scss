@@ -58,3 +58,31 @@
 	width: 270px;
 	@extend %abs-right;
 }
+
+.new-computation-vision {
+	position: absolute;
+}
+
+.new-computation-illustration {
+	position: relative;
+	top: 175px;
+	left: 50px;
+	width: 440px;
+
+	.connection 		{@include abs(0 0 0 210px);}
+	.microchip 		{@include abs(130px 0 0 0);}
+	.server 			{@include abs(180px 0 0 235px);}
+}
+
+.diagram-half {
+	width: 400px;
+	position: absolute;
+	
+	.left & {
+		left: 0;
+	}
+
+	.right & {
+		right: 0;
+	}
+}
