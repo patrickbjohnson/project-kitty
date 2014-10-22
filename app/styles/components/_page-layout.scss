@@ -12,9 +12,25 @@
 // .intro 			{height: 600px;}
 .resources 		{height: 540px;}
 .globe			{height: 950px; margin-bottom: 250px}
-.computation 	{height: 460px; margin-bottom: 75px;}
+.computation 	{height: 460px; }
 // .new-vision 	{height: 950px;}
 // .insight 			{height: 620px;}
 // .new-approach {height: 795px;}
 // .finale 			{height: 560px;}
 
+
+// for all elements on the right side of the page
+// pushes them 512px from the left
+
+// would love your thoughts on this
+// I can do a placeholder class or i can just add it to the dom
+// 
+// adding it to the dom is 1 additional class, 1 additional selector in the CSS
+//
+// adding it as a placeholder creates comma-separated list of selectors
+// that just seems like its pointless when I can add it to the DOM
+//
+// So it's like, less "semantic" DOM or larger CSS file. 
+// Personally, I feel like less "semantic"/smaller CSS file wins
+.abs-right, 
+%abs-right {left: 512px;}

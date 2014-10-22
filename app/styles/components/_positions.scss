@@ -6,23 +6,18 @@
 // First Section 
 .sun {
 	@include abs(20px 0 0 85px); 
-	@extend %inbl;
 	// for some reason the width is set to 0?
 	width: 190px;
 }
 
 .timer {
 	@include abs(95px 0 0 210px);
-	@extend  %inbl;
 	&-svg {
 		width: 270px;	
 	}
 }
 
-.resources-copy {
-	@include abs(0 210px 0 0);
-	@extend %inbl;
-}
+.resources-copy {position: absolute;}
 
 .globe-graphic {
 	position: relative;
@@ -33,7 +28,8 @@
 
 .globe {
 	.fact-block.right {
-		@include abs(295px 275px 0 0);
+		@include abs(295px 0 0 0);
+
 	}
 	.fact-block.left {
 		@include abs(465px 0 0 200px)
@@ -47,16 +43,18 @@
 	}
 }
 .globe-stat {
-	@include abs(0 285px 110px 0);
+	@include abs(0 0 110px 0);
 	width: 225px;
+	@extend %abs-right;
 }
 
 .computation-left {
-	@include abs(0 0 0 125px);
+	@include abs(0 0 0 150px);
 	width: 360px;
 }
 
 .computation-right {
 	@include abs(215px 130px 0 0);
 	width: 270px;
+	@extend %abs-right;
 }
