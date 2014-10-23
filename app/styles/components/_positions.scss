@@ -46,7 +46,7 @@
 }
 
 .computation-left {
-	@include abs(0 0 0 150px);
+	@include abs(0 0 0 110px);
 	width: 360px;
 }
 
@@ -61,20 +61,18 @@
 }
 
 .new-computation-illustration {
+	@include pos(175px 0 0 40px);
 	position: relative;
-	top: 175px;
-	left: 50px;
 	width: 440px;
 
-	.connection 		{@include abs(0 0 0 210px);}
-	.microchip 		{@include abs(130px 0 0 0);}
-	.server 			{@include abs(180px 0 0 235px);}
+	.connection 	{@include abs(0 0 0 210px);}
+	.microchip 		{@include abs(200px 0 0 0);}
+	.server 			{@include abs(250px 0 0 235px);}
 }
 
 .diagram-half {
 	width: 400px;
 	position: absolute;
-	
 	.left & {
 		left: 0;
 	}
@@ -82,9 +80,22 @@
 	.right & {
 		right: 0;
 	}
+
+	h1 {
+		text-align: center;
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 45px;
+	}
 }
 
 .diagram-result {
-	@include abs(0 50% 0 50%);
-	margin-left: -5em;
+	@include abs(50px 0px 0px 0px);
+	margin: auto;
+	width: 285px;
 }
+
+.circle-lg {width: 240px;}
+.circle-md {width: 220px;}
+.circle-sm {width: 205px;}
