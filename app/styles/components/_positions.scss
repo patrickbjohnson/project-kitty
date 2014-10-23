@@ -63,6 +63,11 @@
 	position: absolute;
 }
 
+.new-vision-comment {
+	margin-top: 110px;
+	margin-bottom: 80px;
+}
+
 .new-computation-illustration {
 	position: relative;
 	top: 175px;
@@ -85,4 +90,9 @@
 	.right & {
 		right: 0;
 	}
+}
+
+.diagram-result {
+	@include abs(0 50% 0 50%);
+	margin-left: -5em;
 }
