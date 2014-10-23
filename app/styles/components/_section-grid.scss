@@ -7,12 +7,11 @@
 .col-3 {
 	float: left;
   width: 33%;
-  padding: 2em;
+  padding: 2em 1em;
 }
 
 .icon-holder {
-  @include circle(150px); // see mixins.scss
-  background: #888;
+  @include circle(185px); // see mixins.scss
   margin: 1em auto;
 }
 
@@ -21,4 +20,10 @@
 	display: block;
 	margin: auto;
 	width: 850px;
+}
+
+.section-grid-header {
+  margin: auto;
+  .new-vision &   {width: 560px;}
+  .new-approach & {width: 330px;}
 }
