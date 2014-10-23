@@ -1,26 +1,37 @@
-// this is me fucking around
-// i dont know what the hell i'm doing. 
+// Gotta figure out the animation situation here. 
+// Also - whats the fallback for IE?
 
 .sharing {
 	position: fixed;
-	top: 200px;
 	display: block;
+	top: 200px;
+	height: 50px;
+	width: 50px;
 	background: #000;
-	&:hover > .share-icons{
-		color: #fff;
-		left: 200px;
-	}
+	z-index: 10;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	
+
+	// saving this for later
+	// this does work
+	// yay!
+	// &:hover > .share-icons{
+	// 	// @include vendor-prefix(transition, all 300ms ease);
+	// 	color: #fff;
+	// 	left: 200px;
+	// }
+
+	.share-trigger {color: #fff;}
+	
 }
 
-
-// .share-trigger.ss-icon {
-// 	color: #fff;
-// }
-
-// .share-icons li {display: inline-block;}
-// .share-icons a {
-// 	display: block;
-// 	position: relative;
-// 	color: #000;
-// 	text-decoration: none;
-// }
+.share-icons {
+	position: absolute;
+	top: 0;
+	left: 60px;
+	width: 100px;
+	span {font-size: em(6px); text-transform: uppercase; color: #000;}
+	li {display: inline-block; margin-right: 10px;}
+	a {color: #000; font-size: em(18px);&:hover{text-decoration: none;}}
+}

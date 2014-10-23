@@ -34,4 +34,4 @@
 // So it's like, less "semantic" DOM or larger CSS file. 
 // Personally, I feel like less "semantic"/smaller CSS file wins
 .abs-right, 
-%abs-right {left: 512px;}
+%abs-right {position: absolute; left: 512px;}

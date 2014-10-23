@@ -17,8 +17,6 @@
 	}
 }
 
-.resources-copy {position: absolute;}
-
 .globe-graphic {
 	position: relative;
 	display: block;
@@ -45,7 +43,6 @@
 .globe-stat {
 	@include abs(0 0 110px 0);
 	width: 225px;
-	@extend %abs-right;
 }
 
 .computation-left {
@@ -56,11 +53,6 @@
 .computation-right {
 	@include abs(215px 130px 0 0);
 	width: 270px;
-	@extend %abs-right;
-}
-
-.new-computation-vision {
-	position: absolute;
 }
 
 .new-vision-comment {
