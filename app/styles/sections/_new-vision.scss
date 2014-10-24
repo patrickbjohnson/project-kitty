@@ -1,6 +1,10 @@
 .new-vision	{
 	height: 1375px; 
 	z-index: z(base-5);
+
+	.section-grid {
+		height: 530px;
+	}
 }
 .new-vision-comment  {
   display: block;
@@ -9,6 +13,12 @@
 }
 
 .computing-data-insights {position: relative;}
+
+.server-row {
+	@include abs(0 0px -5px 0px);
+	width: 805px;
+	margin: auto;
+}
 
 .diagram-half {
 	width: 400px;

@@ -18,6 +18,10 @@
 	width: 365px;
 	text-align: left;	
 	top: -30px;
+
+	strong {
+		margin: 10px 0;
+	}
 }
 
 .circle-lg {width: 240px;}
@@ -31,4 +35,9 @@
 		@include abs(230px 0 0 120px);
 		width: 125px;
 	}
+}
+
+.server-solo {
+	@include abs(300px -45px 0 0);
+	width: 150px;
 }

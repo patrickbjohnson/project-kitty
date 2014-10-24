@@ -37,11 +37,9 @@
 }
 
 .microchip-bg-sm {
-	@include abs(0 0px -165px -500px);
+	@include abs(0 0px -185px -70px);
 	width: 235px;
 	height: 230px;
-	margin: auto;
-	position: static;
 }
 
 .circuit-right {

@@ -1,11 +1,27 @@
 .computation	{height: 460px; }
 
 .computation-left {
-	@include abs(0 0 0 110px);
+	@include abs(-30px 0 0 110px);
 	width: 360px;
+
+   p {width: 265px;}
 }
 
 .computation-right {
-	@include abs(215px 130px 0 0);
+	@include abs(125px 130px 0 0);
 	width: 270px;
+}
+
+.microchip-loading {
+  @include abs(0 0px 0px 0);
+  width: 265px;
+}
+.microchip-loading-sm {
+  @include abs(220px 185px 0 0);
+  width: 190px;
+}
+
+.circuit-left {
+  @include abs(-40px 0 0 -70px);
+  width: 530px;
 }
