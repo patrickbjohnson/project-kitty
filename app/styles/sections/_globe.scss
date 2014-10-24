@@ -1,0 +1,51 @@
+.globe	{
+	height: 950px; 
+	margin-bottom: 250px;
+
+	.fact-block.right {
+		@include abs(295px 0 0 0);
+
+	}
+	.fact-block.left {
+		@include abs(465px 0 0 200px)
+	}
+}
+
+.globe-graphic {
+	position: relative;
+	display: block;
+	width: 870px;
+	margin: 3em auto 0;
+}
+
+.globe-desk {
+	@include abs(0 0 65px 270px);
+	z-index: 5;
+	&-svg {
+		width: 255px;
+	}
+}
+.globe-stat {
+	@include abs(0 0 110px 0);
+	width: 225px;
+}
+
+.microchip-bg-lg {
+	@include abs(0 0px -165px -210px);
+	width: 275px;
+	margin: auto;
+}
+
+.microchip-bg-sm {
+	@include abs(0 0px -165px -500px);
+	width: 235px;
+	height: 230px;
+	margin: auto;
+	position: static;
+}
+
+.circuit-right {
+	@include abs(0 20px 0 0);
+	width: 420px;
+}
+

@@ -1,0 +1,63 @@
+.new-vision	{
+	height: 1375px; 
+	z-index: z(base-5);
+}
+.new-vision-comment  {
+  display: block;
+  width: 425px;
+  margin: 110px auto 80px;
+}
+
+.computing-data-insights {position: relative;}
+
+.diagram-half {
+	width: 400px;
+	position: absolute;
+	.left & {
+		left: 0;
+	}
+
+	.right & {
+		right: 0;
+	}
+
+	h1 {
+		text-align: center;
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 45px;
+	}
+}
+
+.diagram-result {
+	@include abs(50px 0px 0px 0px);
+	margin: auto;
+	width: 285px;
+}
+
+.diagram-half {
+	width: 400px;
+	position: absolute;
+	.left & {
+		left: 0;
+	}
+
+	.right & {
+		right: 0;
+	}
+
+	h1 {
+		text-align: center;
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 45px;
+	}
+}
+
+.diagram-result {
+	@include abs(50px 0px 0px 0px);
+	margin: auto;
+	width: 285px;
+}

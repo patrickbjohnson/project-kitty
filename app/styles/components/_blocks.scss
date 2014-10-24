@@ -6,7 +6,6 @@
 
 .block, %block { display:block; }
 
-
 .fact-block {
   padding: 1em;
   border-radius: 30px;
@@ -30,11 +29,5 @@
   }
 }
 
-.new-computation-comment {width: 360px;}
-
-.new-vision-comment  {
-  display: block;
-  width: 425px;
-  margin: auto;
-}
-
+.abs-right, 
+%abs-right {position: absolute; left: 512px;}

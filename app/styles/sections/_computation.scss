@@ -1,0 +1,11 @@
+.computation	{height: 460px; }
+
+.computation-left {
+	@include abs(0 0 0 110px);
+	width: 360px;
+}
+
+.computation-right {
+	@include abs(215px 130px 0 0);
+	width: 270px;
+}

@@ -1,0 +1,31 @@
+.resources {
+	height: 540px;
+	z-index: z(base-5);
+}
+.resources-copy {
+	top: 100px;
+	max-width: 295px;
+}
+
+.dots {
+  width: 850px;
+  position: absolute;
+  bottom: -265px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+}
+
+.sun {
+	@include abs(20px 0 0 85px); 
+	width: 190px;
+}
+
+.timer {
+	@include abs(180px 0 0 210px);
+	z-index: z(base-5);
+	&-svg {
+		width: 270px;	
+	}
+}

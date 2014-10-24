@@ -1,0 +1,34 @@
+.new-computation  {
+	height: 755px; 
+	z-index: z(base-5);
+}
+.new-computation-comment {width: 360px;}
+
+.new-computation-illustration {
+	@include pos(175px 0 0 40px);
+	position: relative;
+	width: 440px;
+
+	.connection 		{@include abs(0 0 0 170px);}
+	.microchip 		{@include abs(200px 0 0 0);}
+	.server 			{@include abs(250px 0 0 235px);}
+}
+
+.new-computation-vision {
+	width: 365px;
+	text-align: left;	
+	top: -30px;
+}
+
+.circle-lg {width: 240px;}
+.circle-md {width: 220px;}
+.circle-sm {width: 205px;}
+
+.monitor {
+	z-index: z(base-5);
+
+	.microchip {
+		@include abs(230px 0 0 120px);
+		width: 125px;
+	}
+}

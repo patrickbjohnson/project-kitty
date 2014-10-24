@@ -9,18 +9,26 @@
 @import 'base/base';
 @import 'base/typography';
 
-@import 'components/nav';
-@import 'components/page-layout';
-@import 'components/path';
-@import 'components/intro';
-@import 'components/resources';
-@import 'components/new-vision-comp';
-@import 'components/new-visions';
-@import 'components/finale';
-@import 'components/section-grid';
+
+// reusable components
 @import 'components/blocks';
-@import 'components/positions';
+@import 'components/icons';
+@import 'components/nav';
+@import 'components/path';
+@import 'components/section-grid';
 @import 'components/social';
+
+// page sections
+@import 'sections/computation';
+@import 'sections/finale';
+@import 'sections/globe';
+@import 'sections/intro';
+@import 'sections/new-approach';
+@import 'sections/new-computation';
+@import 'sections/new-vision';
+@import 'sections/resources';
+
+
 
 
 .browsehappy {
