@@ -1,6 +1,12 @@
+html, body {
+	background-color: #fff !important;
+	// this gets overridden by IBM's CSS
+}
+
 body {
-  background: #fafafa;
+  background: #fff;
   font-family: $helvetica;
+  font-weight: $light;
   color: #333;
 }
 

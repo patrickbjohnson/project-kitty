@@ -11,7 +11,8 @@
 }
 
 .timer {
-	@include abs(95px 0 0 210px);
+	@include abs(180px 0 0 210px);
+	// z-index: z(base-5);
 	&-svg {
 		width: 270px;	
 	}
@@ -35,7 +36,8 @@
 }
 
 .globe-desk {
-	@include abs(0 0 50px 265px);
+	@include abs(0 0 65px 270px);
+	z-index: 5;
 	&-svg {
 		width: 255px;
 	}
@@ -65,7 +67,7 @@
 	position: relative;
 	width: 440px;
 
-	.connection 	{@include abs(0 0 0 210px);}
+	.connection 		{@include abs(0 0 0 170px);}
 	.microchip 		{@include abs(200px 0 0 0);}
 	.server 			{@include abs(250px 0 0 235px);}
 }
@@ -99,3 +101,12 @@
 .circle-lg {width: 240px;}
 .circle-md {width: 220px;}
 .circle-sm {width: 205px;}
+
+
+.monitor {
+	z-index: z(base-5);
+
+	.microchip {
+		width: 125px;
+	}
+}

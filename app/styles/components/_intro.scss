@@ -1,6 +1,7 @@
 .intro {
 	margin: 115px auto;
 	text-align:  center;
+	z-index: z(base-5);
 	&-copy {
 		max-width: 425px;
 		margin: 30px auto 85px;

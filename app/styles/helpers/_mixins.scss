@@ -11,6 +11,14 @@
   }
 }
 
+@mixin vendor-prefix($name, $value) {
+  @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+    #{$vendor}#{$name}: #{$value};
+  }
+}
+
+
+
 // i'm not sure if we even have hovers but if we do
 // use this wherever you'd normally use "&:hover" for more thorough/accessible styling
 // .link {

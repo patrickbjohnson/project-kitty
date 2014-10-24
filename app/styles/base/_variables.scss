@@ -1,7 +1,13 @@
-$helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+$helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 'Helvetica Light', 'Helvetica', Arial, 'Lucida Grande', sans-serif; 
 $lubalin-light: 'lubalin-light';
 $lubalin-heavy: 'lubalin-heavy';
 $light: 300;
 
 $font-size-base: 16px;
 
+// z-index stuffs
+$z-layers: (
+	'base': 1,
+	'base-5': 5,
+	'base-10': 10
+)

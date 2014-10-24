@@ -1,10 +1,15 @@
 .path {
   position: absolute;
   margin: auto;
-  top: 760px;
+  // I've had to adjust this between computers
+  // Not sure why...
+  // this changes because of the IBM style sheet...
+  // top: 760px;
+  top: 610px;
   right: 0;
   left: 0;
   height: 5100px;
   // this sets the scale of the line. 
   // with out it the shit is thick as hell
+  z-index: z(base);
 }
