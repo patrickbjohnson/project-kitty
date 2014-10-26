@@ -2,10 +2,9 @@
 	height: 755px; 
 	z-index: z(base-5);
 }
-.new-computation-comment {width: 360px;}
 
 .new-computation-illustration {
-	@include pos(175px 0 0 40px);
+	@include pos(220px 0 0 40px);
 	position: relative;
 	width: 440px;
 
@@ -17,11 +16,26 @@
 .new-computation-vision {
 	width: 365px;
 	text-align: left;	
-	top: -30px;
+	top: 0;
+	
+	h1 {
+		width: 445px;
+		margin-bottom: 25px;
+	}
 
 	strong {
-		margin: 10px 0;
+		margin: 15px 0;
+		font-size: 14px;
+
+		// fix to em
 	}
+
+
+}
+
+.new-computation-comment {
+	width: 370px;
+	strong {margin: 0;}
 }
 
 .circle-lg {width: 240px;}
@@ -29,7 +43,11 @@
 .circle-sm {width: 205px;}
 
 .monitor {
+	position: relative;
+	left: 3px;
+	margin-top: 5px;
 	z-index: z(base-5);
+	
 
 	.microchip {
 		@include abs(230px 0 0 120px);

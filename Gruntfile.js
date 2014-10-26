@@ -263,14 +263,15 @@ module.exports = function (grunt) {
       dist: {
         options: {
           collapseBooleanAttributes: true,
-          collapseWhitespace: true,
+          collapseWhitespace: false,
           conservativeCollapse: true,
-          removeAttributeQuotes: true,
+          removeAttributeQuotes: false,
           removeCommentsFromCDATA: true,
-          removeEmptyAttributes: true,
-          removeOptionalTags: true,
-          removeRedundantAttributes: true,
-          useShortDoctype: true
+          removeEmptyAttributes: false,
+          removeOptionalTags: false,
+          removeRedundantAttributes: false,
+          useShortDoctype: true,
+          keepClosingSlash: true
         },
         files: [{
           expand: true,
@@ -319,7 +320,10 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'fonts/{,*/}*.*',
+            'styles/fonts/{,*/}*.*',
+            'styles/vendor/{,*/}*.*',
+            'scripts/vendor/{,*/}*.*'
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',

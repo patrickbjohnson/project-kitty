@@ -3,6 +3,8 @@
 	z-index: z(base-5);
 
 	.section-grid {
+		position: relative;
+		top: 40px;
 		height: 530px;
 	}
 }

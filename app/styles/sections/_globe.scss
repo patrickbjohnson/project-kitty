@@ -9,6 +9,20 @@
 	.fact-block.left {
 		@include abs(465px 0 0 200px)
 	}
+	
+	&-desk {
+		@include abs(0 0 34px 270px);
+		z-index: 5;
+		&-svg {
+			width: 255px;
+		}
+	}
+
+	&-stat {
+	@include abs(0 0 110px 0);
+	width: 225px;
+}
+
 }
 
 .globe-graphic {
@@ -18,32 +32,19 @@
 	margin: 3em auto 0;
 }
 
-.globe-desk {
-	@include abs(0 0 65px 270px);
-	z-index: 5;
-	&-svg {
-		width: 255px;
+.microchip-bg {
+	&-lg {
+		@include abs(0 0px -195px -210px);
+		width: 275px;
+		margin: auto;
 	}
-}
-.globe-stat {
-	@include abs(0 0 110px 0);
-	width: 225px;
+
+	&-sm {
+		@include abs(0 0px -205px -70px);
+		width: 235px;
+		height: 230px;
+	}
+	
 }
 
-.microchip-bg-lg {
-	@include abs(0 0px -165px -210px);
-	width: 275px;
-	margin: auto;
-}
-
-.microchip-bg-sm {
-	@include abs(0 0px -185px -70px);
-	width: 235px;
-	height: 230px;
-}
-
-.circuit-right {
-	@include abs(0 20px 0 0);
-	width: 420px;
-}
 
