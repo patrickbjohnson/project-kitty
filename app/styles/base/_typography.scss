@@ -39,7 +39,7 @@ a:hover {text-decoration: none;}
 h1 { @extend %huge; @extend %lubalin;}
 h2 { @extend %big; @extend %lubalin; }
 
-strong, %bold {
+strong, .bold, %bold {
   @extend %lubalin;
   font-size: 1.2em;
   display: block;
@@ -61,6 +61,7 @@ strong, %bold {
   }
 }
 
+small, .small { font-size: em(12px); }
 
 .font-24 {font-size: 24px;}
 .font-40 {font-size: 40px;}

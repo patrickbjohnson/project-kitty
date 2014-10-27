@@ -1,0 +1,46 @@
+.footer {
+  @include clear;
+  padding: 50px;
+}
+
+
+
+.footer-branding, .footer-meta {
+  float: left;
+  vertical-align: middle;
+}
+.footer-branding {
+  padding-right: 40px;
+}
+
+.footer-logo {
+  margin:0 0 10px;
+  padding: 0;
+  width: 200px;
+  border-bottom: 1px solid white;
+}
+
+
+.footer-meta {
+  padding: 5px 25px;
+  border-left: 1px solid white;
+  p { line-height: 1; }
+  cite { font-size: 11px; }
+}
+
+.footer-social {
+
+  margin: 5px 0;
+  a, span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  a {
+    background: white;
+    @include circle(40px);
+  }
+  span {
+    font-size: 11px;
+    padding: 0 12px 0 8px;
+  }
+}

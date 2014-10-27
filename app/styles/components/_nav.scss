@@ -7,3 +7,19 @@
 	text-align: center;
 	padding: 10px 0;
 }
+
+.footer-links {
+  ul, li { display: block; list-style: none; margin: 0; padding: 0; }
+  font-size: 11px;
+  line-height: 1;
+  li {
+    display: inline-block;
+    border-right: 1px solid;
+    &:last-of-type { border-right: none; }
+    &:first-of-type a { padding-left: 0; }
+  }
+  a {
+    display: block;
+    padding: 0 1em;
+  }
+}
