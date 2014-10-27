@@ -17,7 +17,7 @@
 .computing-data-insights {position: relative;}
 
 .server-row {
-	@include abs(0 0px -5px 0px);
+	@include abs(0 0px -8px 0px);
 	width: 805px;
 	margin: auto;
 }
@@ -43,9 +43,9 @@
 }
 
 .diagram-result {
-	@include abs(50px 0px 0px 0px);
+	@include abs(75px 0px 0px 0px);
 	margin: auto;
-	width: 285px;
+	width: 275px;
 }
 
 .diagram-half {

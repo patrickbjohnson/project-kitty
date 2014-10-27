@@ -28,8 +28,11 @@
 .globe-graphic {
 	position: relative;
 	display: block;
-	width: 870px;
-	margin: 3em auto 0;
+	// width: 870px;
+	// margin: 3em auto 0;  // for whatever reason, this one wouldn't line up when using an PNG.
+	margin: 35px auto 0;
+
+	img {display: block; margin: auto;}
 }
 
 .microchip-bg {
