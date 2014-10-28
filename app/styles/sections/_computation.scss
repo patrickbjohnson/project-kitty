@@ -1,7 +1,7 @@
 .computation	{height: 460px; }
 
 .computation-left {
-	@include abs(20px 0 0 110px);
+	@include abs(20px 0 0 0);
 	width: 360px;
 
    p {width: 265px;}
