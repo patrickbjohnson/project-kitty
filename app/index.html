@@ -133,7 +133,8 @@
             <div class="dots" data-anim="slide-down" data-origin="bottom">
               <img src="images/svg/bytes_small-01.svg" alt="" >
             </div>
-            <div class="sun">
+            <div class="sun" data-anim="rotate" data-origin="bottom"
+              data-bottom="transform: rotate(0deg);" data-top="transform: rotate(360deg)">
               <img src="images/svg/sun.svg" alt="">
             </div>
             <div class="timer" data-anim="custom-svg">
@@ -195,12 +196,11 @@
                 <strong>but don't capitalize on.</strong></p>
             </div>
 
-            <div class="globe-desk" data-bottom="bottom: -60px; opacity:0;" data-center="bottom: 34px; opacity: 1;">
+            <div class="globe-desk" data-bottom="bottom: -60px; opacity:0;" data-center="bottom: 30px; opacity: 1;">
               <img src="images/svg/man_compter.svg" class="globe-desk-svg" alt="">
             </div>
             <div class="microchips">
               <img class="microchip-bg-lg" src="images/svg/computer_chip_hour_LG-01.svg" alt="" >
-              <!-- gotta figure out if they want this one edge of container or page -->
               <img class="microchip-bg-sm" src="images/svg/computer_chip_hour_SM-01.svg" alt="" >
             </div>
 
@@ -218,7 +218,9 @@
             <div class="container computation">
               <div class="computation-left"
               data-anim="slide-in"
-              data-origin="left">
+              data-origin="left"
+              data-bottom="opacity:0; left: 0px;" data-center="opacity: 1; left: 110px;"
+              >
               <h1>But the current approach to computing has a shelf-life</h1>
               <p>For decades computer scientists have taken
                 advantage of advances in silicon chips to rapidly
@@ -226,9 +228,11 @@
                 <img class="circuit-left" src="images/svg/circuts_left-01.svg" alt="" >
               </div>
 
-              <div class="computation-right abs-right"
+              <div class="computation-right"
               data-anim="slide-in"
-              data-origin="right">
+              data-origin="right"
+              data-bottom="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;"
+              >
               <p>Now, limitations in traditional computer and chip
                 design are slowing progress – and that's even
                 before you consider the big data phenomenon.</p>
@@ -294,19 +298,25 @@
           </div>
           <div class="col-3">
             <h2>Laboratories</h2>
-            <div class="icon-holder" data-anim="fade-in">
+            <div class="icon-holder" data-anim="fade-in"
+            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            >
               <img src="images/svg/laboratory.svg" alt="">
             </div>
           </div>
           <div class="col-3">
             <h2>Universities</h2>
-            <div class="icon-holder" data-anim="fade-in">
+            <div class="icon-holder" data-anim="fade-in"
+            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            >
               <img src="images/svg/university.svg" alt="">
             </div>
           </div>
           <div class="col-3">
             <h2>Businesses</h2>
-            <div class="icon-holder" data-anim="fade-in">
+            <div class="icon-holder" data-anim="fade-in"
+            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            >
               <img class="icon-holder" src="images/svg/business.svg" alt="">
             </div>
           </div>
@@ -317,7 +327,10 @@
 
         <div class="new-vision-comment fact-block light"
         data-anim="slide-in"
-        data-origin="bottom">
+        data-origin="bottom"
+        data-bottom="opacity: 0; bottom: 0px;" data-center="opacity: 1; bottom: 100px;"
+
+        >
         <p>So they need computing systems that are designed specifically
           to handle these new tasks. Data-centric design enables computer
           scientists to engineer systems that are optimized for specific jobs
@@ -353,47 +366,66 @@
           </div>
 
           <div class="col-3">
-            <div class="icon-holder" data-anim="fade-in">
+            <div class="icon-holder" data-anim="fade-in"
+            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            >
               <img src="images/svg/icon-doctor.svg" alt="">
             </div>
-            <h2 data-anim="slide-in fade-in" data-origin="bottom">Healthcare</h2>
-            <p data-anim="slide-in fade-in" data-origin="bottom">
-              Simulating the interactions of
-              molecules to help identify patterns
-              that will help pharmaceutical
-              companies develop drugs
-              to target specific cells.</p>
+            <div class="col-3-content" data-anim="slide-in fade-in" data-origin="bottom"
+              data-bottom="opacity: 0; left:-50px;" data-center="opacity: 1; left: 0px;"
+            >
+              <h2>Healthcare</h2>
+              <p>
+                Simulating the interactions of
+                molecules to help identify patterns
+                that will help pharmaceutical
+                companies develop drugs
+                to target specific cells.</p>
+            </div>
+            
           </div>
 
           <div class="col-3">
-            <div class="icon-holder" data-anim="fade-in">
+            <div class="icon-holder" data-anim="fade-in"
+            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            >
              <img src="images/svg/icon-energy.svg" alt="">
 
             </div>
-            <h2 data-anim="slide-in fade-in"
-            data-origin="bottom">Energy</h2>
-            <p data-anim="slide-in fade-in"
-            data-origin="bottom">
-            Increasing the use of wind energy
-            by designing efficient wind turbines
-            that can withstand the elements
-            in geographic regions known for
-            inclement weather.</p>
+            <div class="col-3-content" data-anim="slide-in fade-in"
+              data-origin="bottom"
+              data-bottom="opacity: 0; bottom:-50px;" data-center="opacity: 1; bottom: 0px;"
+              >
+              <h2>Energy</h2>
+              <p>
+              Increasing the use of wind energy
+              by designing efficient wind turbines
+              that can withstand the elements
+              in geographic regions known for
+              inclement weather.</p>
+            </div>
+            
           </div>
 
           <div class="col-3">
-            <div class="icon-holder" data-anim="fade-in">
+            <div class="icon-holder" data-anim="fade-in"
+            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            >
               <img src="images/svg/icon-airline.svg" alt="">
             </div>
-            <h2 data-anim="slide-in fade-in"
-            data-origin="bottom">Air Travel</h2>
+            <div class="col-3-content"
+            data-anim="slide-in fade-in" data-origin="bottom"
+            data-bottom="opacity: 0; right:-50px;" data-center="opacity: 1; right: 0px;"
+            >
+              <h2>Air Travel</h2>
             <!-- svg here for icons -->
-            <p data-anim="slide-in fade-in"
-            data-origin="bottom">
+            <p>
             Designing and building better jet
             engines to withstand heat and
             other pressures, for faster,
             efficient air travel.</p>
+            </div>
+            
           </div>
         </div><!-- section-grid -->
       </div>
