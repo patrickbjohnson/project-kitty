@@ -9,7 +9,7 @@ $(document).ready(function(){
 			$('.main-nav').text(data.curTop);
 
        var num = Math.ceil(document.getElementById('timer').style['stroke-miterlimit']);
-      if( num < 25 ) {
+      	if( num < 25 ) {
           document.getElementById('text').innerHTML = num;
        }
 		}
