@@ -6,6 +6,7 @@
 	background: rgba(0,0,0,0.8);
 	text-align: center;
 	padding: 10px 0;
+  z-index: z(base-10);
 }
 
 .footer-links {
@@ -22,4 +23,10 @@
     display: block;
     padding: 0 1em;
   }
+}
+
+
+// IBM Nav quick fix. 
+#ibm-universal-nav {
+  float: none;
 }

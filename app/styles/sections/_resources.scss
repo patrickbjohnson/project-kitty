@@ -5,7 +5,15 @@
 .resources-copy {
 	top: 100px;
 	max-width: 295px;
+
+	> p > strong { display: inline-block;}
+
+	.font-40 {
+		top: -10px;
+	}
 }
+
+
 
 .dots {
   width: 850px;

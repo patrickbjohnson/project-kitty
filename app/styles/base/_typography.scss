@@ -1,16 +1,17 @@
 
 @include font-face(lubalin-light, '../../fonts/lubalin/lubalingraphstd-book-webfont', 300, normal);
 @include font-face(lubalin-heavy, '../../fonts/lubalin/lubalingraphstd-demi-webfont', 600, normal);
+@include font-face(helvetica-neue, '../../fonts/helvetica-neue/2C6636_0_0', normal, normal);
 
 body, .copy, %copy  {
 	font-family: $helvetica;
-	font-weight: $light;
+	font-weight: bold;
 	line-height: 1.5;
 }
 
 h1,h2,h3,h4,h5,h6, %header {
 	margin: 0;
-	font-weight: 300;
+	font-weight: bold;
 	line-height: 1;
     text-shadow: none;
 }
@@ -56,14 +57,16 @@ strong, .bold, %bold {
   p {font-size: em(14px);}
   strong {
     font-family: inherit;
-    font-size:2.5em;
-    display:inline;
+    font-size: em(52px);
+    // display:inline;
+    letter-spacing: -16px;
+    display: inline-block;
   }
 }
 
 small, .small { font-size: em(12px); }
 
-.font-24 {font-size: 24px;}
-.font-40 {font-size: 40px;}
-.font-60 {font-size: 60px;}
+.font-24 {font-size: 24px; position: relative;}
+.font-40 {font-size: 40px; position: relative;}
+.font-60 {font-size: 60px; position: relative;}
 .font-heavy {font-family: $lubalin-heavy;}
