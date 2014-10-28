@@ -12,7 +12,7 @@ $(document).ready(function(){
       if( num < 25 ) {
           document.getElementById('text').innerHTML = num;
        }
-		},
+		}
 
 	});
 });

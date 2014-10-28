@@ -136,53 +136,59 @@
             <div class="sun">
               <img src="images/svg/sun.svg" alt="">
             </div>
-            <div class="timer"data-anim="custom-svg">
-              <svg class="timer-svg" version="1.1" baseProfile="basic" id="timer-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" xml:space="preserve">
-                <style type="text/css">
-                  .st0{fill:#000;stroke:none;}
-                  .st1{fill:none;stroke:#bada55;stroke-width:3;stroke-miterlimit:10;}
-                  .st3{fill:none;stroke:#fff;stroke-width:3;stroke-miterlimit:10;}
-                  .st2{fill:#fff;stroke:#bada55;stroke-width:35;stroke-linejoin:bevel;}
-                </style>
+            <div class="timer" data-anim="custom-svg">
+              <svg class="timer-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 260.5 350" enable-background="new 0 0 260.5 350" xml:space="preserve">
+                <!-- timer top -->
+                <circle cx="130.1" cy="3.7" r="4.1"/>
+                <!-- whitebackground behind top of clock -->
+                <ellipse fill="#FFFFFF" cx="130.6" cy="36.2" rx="34.9" ry="28.3"/>
+                
+                <!-- Timer Loop -->
+                <path d="M167.5,37.4h-12.3c0-11.7-11.4-21.3-25.2-21.3s-25.2,9.5-25.2,21.3H92.7c0-18.5,16.8-33.5,37.5-33.5
+                C150.6,3.8,167.5,18.9,167.5,37.4"/>
 
-                <circle fill="white" cx="151" cy="184.3" r="120" />
-                <path d="M150.5,96.1c48.5,0,88,39.5,88,88s-39.5,88-88,88c-48.5,0-88-39.5-88-88S102,96.1,150.5,96.1 M150.5,71.1
-                c-62.4,0-113,50.6-113,113c0,62.4,50.6,113,113,113c62.4,0,113-50.6,113-113C263.5,121.7,212.9,71.1,150.5,71.1L150.5,71.1z"/>
+                <!-- Clock stem -->
+                <!-- background -->
+                <rect x="97.7" y="59" fill="#FFFFFF" width="64.8" height="44"/>
+                <!-- middle stem -->
+                <path d="M97.7,74h64.8v13.7c0,0-37.8-6.5-64.8,0.9C97.7,88.6,97.7,74,97.7,74z"/>
+                <!-- bottom stem -->
+                <path d="M94,40.3c0,0-13.4,0-13.4,13.4v2.3c0,0,0,13.4,13.4,13.4h72.3c0,0,13.4,0,13.4-13.4v-2.3c0,0,0-13.4-13.4-13.4
+                C166.2,40.3,94,40.3,94,40.3z"/>
 
-                <path class="st0" d="M180.1,29h-9.5c0-9.1-8.8-16.5-19.5-16.5s-19.5,7.4-19.5,16.5h-9.5c0-14.3,13-26,29.1-26
-                C167,3,180.1,14.7,180.1,29"/>
+                <!-- Black timer outline -->
+                <circle fill="#FFFFFF" stroke="#000000" stroke-width="30" stroke-miterlimit="10" cx="130.1" cy="220.4" r="114.5"/>
+                <!-- Ticker -->
+                <!-- Trying to replicate wihtout breaking the path of the line -->
+                <!-- <circle fill="#FFFFFF" stroke="#009245" stroke-width="30" stroke-linejoin="bevel" stroke-miterlimit="10" stroke-dasharray="15,5,700" 
+                id="timer"  stroke-miterlimit="1" stroke-dashoffset="500"  data-bottom="stroke-dashoffset:500; stroke-miterlimit:1;" data-top="stroke-dashoffset:0;stroke-miterlimit:38;"  
+                cx="129.5" cy="219.5" r="73.4"/> -->
+                
+                <path fill="#FFFFFF" stroke="#009245" stroke-width="30" stroke-miterlimit="1" stroke-dasharray="15,5,10,500" id="timer"  stroke-miterlimit="1" stroke-dashoffset="500"  data-bottom="stroke-dashoffset:500; stroke-miterlimit:1;" data-top="stroke-dashoffset:0;stroke-miterlimit:38;" 
+                d="M208.2,220 c0,43-34.9,77.9-77.9,77.9S52.3,263,52.3,220c0-42,33.3-76.3,74.9-77.9c1,0,4.5,0,5.3,0C174.5,143.3,208.2,177.7,208.2,220z"/>
 
-                <!-- cool animated part -->
-                <path class="st2" id="timer"  stroke-miterlimit="1" stroke-dashoffset="700" stroke-dasharray="5 15 700" data-bottom="stroke-dashoffset:740; stroke-miterlimit:1;" data-top="stroke-dashoffset:0;stroke-miterlimit:38;"  d="M144.5,122,150.5,122.1c34.2,0,62,27.8,62,62c0,34.2-27.8,62-62,62s-62-27.8-62-62c0-32.2,28.8-62,70-61.7"/>
-
-
-                 <!-- quarter interval markers -->
-                <line class="st1" x1="150" y1="105" x2="150" y2="135"/>
-                <line class="st3" x1="148" y1="105" x2="148" y2="135"/>
-                <line class="st1" x1="70" y1="183.2" x2="104" y2="183.2"/>
-                <line class="st3" x1="70" y1="181" x2="104" y2="181"/>
-                <line class="st1" x1="150" y1="230" x2="150" y2="262"/>
-                <line class="st3" x1="148" y1="230" x2="148" y2="262"/>
-                <line class="st1" x1="195" y1="183.2" x2="230" y2="183.2"/>
-                <line class="st3" x1="195" y1="181" x2="230" y2="181"/>
-
-
-                <path class="st0" d="M125.9,57.4h50.2V68c0,0-29.3-5-50.2,0.7V57.4z"/>
-                <path class="st0" d="M123,31.3c0,0-10.4,0-10.4,10.4v1.8c0,0,0,10.4,10.4,10.4H179c0,0,10.4,0,10.4-10.4v-1.8c0,0,0-10.4-10.4-10.4
-                H123z"/>
-
-                <!-- middle circle and number -->
-                <circle class="st0" cx="151" cy="184.3" r="37.5"/>
-                <text id="text" fill="white" x="151" y="184" font="sans-serif;" font-weight="bold">1</text>
+                <circle cx="130.1" cy="220.4" r="48.4" />
+                <!-- timer middle where text will go -->
+                <circle cx="130.1" cy="220.4" r="48.4"/>
+                <text id="text" fill="white" x="124" y="225" font="sans-serif;" font-weight="bold">1</text>
+                
               </svg>
+
+
             </div>
-          <div class="resources-copy copy abs-right" data-anim="slide-in" data-origin="right">
+            
+          <div class="resources-copy copy pos-abs" data-anim="slide-in" data-origin="right"
+          
+          data-bottom="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;"
+
+          >
             <h1>Big Data, The New Natural Resource</h1>
             <p>
               <span class="font-24">Every day society generates</span>
               <span class="stat stacked-text"><strong>2.5</strong>
-                billion
-                gigabytes</span>of data in organizations, via the <strong>Internet of Things</strong> and as a result of our personal digital activities.
+              <span class="stat font-60">billion</span>
+              <span class="stat font-40">gigabytes</span>
+              </span>of data in organizations, via the <strong>Internet of Things</strong> and as a result of our personal digital activities.</span>
               </p>
             </div>
           </div>
@@ -196,19 +202,19 @@
               <!-- this will become a png -->
               <img src="images/png/world.png" alt="">
             </div>
-            <div class="globe-comment fact-block dark right abs-right">
+            <div class="globe-comment fact-block dark right" data-bottom="right: -200px; opacity:0;" data-center="right: 285px; opacity: 1;">
               <p>This super-abundance
                 of information has created
                 a phenomenon known as
                 <strong>Dark Data –</strong></p>
             </div>
 
-            <div class="globe-comment fact-block dark left ">
+            <div class="globe-comment fact-block dark left " data-bottom="left: -200px; opacity:0;" data-center="left: 210px; opacity: 1;">
               <p>information we gather
                 <strong>but don't capitalize on.</strong></p>
             </div>
 
-            <div class="globe-desk">
+            <div class="globe-desk" data-bottom="bottom: -200px; opacity:0;" data-center="bottom: 34px; opacity: 1;">
               <img src="images/svg/man_compter.svg" class="globe-desk-svg" alt="">
             </div>
             <div class="microchips">
@@ -218,7 +224,7 @@
             </div>
 
 
-            <div class="globe-stat abs-right">
+            <div class="globe-stat"  data-bottom="right: -200px; opacity:0;" data-center="right: 285px; opacity: 1;">
               <span class="stat"><strong>1%⬇</strong></span>
               <p><strong>Less than one percent</strong>
                 of the data generated every day
@@ -337,17 +343,19 @@
           – improving the speed and quality of insights.</p>
         </div>
         <figure class="computing-data-insights">
-          <div class="diagram-half computing" data-anim="slide-in" data-origin="left" data-bottom="left:0%;" data-center="left: 15%;">
+          <div class="diagram-half computing" data-anim="slide-in" data-origin="left" data-bottom="left:0%;" data-center="left: 25%;">
             <img src="images/svg/diagram-computing.svg" alt="">
             <h1>Data</h1>
           </div>
 
-          <div class="diagram-half data" data-anim="slide-in" data-origin="right" data-bottom="right:0%;" data-center="right: 15%;">
+          <div class="diagram-half data" data-anim="slide-in" data-origin="right" data-bottom="right:0%;" data-center="right: 25%;">
             <img src="images/svg/diagram-data.svg" alt="">
             <h1>Computing</h1>
           </div>
 
-          <div class="diagram-result" data-anim="slide-in" data-origin="bottom" >
+          <div class="diagram-result" data-anim="slide-in" data-origin="bottom" 
+            data-bottom-top="opacity:0; transform:scale(0);" 
+            data-center="opacity:1; transform:scale(1.50);">
             <img src="images/svg/diagram-result.svg" alt="">
           </div>
           <img  class="bytes-bg bytes-bg-lt" src="images/svg/bytes-bg-lt.svg" alt="">

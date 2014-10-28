@@ -21,8 +21,14 @@
 	&-stat {
 	@include abs(0 0 110px 0);
 	width: 225px;
+
+	}
 }
 
+.globe-stat {
+	.stat strong {
+		font-size: 1.950em;
+	}
 }
 
 .globe-graphic {
