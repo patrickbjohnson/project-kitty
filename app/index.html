@@ -72,16 +72,6 @@
           </ul>
         </menu>
       </aside>
-      <aside class="sharing sharing-abs">
-        <menu class="share-icons">
-          <ul>
-            <li><a class="ss-icon ss-social" href="#" title="Share on Facebook">facebook</a></li>
-            <li><a class="ss-icon ss-social" href="#" title="Share on Twitter">twitter</a></li>
-            <li><a class="ss-icon ss-social" href="#" title="Share on Google">googleplus</a></li>
-          </ul>
-        </menu>
-      </aside>
-
       <!-- /sharing -->
       <nav class="main-nav"></nav>
 
@@ -113,7 +103,7 @@
 
 
       <section class="section">
-        <div class="container intro">
+        <div class="container intro" id="intro">
           <img class="logo" src="images/svg/logo_blue-01.svg" alt="">
           <div class="intro-copy">
             <h1>A new Vision for Big Data Computation</h1>
@@ -123,12 +113,12 @@
 
             <div class="start">
               <span class="label">Scroll to begin</span>
-              <a class="icon-down circle invert block ss-icon ss-standard">navigatedown</a>
+              <a class="icon-down circle invert block ss-icon ss-standard" href="#resources">navigatedown</a>
             </div>
           </div>
         </section>
         <!-- /intro -->
-        <section class="section section-resources">
+        <section class="section section-resources" id="resources">
           <div class="container resources">
             <div class="dots" data-anim="slide-down" data-origin="bottom">
               <img src="images/svg/bytes_small-01.svg" alt="" >
@@ -180,9 +170,12 @@
         <section class="section section-globe">
           <div class="container globe">
 
-            <div class="globe-graphic" data-anim="slide-left"><!-- is it, though? -->
+            <div class="globe-graphic globe-graphic-container" data-anim="slide-left">
+              <img 
+              data-bottom="right: -200px;" data-center="right: 150px;"
+              src="images/png/updated-map.png" alt="">
               <!-- this will become a png -->
-              <img src="images/png/world.png" alt="">
+              <!-- <img src="images/png/world.png" alt=""> -->
             </div>
             <div class="globe-comment fact-block dark right" data-bottom="right: -200px; opacity:0;" data-center="right: 285px; opacity: 1;">
               <p>This super-abundance
@@ -320,7 +313,9 @@
               <img class="icon-holder" src="images/svg/business.svg" alt="">
             </div>
           </div>
-          <div class="server-row" data-anim="custom-svg">
+          <div class="server-row" data-anim="custom-svg"
+            data-bottom="bottom:-200px;" data-center="bottom: -10px;"
+          >
             <img src="images/svg/server-row.svg" alt="">
           </div>
         </div><!-- /section-grid -->
@@ -441,7 +436,7 @@
         the computers on your desk, and in your hand. In the new era of computing,
         they'll work faster and smarter – and use less energy.</p>
       </div>
-      <span class="icon-up circle invert block ss-icon ss-standard">navigateup</span>
+      <a class="icon-up circle invert block ss-icon ss-standard" href="#intro">navigateup</a>
     </div>
   </section>
   <!-- /finale -->

@@ -57,3 +57,14 @@
 }
 
 
+.globe-graphic-container {
+	@include circle(965px);
+	overflow: hidden;
+	border: 1px solid red;
+	z-index: z(base-5);
+
+	img {
+		position: relative;
+		width: 1000px;
+	}
+}
