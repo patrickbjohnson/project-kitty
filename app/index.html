@@ -120,15 +120,12 @@
         <!-- /intro -->
         <section class="section section-resources" id="resources">
           <div class="container resources">
-            <div class="dots" data-anim="slide-up" data-bottom="bottom: -450px;" data-top="bottom:300px;" >
-              <img src="images/svg/bytes_small-01.svg" alt="" >
-            </div>
             <div class="sun" data-anim="rotate" data-origin="bottom"
               data-bottom="transform: rotate(0deg);" data-center="transform: rotate(360deg)">
               <img src="images/svg/sun.svg" alt="">
             </div>
             <div class="timer" data-anim="custom-svg">
-              <svg class="timer-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 260.5 350" enable-background="new 0 0 260.5 350" xml:space="preserve">
+              <svg class="timer-svg" id="timer-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 260.5 350" enable-background="new 0 0 260.5 350" xml:space="preserve">
                   <circle cx="130.1" cy="3.7" r="4.1"/>
                   <rect x="97.7" y="59" fill="#FFFFFF" width="64.8" height="44"/>
                   <ellipse fill="#FFFFFF" cx="130.6" cy="36.2" rx="34.9" ry="28.3"/>
@@ -143,7 +140,9 @@
 
                   <!-- Animated path -->
                   <path fill="#FFFFFF" stroke="#009245" stroke-width="35" stroke-miterlimit="1" stroke-dasharray="5 10 700" 
-                  id="timer"  stroke-miterlimit="1" data-bottom="stroke-dashoffset:700; stroke-miterlimit:1;" data-top="stroke-dashoffset:0;stroke-miterlimit:38;" d="M132.1,146.6
+                  id="timer"  stroke-miterlimit="1"
+                  data-top="stroke-dashoffset:0;stroke-miterlimit:38;" 
+                  data-bottom="stroke-dashoffset:700; stroke-miterlimit:1;"  d="M132.1,146.6
                     c40,1.1,72,33.9,72,74.2c0,41-33.2,74.2-74.2,74.2s-74.2-33.2-74.2-74.2c0-40,31.7-72.6,71.3-74.1"/>
 
                   <!-- Middle black circle -->
@@ -151,18 +150,40 @@
                   <text id="text" text-anchor="middle" font-family="'helvetica-neue'" font-size="56" x="130.1" y="238.4" fill="#ffffff">1</text>
               </svg>
             </div>
+            <!-- 
+            Basing these animations on the top
+            of the 'resources' section
+            Basically goes from farthest 
+            from the top to closest
+            so in this case, 
+            700 from the top 
+            600 from the top  
+            200 from the top  
+             -->
+            <div class="dots" data-anim="slide-up" 
 
-          <div class="resources-copy copy pos-abs" data-anim="slide-in" data-origin="right"
-          data-bottom="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;">
-            <h1>Big Data, The New Natural Resource</h1>
-            <p>
-              <span class="font-24">Every day society generates</span>
-              <span class="stat stacked-text"><strong>2.5</strong>
-              <span class="stat font-60">billion</span>
-              <span class="stat font-40">gigabytes</span>
-              </span>of data in organizations, via the <strong>Internet of Things</strong> and as a result of our personal digital activities.</span>
-              </p>
+            data-anchor-target=".resources"
+
+            data-top=" opacity: 0; top: 0px;" 
+            data--200-top="opacity: 1; top: 450px;"
+            data--500-top="opacity:1; top: 450px;"
+            data--800-top="opacity: 1; top: 450px;"
+            data--900-top="opacity: 1; top: 450px;"
+
+            >
+              <img src="images/svg/bytes_small-01.svg" alt="" >
+            
             </div>
+            <div class="resources-copy copy pos-abs" data-anim="slide-in" data-origin="right" data-100-bottom="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;">
+              <h1>Big Data, The New Natural Resource</h1>
+              <p>
+                <span class="font-24">Every day society generates</span>
+                <span class="stat stacked-text"><strong>2.5</strong>
+                <span class="stat font-60">billion</span>
+                <span class="stat font-40">gigabytes</span>
+                </span>of data in organizations, via the <strong>Internet of Things</strong> and as a result of our personal digital activities.</span>
+                </p>
+              </div>
           </div>
 
         </section>
@@ -350,13 +371,11 @@
         <div class="new-vision-comment fact-block light"
         data-anim="slide-in"
         data-origin="bottom"
-        data-bottom=" transform: scale(0)" data-center="transform: scale(1);"
-
-        >
-        <p data-bottom=" opacity: 0;" data-center="opacity: 1;">So they need computing systems that are designed specifically
-          to handle these new tasks. Data-centric design enables computer
-          scientists to engineer systems that are optimized for specific jobs
-          – improving the speed and quality of insights.</p>
+        data-bottom=" transform: scale(0)" data-center="transform: scale(1);">
+          <p data-bottom=" opacity: 0;" data-center="opacity: 1;">So they need computing systems that are designed specifically
+            to handle these new tasks. Data-centric design enables computer
+            scientists to engineer systems that are optimized for specific jobs
+            – improving the speed and quality of insights.</p>
         </div>
         <figure class="computing-data-insights">
           <div class="diagram-half computing" data-anim="slide-in" data-origin="left" data-bottom="left:0%;" data-center="left: 15%;">
