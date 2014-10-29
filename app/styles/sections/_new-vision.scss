@@ -5,7 +5,7 @@
 	.section-grid {
 		position: relative;
 		top: 40px;
-		height: 530px;
+		height: 560px;
 	}
 }
 .new-vision-comment  {
@@ -73,12 +73,17 @@
 }
 
 
-
-
 .bytes-bg {
 	@include abs(180px 0 0 0);
-	width: 220px;
+	width: 230px;
 
 	&-lt {left: 0;}
 	&-rt  {right: 0;}
+}
+
+.icon-data {
+	position: relative;
+	top: -60px;
+	width: 100px;
+	z-index: -1;
 }

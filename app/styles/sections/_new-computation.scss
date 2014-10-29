@@ -8,9 +8,9 @@
 	position: relative;
 	width: 440px;
 
-	.connection 		{@include abs(0 0 0 170px);}
-	.microchip 		{@include abs(200px 0 0 0);}
-	.server 			{@include abs(250px 0 0 235px);}
+	.connection 		{@include abs(0 0 0 175px); z-index:1;}
+	.microchip 		{@include abs(200px 0 0 0); z-index:1;}
+	.server 			{@include abs(250px 0 0 235px); z-index:1;}
 }
 
 .new-computation-vision {
@@ -38,21 +38,28 @@
 	strong {margin: 0;}
 }
 
-.circle-lg {width: 240px;}
+.circle-lg  {width: 240px;}
 .circle-md {width: 220px;}
 .circle-sm {width: 205px;}
 
-.monitor {
-	position: relative;
-	left: 3px;
-	margin-top: 5px;
-	z-index: z(base-5);
+// .monitor {
+// 	position: relative;
+// 	left: 3px;
+// 	margin-top: 5px;
+// 	z-index: z(base-5);
 	
 
-	.microchip {
-		@include abs(230px 0 0 120px);
-		width: 125px;
-	}
+// 	.microchip {
+// 		@include abs(230px 0 0 120px);
+// 		width: 125px;
+// 	}
+// }
+
+.monitor img {
+	width: 485px;
+	position: relative;
+	top: -10px;
+	left: -72px;
 }
 
 .server-solo {

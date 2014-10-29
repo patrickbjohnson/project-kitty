@@ -120,7 +120,7 @@
         <!-- /intro -->
         <section class="section section-resources" id="resources">
           <div class="container resources">
-            <div class="dots" data-anim="slide-down" data-origin="bottom">
+            <div class="dots" data-anim="slide-up" data-bottom="bottom: -450px;" data-top="bottom:300px;" >
               <img src="images/svg/bytes_small-01.svg" alt="" >
             </div>
             <div class="sun" data-anim="rotate" data-origin="bottom"
@@ -129,26 +129,26 @@
             </div>
             <div class="timer" data-anim="custom-svg">
               <svg class="timer-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 260.5 350" enable-background="new 0 0 260.5 350" xml:space="preserve">
-                <circle cx="130.1" cy="3.7" r="4.1"/>
-                <rect x="97.7" y="59" fill="#FFFFFF" width="64.8" height="44"/>
-                <ellipse fill="#FFFFFF" cx="130.6" cy="36.2" rx="34.9" ry="28.3"/>
-                <path d="M97.7,74h64.8v13.7c0,0-37.8-6.5-64.8,0.9C97.7,88.6,97.7,74,97.7,74z"/>
-                 <path d="M94,40.3c0,0-13.4,0-13.4,13.4v2.3c0,0,0,13.4,13.4,13.4h72.3c0,0,13.4,0,13.4-13.4v-2.3c0,0,0-13.4-13.4-13.4
-                  C166.2,40.3,94,40.3,94,40.3z"/>
-                <path d="M167.5,37.4h-12.3c0-11.7-11.4-21.3-25.2-21.3s-25.2,9.5-25.2,21.3H92.7c0-18.5,16.8-33.5,37.5-33.5
-                  C150.6,3.8,167.5,18.9,167.5,37.4"/>
+                  <circle cx="130.1" cy="3.7" r="4.1"/>
+                  <rect x="97.7" y="59" fill="#FFFFFF" width="64.8" height="44"/>
+                  <ellipse fill="#FFFFFF" cx="130.6" cy="36.2" rx="34.9" ry="28.3"/>
+                  <path d="M97.7,74h64.8v13.7c0,0-37.8-6.5-64.8,0.9C97.7,88.6,97.7,74,97.7,74z"/>
+                   <path d="M94,40.3c0,0-13.4,0-13.4,13.4v2.3c0,0,0,13.4,13.4,13.4h72.3c0,0,13.4,0,13.4-13.4v-2.3c0,0,0-13.4-13.4-13.4
+                    C166.2,40.3,94,40.3,94,40.3z"/>
+                  <path d="M167.5,37.4h-12.3c0-11.7-11.4-21.3-25.2-21.3s-25.2,9.5-25.2,21.3H92.7c0-18.5,16.8-33.5,37.5-33.5
+                    C150.6,3.8,167.5,18.9,167.5,37.4"/>
 
-                <!-- Base black circle -->
-                <circle fill="#FFFFFF" stroke="#000000" stroke-width="30" stroke-miterlimit="10" cx="130.1" cy="220.4" r="114.5"/>
+                  <!-- Base black circle -->
+                  <circle fill="#FFFFFF" stroke="#000000" stroke-width="30" stroke-miterlimit="10" cx="130.1" cy="220.4" r="114.5"/>
 
-                <!-- Animated path -->
-                <path fill="#FFFFFF" stroke="#009245" stroke-width="35" stroke-miterlimit="1" stroke-dasharray="5 10 700" 
-                id="timer"  stroke-miterlimit="1" data-bottom="stroke-dashoffset:700; stroke-miterlimit:1;" data-top="stroke-dashoffset:0;stroke-miterlimit:38;" d="M132.1,146.6
-                  c40,1.1,72,33.9,72,74.2c0,41-33.2,74.2-74.2,74.2s-74.2-33.2-74.2-74.2c0-40,31.7-72.6,71.3-74.1"/>
+                  <!-- Animated path -->
+                  <path fill="#FFFFFF" stroke="#009245" stroke-width="35" stroke-miterlimit="1" stroke-dasharray="5 10 700" 
+                  id="timer"  stroke-miterlimit="1" data-bottom="stroke-dashoffset:700; stroke-miterlimit:1;" data-top="stroke-dashoffset:0;stroke-miterlimit:38;" d="M132.1,146.6
+                    c40,1.1,72,33.9,72,74.2c0,41-33.2,74.2-74.2,74.2s-74.2-33.2-74.2-74.2c0-40,31.7-72.6,71.3-74.1"/>
 
-                <!-- Middle black circle -->
-                <circle cx="130.1" cy="220.4" r="48.4"/>                
-                <text id="text" text-anchor="middle" font-family="'Arial-BoldMT'" font-size="56" x="130.1" y="238.4" fill="#ffffff">1</text>
+                  <!-- Middle black circle -->
+                  <circle cx="130.1" cy="220.4" r="48.4"/>                
+                  <text id="text" text-anchor="middle" font-family="'helvetica-neue'" font-size="56" x="130.1" y="238.4" fill="#ffffff">1</text>
               </svg>
             </div>
 
@@ -164,18 +164,17 @@
               </p>
             </div>
           </div>
+
         </section>
         <!-- /resources -->
 
         <section class="section section-globe">
           <div class="container globe">
-
-            <div class="globe-graphic globe-graphic-container" data-anim="slide-left">
+            
+            <div class="globe-graphic-container">
               <img 
-              data-bottom="right: -200px;" data-center="right: 150px;"
+              data-top="margin-left: -90px;" data-center="margin-left: -145px;"
               src="images/png/updated-map.png" alt="">
-              <!-- this will become a png -->
-              <!-- <img src="images/png/world.png" alt=""> -->
             </div>
             <div class="globe-comment fact-block dark right" data-bottom="right: -200px; opacity:0;" data-center="right: 285px; opacity: 1;">
               <p>This super-abundance
@@ -189,12 +188,12 @@
                 <strong>but don't capitalize on.</strong></p>
             </div>
 
-            <div class="globe-desk" data-bottom="bottom: -60px; opacity:0;" data-center="bottom: 30px; opacity: 1;">
+            <div class="globe-desk" data-bottom="bottom: -60px; opacity:0;" data-center="bottom: 35px; opacity: 1;">
               <img src="images/svg/man_compter.svg" class="globe-desk-svg" alt="">
             </div>
             <div class="microchips">
               <img class="microchip-bg-lg" src="images/svg/computer_chip_hour_LG-01.svg" alt="" >
-              <img class="microchip-bg-sm" src="images/svg/computer_chip_hour_SM-01.svg" alt="" >
+              <img class="microchip-bg-sm" src="images/svg/hourglass-sm.svg" alt="" >
             </div>
 
 
@@ -224,7 +223,7 @@
               <div class="computation-right"
               data-anim="slide-in"
               data-origin="right"
-              data-bottom="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;"
+              data-bottom="opacity:0; right: 0px;" data-center="opacity: 1; right: 245px;"
               >
               <p>Now, limitations in traditional computer and chip
                 design are slowing progress – and that's even
@@ -268,7 +267,27 @@
           <strong>That's a huge waste of time and energy.</strong></p>
 
           <div class="monitor">
-            <img src="images/svg/monitor-new.svg" alt="">
+            <!-- <img src="images/svg/monitor-new.svg" alt=""> -->
+            <img src="images/svg/monitor-svg.svg" alt="">
+            <!-- <svg class="monitor-circuits" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 465 190.163" style="enable-background:new 0 0 465 190.163;" xml:space="preserve">
+                <g id="lines_x5F_out_x5F_of_x5F_computer_x5F_chip">
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="157.854,0.352 163.111,5.663 229.5,5.663 229.5,36.163   
+                    "/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="288.5,0.163 288.5,4 252.995,39.586"/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="123.244,0.394 158.5,35.26 158.5,76.663 190,76.663 "/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="273.798,39.525 294.908,18.663 369,18.663 
+                    417.223,66.846"/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="306.978,71.76 329.5,49.313 329.5,0.163"/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="310,96.663 354,96.663 383.657,126.663 465,126.663"/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="310,116.663 349,116.663 384.5,152.291 384.5,190.163"/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="273.88,151.389 291.38,168.663 338.5,168.663 
+                    338.5,190.163"/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="249.982,153.831 231.5,172.231 231.5,190.163"/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="190,116.663 134,116.663 79.944,170.663 53,170.663 34.124,151.663 0,151.663"/>
+                </g>
+            </svg> -->
+
           </div>
           <figcaption class="new-computation-comment fact-block light block " data-anim="slide-in" data-origin="bottom">
             <p><strong>The new approach, data-centric design</strong>
@@ -292,10 +311,12 @@
           <div class="col-3">
             <h2>Laboratories</h2>
             <div class="icon-holder" data-anim="fade-in"
-            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
-            >
+            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;">
               <img src="images/svg/laboratory.svg" alt="">
             </div>
+            <img 
+              data-anim="slide-down"
+            class="icon-data icon-data-1" src="images/svg/icon-data-1.svg" alt="">
           </div>
           <div class="col-3">
             <h2>Universities</h2>
@@ -304,6 +325,9 @@
             >
               <img src="images/svg/university.svg" alt="">
             </div>
+            <img 
+              data-anim="slide-down"
+            class="icon-data icon-data-1" src="images/svg/icon-data-2.svg" alt="">
           </div>
           <div class="col-3">
             <h2>Businesses</h2>
@@ -312,6 +336,9 @@
             >
               <img class="icon-holder" src="images/svg/business.svg" alt="">
             </div>
+            <img 
+              data-anim="slide-down"
+            class="icon-data icon-data-1" src="images/svg/icon-data-3.svg" alt="">
           </div>
           <div class="server-row" data-anim="custom-svg"
             data-bottom="bottom:-200px;" data-center="bottom: -10px;"
