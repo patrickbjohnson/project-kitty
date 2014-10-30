@@ -1,5 +1,5 @@
 .new-computation  {
-	height: 755px; 
+	height: 755px;
 	z-index: z(base-5);
 }
 
@@ -15,9 +15,9 @@
 
 .new-computation-vision {
 	width: 365px;
-	text-align: left;	
+	text-align: left;
 	top: 0;
-	
+
 	h1 {
 		width: 445px;
 		margin-bottom: 25px;
@@ -47,7 +47,7 @@
 // 	left: 3px;
 // 	margin-top: 5px;
 // 	z-index: z(base-5);
-	
+
 
 // 	.microchip {
 // 		@include abs(230px 0 0 120px);
@@ -55,11 +55,14 @@
 // 	}
 // }
 
-.monitor img {
-	width: 485px;
+.monitor-img {
+	// width: 485px;
 	position: relative;
+  // top: -10px;
 	top: -10px;
-	left: -72px;
+	// left: -72px;
+  left: -310px;
+  height: 280px;
 }
 
 .server-solo {
