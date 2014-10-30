@@ -37,7 +37,7 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
-      <!-- sharing; once we sort the markup for this we'll just duplicate it where it's needed -->
+
 
       <!-- IBM Nav -->
       <div id="ibm-universal-nav" role="navigation" aria-label="Site map">
@@ -197,61 +197,85 @@
               data-top="margin-left: -90px;" data-center="margin-left: -145px;"
               src="images/png/updated-map.png" alt="">
             </div>
-            <div class="globe-comment fact-block dark right" data-bottom="right: -200px; opacity:0;" data-center="right: 285px; opacity: 1;">
+            <div class="globe-comment fact-block dark right"
+            data-target-anchor=".globe-graphic-container"
+
+            data-500-center="right: -25px"
+            data-200-center="right: 250px;"
+            >
               <p>This super-abundance
                 of information has created
                 a phenomenon known as
                 <strong>Dark Data –</strong></p>
             </div>
 
-            <div class="globe-comment fact-block dark left " data-bottom="left: -200px; opacity:0;" data-center="left: 210px; opacity: 1;">
+            <div class="globe-comment fact-block dark left "
+            data-target-anchor=".globe-graphic-container"
+            data-500-center="left: -25px"
+            data-100-center="left: 250px;"
+            >
               <p>information we gather
                 <strong>but don't capitalize on.</strong></p>
             </div>
 
-            <div class="globe-desk" data-bottom="bottom: -60px; opacity:0;" data-center="bottom: 35px; opacity: 1;">
+            <div class="globe-desk"
+            data-target-anchor=".globe-graphic-container"
+            data-bottom="bottom: -40px; opacity:0;"
+            data-center="bottom: 35px; opacity: 1;">
               <img src="images/svg/man_compter.svg" class="globe-desk-svg" alt="">
             </div>
-            <div class="microchips">
-              <img class="microchip-bg-lg" src="images/svg/computer_chip_hour_LG-01.svg" alt="" >
-              <img class="microchip-bg-sm" src="images/svg/hourglass-sm.svg" alt="" >
-            </div>
 
 
-            <div class="globe-stat"  data-bottom="right: -200px; opacity:0;" data-center="right: 285px; opacity: 1;">
+
+            <div class="globe-stat"
+            data-bottom="right: 50px; opacity:0;"
+            data-center="right: 285px; opacity: 1;">
               <span class="stat"><strong>1%⬇</strong></span>
+              <!-- The arrow here doens't work in IE. What are our options? Could use symbol set font as it has Ie6 compatibl -->
               <p><strong>Less than one percent</strong>
                 of the data generated every day
                 is mined for valuable insights.</p>
+              </div>
+
+
+              <div class="microchips">
+                <img class="microchip-bg-lg" src="images/svg/computer_chip_hour_LG-01.svg" alt="" >
+                <img class="microchip-bg-sm" src="images/svg/hourglass-sm.svg" alt="" >
               </div>
             </div>
           </section>
           <!-- /globe -->
           <section class="section section-computation">
             <div class="container computation">
-              <div class="computation-left"
-              data-anim="slide-in"
-              data-origin="left"
-              data-bottom="opacity:0; right: 190px;" data-center="opacity: 1; right: 550px;"
+
+              <div class="computation-left">
+                <div class="computation-left-copy slide-bg"
+                  data-anim="slide-in"
+                  data-origin="left"
+                  data-bottom="opacity:0; left: 135%;" data-center="opacity: 1; left: 5%;"
+                >
+                  <h1>But the current approach to computing has a shelf-life</h1>
+                  <p>For decades computer scientists have taken
+                    advantage of advances in silicon chips to rapidly
+                    expand the capabilities of computers.</p>
+                </div>
+              </div>
+              <img class="circuit-left" src="images/svg/circuts_left-01.svg" alt="" >
+
+              <div class="computation-right">
+              <div class="computation-right-copy slide-bg"
+                data-anim="slide-in"
+                data-origin="right"
+                data-bottom="opacity:0; right: 260px;" data-center="opacity: 1; right: -20px;"
               >
-              <h1>But the current approach to computing has a shelf-life</h1>
-              <p>For decades computer scientists have taken
-                advantage of advances in silicon chips to rapidly
-                expand the capabilities of computers.</p>
-                <img class="circuit-left" src="images/svg/circuts_left-01.svg" alt="" >
+                <p>Now, limitations in traditional computer and chip
+                  design are slowing progress – and that's even
+                  before you consider the big data phenomenon.</p>
               </div>
 
-              <div class="computation-right"
-              data-anim="slide-in"
-              data-origin="right"
-              data-bottom="opacity:0; right: 0px;" data-center="opacity: 1; right: 245px;"
-              >
-              <p>Now, limitations in traditional computer and chip
-                design are slowing progress – and that's even
-                before you consider the big data phenomenon.</p>
               </div>
-
               <img class="circuit-right" src="images/svg/circuit-board.svg" alt="" >
+
 
             </div>
         <!--
@@ -288,7 +312,7 @@
           <strong>That's a huge waste of time and energy.</strong></p>
 
           <div class="monitor">
-            <!-- <img src="images/svg/monitor-new.svg" alt=""> -->
+                      <!-- <img src="images/svg/monitor-new.svg" alt=""> -->
             <!-- <img class="monitor-img" src="images/svg/monitor-svg.svg" alt="" style="border:1px solid red;"> -->
 <svg class="monitor-img"  version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="808.9px" height="368.4px" viewBox="0.5 424.1 808.9 368.4" xml:space="preserve">
 <style type="text/css">
@@ -403,37 +427,50 @@
           <div class="col-3">
             <h2>Laboratories</h2>
             <div class="icon-holder" data-anim="fade-in"
-            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;">
+            data-100-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);">
               <img src="images/svg/laboratory.svg" alt="">
             </div>
             <img
               data-anim="slide-down"
+              data-anchor-target=".icon-holder"
+              data-200-center="top: -150px; opacity: 0;"
+              data-190-center="opacity: 1;"
+              data--15-center="top: -40px;"
             class="icon-data icon-data-1" src="images/svg/icon-data-1.svg" alt="">
           </div>
           <div class="col-3">
             <h2>Universities</h2>
             <div class="icon-holder" data-anim="fade-in"
-            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            data-100-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);"
             >
               <img src="images/svg/university.svg" alt="">
             </div>
             <img
               data-anim="slide-down"
+              data-anchor-target=".icon-holder"
+              data-200-center="top: -150px; opacity: 0;"
+              data-190-center="opacity: 1;"
+              data--15-center="top: -40px;"
             class="icon-data icon-data-1" src="images/svg/icon-data-2.svg" alt="">
           </div>
           <div class="col-3">
             <h2>Businesses</h2>
             <div class="icon-holder" data-anim="fade-in"
-            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            data-100-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);"
             >
               <img class="icon-holder" src="images/svg/business.svg" alt="">
             </div>
             <img
               data-anim="slide-down"
+              data-anchor-target=".icon-holder"
+              data-200-center="top: -150px; opacity: 0;"
+              data-190-center="opacity: 1;"
+              data--15-center="top: -40px;"
             class="icon-data icon-data-1" src="images/svg/icon-data-3.svg" alt="">
           </div>
           <div class="server-row" data-anim="custom-svg"
-            data-bottom="bottom:-200px;" data-center="bottom: -10px;"
+          data-anchor-target=".new-vision .icon-holder"
+            data-200-center="bottom:-200px;" data-140-center="bottom: -10px;"
           >
             <img src="images/svg/server-row.svg" alt="">
           </div>
@@ -442,30 +479,45 @@
         <div class="new-vision-comment fact-block light"
         data-anim="slide-in"
         data-origin="bottom"
-        data-bottom=" transform: scale(0)" data-center="transform: scale(1);">
-          <p data-bottom=" opacity: 0;" data-center="opacity: 1;">So they need computing systems that are designed specifically
+        data-50-bottom=" transform: scale(0)" data--150-bottom="transform: scale(1);">
+          <p data-100-center=" opacity: 0;" data-center="opacity: 1;">So they need computing systems that are designed specifically
             to handle these new tasks. Data-centric design enables computer
             scientists to engineer systems that are optimized for specific jobs
             – improving the speed and quality of insights.</p>
         </div>
         <figure class="computing-data-insights">
-          <div class="diagram-half computing" data-anim="slide-in" data-origin="left" data-bottom="left:0%;" data-center="left: 15%;">
+          <div class="diagram-half computing" data-anim="slide-in" data-origin="left"
+          data-target-anchor=".computing-data-insights"
+          data-150-bottom="left:0%;"
+          data-150-center="left: 15%;">
             <img src="images/svg/diagram-computing.svg" alt="">
             <h1>Data</h1>
           </div>
 
-          <div class="diagram-half data" data-anim="slide-in" data-origin="right" data-bottom="right:0%;" data-center="right: 15%;">
+          <div class="diagram-half data" data-anim="slide-in" data-origin="right"
+          data-target-anchor=".computing-data-insights"
+          data-150-bottom="right:0%;"
+          data-150-center="right: 15%;">
             <img src="images/svg/diagram-data.svg" alt="">
             <h1>Computing</h1>
           </div>
 
-          <div class="diagram-result" data-anim="slide-in" data-origin="bottom"
+
+          <!-- <div class="diagram-result" data-anim="slide-in" data-origin="bottom"
             data-bottom-top="opacity:0; transform:scale(0);"
             data-center="opacity:1; transform:scale(1.50);">
             <img src="images/svg/diagram-result.svg" alt="">
-          </div>
-          <img  class="bytes-bg bytes-bg-lt" src="images/svg/bytes-bg-lt.svg" alt="">
-          <img  class="bytes-bg bytes-bg-rt" src="images/svg/bytes-bg-lt.svg" alt="">
+          </div> -->
+          <img
+          data-target-anchor=".computing-data-insights"
+            data-150-bottom="left:30%; opacity: 0;"
+            data-150-center="left: 0%; opacity: 1;"
+          class="bytes-bg bytes-bg-lt" src="images/svg/bytes-bg-lt.svg" alt="">
+          <img
+          data-target-anchor=".computing-data-insights"
+            data-150-bottom="right:30%; opacity: 0;"
+            data-150-center="right: 0%; opacity: 1;"
+          class="bytes-bg bytes-bg-rt" src="images/svg/bytes-bg-lt.svg" alt="">
         </figure>
       </div>
     </section>
@@ -479,12 +531,12 @@
 
           <div class="col-3">
             <div class="icon-holder" data-anim="fade-in"
-            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            data-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);"
             >
               <img src="images/svg/icon-doctor.svg" alt="">
             </div>
             <div class="col-3-content" data-anim="slide-in fade-in" data-origin="bottom"
-              data-bottom="opacity: 0; bottom:-300px;" data-center="opacity: 1; bottom: 0px;"
+              data-bottom="opacity: 0; top: 300px;" data-center="opacity: 1; top: 0px;"
             >
               <h2>Healthcare</h2>
               <p>
@@ -499,14 +551,14 @@
 
           <div class="col-3">
             <div class="icon-holder" data-anim="fade-in"
-            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            data-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);"
             >
              <img src="images/svg/icon-energy.svg" alt="">
 
             </div>
             <div class="col-3-content" data-anim="slide-in fade-in"
               data-origin="bottom"
-              data-bottom="opacity: 0; bottom:-300px;" data-center="opacity: 1; bottom: 0px;"
+              data-bottom="opacity: 0; top: 300px;" data-center="opacity: 1; top: 0px;"
               >
               <h2>Energy</h2>
               <p>
@@ -521,13 +573,13 @@
 
           <div class="col-3">
             <div class="icon-holder" data-anim="fade-in"
-            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            data-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);"
             >
               <img src="images/svg/icon-airline.svg" alt="">
             </div>
             <div class="col-3-content"
             data-anim="slide-in fade-in" data-origin="bottom"
-            data-bottom="opacity: 0; bottom:-300px;" data-center="opacity: 1; bottom: 0px;"
+            data-bottom="opacity: 0; top: 300px;" data-center="opacity: 1; top: 0px;"
             >
               <h2>Air Travel</h2>
             <!-- svg here for icons -->
