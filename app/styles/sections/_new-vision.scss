@@ -23,8 +23,9 @@
 }
 
 .diagram-half {
+	@include abs(0 0 0 0);
 	width: 400px;
-	position: absolute;
+	height: 400px;
 	.left & {
 		left: 0;
 	}
