@@ -8,12 +8,12 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
-
+  
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
-  <link href="//1.www.s81c.com/common/v17/css/www.css" rel="stylesheet" title="www" type="text/css"/>
+  <link href="http://1.www.s81c.com/common/v17/css/www.css" rel="stylesheet" title="www" type="text/css"/>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/vendor/ss-standard.css">
   <link rel="stylesheet" href="styles/vendor/ss-social-circle.css">
@@ -58,7 +58,7 @@
             </p>
           </form>
         </div>
-      </div>
+      </div> 
 
 
       <aside class="sharing sharing-fixed">
@@ -72,20 +72,10 @@
           </ul>
         </menu>
       </aside>
-      <aside class="sharing sharing-abs">
-        <menu class="share-icons">
-          <ul>
-            <li><a class="ss-icon ss-social" href="#" title="Share on Facebook">facebook</a></li>
-            <li><a class="ss-icon ss-social" href="#" title="Share on Twitter">twitter</a></li>
-            <li><a class="ss-icon ss-social" href="#" title="Share on Google">googleplus</a></li>
-          </ul>
-        </menu>
-      </aside>
-
       <!-- /sharing -->
       <nav class="main-nav"></nav>
 
-
+      
 
 
       <!-- Path goes here -->
@@ -113,7 +103,7 @@
 
 
       <section class="section">
-        <div class="container intro">
+        <div class="container intro" id="intro">
           <img class="logo" src="images/svg/logo_blue-01.svg" alt="">
           <div class="intro-copy">
             <h1>A new Vision for Big Data Computation</h1>
@@ -123,82 +113,89 @@
 
             <div class="start">
               <span class="label">Scroll to begin</span>
-              <a class="icon-down circle invert block ss-icon ss-standard">navigatedown</a>
+              <a class="icon-down circle invert block ss-icon ss-standard" href="#resources">navigatedown</a>
             </div>
           </div>
         </section>
         <!-- /intro -->
-        <section class="section section-resources">
+        <section class="section section-resources" id="resources">
           <div class="container resources">
-            <div class="dots" data-anim="slide-down" data-origin="bottom">
-              <img src="images/svg/bytes_small-01.svg" alt="" >
-            </div>
-            <div class="sun">
+            <div class="sun" data-anim="rotate" data-origin="bottom"
+              data-bottom="transform: rotate(0deg);" data-center="transform: rotate(360deg)">
               <img src="images/svg/sun.svg" alt="">
             </div>
-             <div class="timer" data-anim="custom-svg">
-              <svg class="timer-svg" version="1.1" baseProfile="basic" id="timer-svg"
-              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  style="width:350px;  position: relative; left: -50px;"
-              viewBox="0 0 300 300" xml:space="preserve">
-                <style type="text/css">
-                  .st0{fill:#000;stroke:none;}
-                  .st1{fill:none;stroke:#000;stroke-width:10;stroke-miterlimit:10;}
-                  .st2{fill:#fff;stroke:#bada55;stroke-width:35;stroke-linejoin:bevel;}
-                </style>
+            <div class="timer" data-anim="custom-svg">
+              <svg class="timer-svg" id="timer-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 260.5 350" enable-background="new 0 0 260.5 350" xml:space="preserve">
+                  <circle cx="130.1" cy="3.7" r="4.1"/>
+                  <rect x="97.7" y="59" fill="#FFFFFF" width="64.8" height="44"/>
+                  <ellipse fill="#FFFFFF" cx="130.6" cy="36.2" rx="34.9" ry="28.3"/>
+                  <path d="M97.7,74h64.8v13.7c0,0-37.8-6.5-64.8,0.9C97.7,88.6,97.7,74,97.7,74z"/>
+                   <path d="M94,40.3c0,0-13.4,0-13.4,13.4v2.3c0,0,0,13.4,13.4,13.4h72.3c0,0,13.4,0,13.4-13.4v-2.3c0,0,0-13.4-13.4-13.4
+                    C166.2,40.3,94,40.3,94,40.3z"/>
+                  <path d="M167.5,37.4h-12.3c0-11.7-11.4-21.3-25.2-21.3s-25.2,9.5-25.2,21.3H92.7c0-18.5,16.8-33.5,37.5-33.5
+                    C150.6,3.8,167.5,18.9,167.5,37.4"/>
 
-                <circle fill="white" cx="151" cy="184.3" r="120" />
-                <path d="M150.5,96.1c48.5,0,88,39.5,88,88s-39.5,88-88,88c-48.5,0-88-39.5-88-88S102,96.1,150.5,96.1 M150.5,71.1
-                c-62.4,0-113,50.6-113,113c0,62.4,50.6,113,113,113c62.4,0,113-50.6,113-113C263.5,121.7,212.9,71.1,150.5,71.1L150.5,71.1z"/>
+                  <!-- Base black circle -->
+                  <circle fill="#FFFFFF" stroke="#000000" stroke-width="30" stroke-miterlimit="10" cx="130.1" cy="220.4" r="114.5"/>
 
-                <path class="st0" d="M180.1,29h-9.5c0-9.1-8.8-16.5-19.5-16.5s-19.5,7.4-19.5,16.5h-9.5c0-14.3,13-26,29.1-26
-                C167,3,180.1,14.7,180.1,29"/>
+                  <!-- Animated path -->
+                  <path fill="#FFFFFF" stroke="#009245" stroke-width="35" stroke-miterlimit="1" stroke-dasharray="5 10 700" 
+                  id="timer"  stroke-miterlimit="1"
+                  data-top="stroke-dashoffset:0;stroke-miterlimit:38;" 
+                  data-bottom="stroke-dashoffset:700; stroke-miterlimit:1;"  d="M132.1,146.6
+                    c40,1.1,72,33.9,72,74.2c0,41-33.2,74.2-74.2,74.2s-74.2-33.2-74.2-74.2c0-40,31.7-72.6,71.3-74.1"/>
 
-
-                 <!-- quarter interval markers -->
-                <line class="st1" x1="150" y1="95" x2="150" y2="135"/>
-                <line class="st1" x1="50" y1="183.2" x2="104" y2="183.2"/>
-                <line class="st1" x1="150" y1="230" x2="150" y2="292"/>
-                <line class="st1" x1="195" y1="183.2" x2="260" y2="183.2"/>
-
-                <!-- cool animated part -->
-                <path class="st2" id="timer"  stroke-miterlimit="1" stroke-dashoffset="700" stroke-dasharray="5 15 700" data-bottom="stroke-dashoffset:740; stroke-miterlimit:1;" data-top="stroke-dashoffset:0;stroke-miterlimit:38;"  d="M144.5,122,150.5,122.1c34.2,0,62,27.8,62,62c0,34.2-27.8,62-62,62s-62-27.8-62-62c0-32.2,28.8-62,70-61.7"/>
-
-
-
-
-                <path class="st0" d="M125.9,57.4h50.2V68c0,0-29.3-5-50.2,0.7V57.4z"/>
-                <path class="st0" d="M123,31.3c0,0-10.4,0-10.4,10.4v1.8c0,0,0,10.4,10.4,10.4H179c0,0,10.4,0,10.4-10.4v-1.8c0,0,0-10.4-10.4-10.4
-                H123z"/>
-
-                <!-- middle circle and number -->
-                <circle class="st0" cx="151" cy="184.3" r="37.5"/>
-                <text id="text" fill="white" x="131" y="194" font="Helvetica Bold, sans-serif;" style="font-size:30px; font-weight:bold;">1</text>
+                  <!-- Middle black circle -->
+                  <circle cx="130.1" cy="220.4" r="48.4"/>                
+                  <text id="text" text-anchor="middle" font-family="'helvetica-neue'" font-size="56" x="130.1" y="238.4" fill="#ffffff">1</text>
               </svg>
-          </div>
-          <div class="resources-copy copy pos-abs" data-anim="slide-in" data-origin="right"
-
-          data-bottom="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;"
-
-          >
-            <h1>Big Data, The New Natural Resource</h1>
-            <p>
-              <span class="font-24">Every day society generates</span>
-              <span class="stat stacked-text"><strong>2.5</strong>
-              <span class="stat font-60">billion</span>
-              <span class="stat font-40">gigabytes</span>
-              </span>of data in organizations, via the <strong>Internet of Things</strong> and as a result of our personal digital activities.</span>
-              </p>
             </div>
+            <!-- 
+            Basing these animations on the top
+            of the 'resources' section
+            Basically goes from farthest 
+            from the top to closest
+            so in this case, 
+            700 from the top 
+            600 from the top  
+            200 from the top  
+             -->
+            <div class="dots" data-anim="slide-up" 
+
+            data-anchor-target=".resources"
+
+            data-top=" opacity: 0; top: 0px;" 
+            data--200-top="opacity: 1; top: 450px;"
+            data--500-top="opacity:1; top: 450px;"
+            data--800-top="opacity: 1; top: 450px;"
+            data--900-top="opacity: 1; top: 450px;"
+
+            >
+              <img src="images/svg/bytes_small-01.svg" alt="" >
+            
+            </div>
+            <div class="resources-copy copy pos-abs" data-anim="slide-in" data-origin="right" data-100-bottom="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;">
+              <h1>Big Data, The New Natural Resource</h1>
+              <p>
+                <span class="font-24">Every day society generates</span>
+                <span class="stat stacked-text"><strong>2.5</strong>
+                <span class="stat font-60">billion</span>
+                <span class="stat font-40">gigabytes</span>
+                </span>of data in organizations, via the <strong>Internet of Things</strong> and as a result of our personal digital activities.</span>
+                </p>
+              </div>
           </div>
+
         </section>
         <!-- /resources -->
 
         <section class="section section-globe">
           <div class="container globe">
-
-            <div class="globe-graphic" data-anim="slide-left"><!-- is it, though? -->
-              <!-- this will become a png -->
-              <img src="images/png/world.png" alt="">
+            
+            <div class="globe-graphic-container">
+              <img 
+              data-top="margin-left: -90px;" data-center="margin-left: -145px;"
+              src="images/png/updated-map.png" alt="">
             </div>
             <div class="globe-comment fact-block dark right" data-bottom="right: -200px; opacity:0;" data-center="right: 285px; opacity: 1;">
               <p>This super-abundance
@@ -212,13 +209,12 @@
                 <strong>but don't capitalize on.</strong></p>
             </div>
 
-            <div class="globe-desk" data-bottom="bottom: -200px; opacity:0;" data-center="bottom: 34px; opacity: 1;">
+            <div class="globe-desk" data-bottom="bottom: -60px; opacity:0;" data-center="bottom: 35px; opacity: 1;">
               <img src="images/svg/man_compter.svg" class="globe-desk-svg" alt="">
             </div>
             <div class="microchips">
               <img class="microchip-bg-lg" src="images/svg/computer_chip_hour_LG-01.svg" alt="" >
-              <!-- gotta figure out if they want this one edge of container or page -->
-              <img class="microchip-bg-sm" src="images/svg/computer_chip_hour_SM-01.svg" alt="" >
+              <img class="microchip-bg-sm" src="images/svg/hourglass-sm.svg" alt="" >
             </div>
 
 
@@ -235,7 +231,9 @@
             <div class="container computation">
               <div class="computation-left"
               data-anim="slide-in"
-              data-origin="left">
+              data-origin="left"
+              data-bottom="opacity:0; right: 190px;" data-center="opacity: 1; right: 550px;"
+              >
               <h1>But the current approach to computing has a shelf-life</h1>
               <p>For decades computer scientists have taken
                 advantage of advances in silicon chips to rapidly
@@ -243,16 +241,18 @@
                 <img class="circuit-left" src="images/svg/circuts_left-01.svg" alt="" >
               </div>
 
-              <div class="computation-right abs-right"
+              <div class="computation-right"
               data-anim="slide-in"
-              data-origin="right">
+              data-origin="right"
+              data-bottom="opacity:0; right: 0px;" data-center="opacity: 1; right: 245px;"
+              >
               <p>Now, limitations in traditional computer and chip
                 design are slowing progress – and that's even
                 before you consider the big data phenomenon.</p>
               </div>
 
               <img class="circuit-right" src="images/svg/circuit-board.svg" alt="" >
-
+              
             </div>
         <!--
 
@@ -288,13 +288,33 @@
           <strong>That's a huge waste of time and energy.</strong></p>
 
           <div class="monitor">
-            <img src="images/svg/monitor-new.svg" alt="">
+            <!-- <img src="images/svg/monitor-new.svg" alt=""> -->
+            <img src="images/svg/monitor-svg.svg" alt="">
+            <!-- <svg class="monitor-circuits" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 465 190.163" style="enable-background:new 0 0 465 190.163;" xml:space="preserve">
+                <g id="lines_x5F_out_x5F_of_x5F_computer_x5F_chip">
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="157.854,0.352 163.111,5.663 229.5,5.663 229.5,36.163   
+                    "/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="288.5,0.163 288.5,4 252.995,39.586"/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="123.244,0.394 158.5,35.26 158.5,76.663 190,76.663 "/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="273.798,39.525 294.908,18.663 369,18.663 
+                    417.223,66.846"/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="306.978,71.76 329.5,49.313 329.5,0.163"/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="310,96.663 354,96.663 383.657,126.663 465,126.663"/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="310,116.663 349,116.663 384.5,152.291 384.5,190.163"/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="273.88,151.389 291.38,168.663 338.5,168.663 
+                    338.5,190.163"/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="249.982,153.831 231.5,172.231 231.5,190.163"/>
+                  <polyline style="fill:none;stroke:#CCCCCC;stroke-miterlimit:10;" points="190,116.663 134,116.663 79.944,170.663 53,170.663 34.124,151.663 0,151.663"/>
+                </g>
+            </svg> -->
+
           </div>
           <figcaption class="new-computation-comment fact-block light block " data-anim="slide-in" data-origin="bottom">
             <p><strong>The new approach, data-centric design</strong>
               moves much of the processing to the places where the data is stored, whether that's within a single computing system in a network of computers, or far away in sensors tracking the weather or monitoring an energy pipeline.</p>
           </figcaption>
-
+          
         </div>
         <img  class="server-solo" src="images/svg/server-solo.svg" alt="">
       </div>
@@ -311,48 +331,65 @@
           </div>
           <div class="col-3">
             <h2>Laboratories</h2>
-            <div class="icon-holder" data-anim="fade-in">
+            <div class="icon-holder" data-anim="fade-in"
+            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;">
               <img src="images/svg/laboratory.svg" alt="">
             </div>
+            <img 
+              data-anim="slide-down"
+            class="icon-data icon-data-1" src="images/svg/icon-data-1.svg" alt="">
           </div>
           <div class="col-3">
             <h2>Universities</h2>
-            <div class="icon-holder" data-anim="fade-in">
+            <div class="icon-holder" data-anim="fade-in"
+            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            >
               <img src="images/svg/university.svg" alt="">
             </div>
+            <img 
+              data-anim="slide-down"
+            class="icon-data icon-data-1" src="images/svg/icon-data-2.svg" alt="">
           </div>
           <div class="col-3">
             <h2>Businesses</h2>
-            <div class="icon-holder" data-anim="fade-in">
+            <div class="icon-holder" data-anim="fade-in"
+            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            >
               <img class="icon-holder" src="images/svg/business.svg" alt="">
             </div>
+            <img 
+              data-anim="slide-down"
+            class="icon-data icon-data-1" src="images/svg/icon-data-3.svg" alt="">
           </div>
-          <div class="server-row" data-anim="custom-svg">
+          <div class="server-row" data-anim="custom-svg"
+            data-bottom="bottom:-200px;" data-center="bottom: -10px;"
+          >
             <img src="images/svg/server-row.svg" alt="">
           </div>
         </div><!-- /section-grid -->
 
         <div class="new-vision-comment fact-block light"
         data-anim="slide-in"
-        data-origin="bottom">
-        <p>So they need computing systems that are designed specifically
-          to handle these new tasks. Data-centric design enables computer
-          scientists to engineer systems that are optimized for specific jobs
-          – improving the speed and quality of insights.</p>
+        data-origin="bottom"
+        data-bottom=" transform: scale(0)" data-center="transform: scale(1);">
+          <p data-bottom=" opacity: 0;" data-center="opacity: 1;">So they need computing systems that are designed specifically
+            to handle these new tasks. Data-centric design enables computer
+            scientists to engineer systems that are optimized for specific jobs
+            – improving the speed and quality of insights.</p>
         </div>
         <figure class="computing-data-insights">
-          <div class="diagram-half computing" data-anim="slide-in" data-origin="left" data-bottom="left:0%;" data-center="left: 25%;">
+          <div class="diagram-half computing" data-anim="slide-in" data-origin="left" data-bottom="left:0%;" data-center="left: 15%;">
             <img src="images/svg/diagram-computing.svg" alt="">
             <h1>Data</h1>
           </div>
 
-          <div class="diagram-half data" data-anim="slide-in" data-origin="right" data-bottom="right:0%;" data-center="right: 25%;">
+          <div class="diagram-half data" data-anim="slide-in" data-origin="right" data-bottom="right:0%;" data-center="right: 15%;">
             <img src="images/svg/diagram-data.svg" alt="">
             <h1>Computing</h1>
           </div>
 
-          <div class="diagram-result" data-anim="slide-in" data-origin="bottom"
-            data-bottom-top="opacity:0; transform:scale(0);"
+          <div class="diagram-result" data-anim="slide-in" data-origin="bottom" 
+            data-bottom-top="opacity:0; transform:scale(0);" 
             data-center="opacity:1; transform:scale(1.50);">
             <img src="images/svg/diagram-result.svg" alt="">
           </div>
@@ -370,47 +407,66 @@
           </div>
 
           <div class="col-3">
-            <div class="icon-holder" data-anim="fade-in">
+            <div class="icon-holder" data-anim="fade-in"
+            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            >
               <img src="images/svg/icon-doctor.svg" alt="">
             </div>
-            <h2 data-anim="slide-in fade-in" data-origin="bottom">Healthcare</h2>
-            <p data-anim="slide-in fade-in" data-origin="bottom">
-              Simulating the interactions of
-              molecules to help identify patterns
-              that will help pharmaceutical
-              companies develop drugs
-              to target specific cells.</p>
+            <div class="col-3-content" data-anim="slide-in fade-in" data-origin="bottom"
+              data-bottom="opacity: 0; bottom:-300px;" data-center="opacity: 1; bottom: 0px;"
+            >
+              <h2>Healthcare</h2>
+              <p>
+                Simulating the interactions of
+                molecules to help identify patterns
+                that will help pharmaceutical
+                companies develop drugs
+                to target specific cells.</p>
+            </div>
+            
           </div>
 
           <div class="col-3">
-            <div class="icon-holder" data-anim="fade-in">
+            <div class="icon-holder" data-anim="fade-in"
+            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            >
              <img src="images/svg/icon-energy.svg" alt="">
 
             </div>
-            <h2 data-anim="slide-in fade-in"
-            data-origin="bottom">Energy</h2>
-            <p data-anim="slide-in fade-in"
-            data-origin="bottom">
-            Increasing the use of wind energy
-            by designing efficient wind turbines
-            that can withstand the elements
-            in geographic regions known for
-            inclement weather.</p>
+            <div class="col-3-content" data-anim="slide-in fade-in"
+              data-origin="bottom"
+              data-bottom="opacity: 0; bottom:-300px;" data-center="opacity: 1; bottom: 0px;"
+              >
+              <h2>Energy</h2>
+              <p>
+              Increasing the use of wind energy
+              by designing efficient wind turbines
+              that can withstand the elements
+              in geographic regions known for
+              inclement weather.</p>
+            </div>
+            
           </div>
 
           <div class="col-3">
-            <div class="icon-holder" data-anim="fade-in">
+            <div class="icon-holder" data-anim="fade-in"
+            data-bottom="transform: scale(0); opacity: 0;" data-center="transform: scale(1); opacity: 1;"
+            >
               <img src="images/svg/icon-airline.svg" alt="">
             </div>
-            <h2 data-anim="slide-in fade-in"
-            data-origin="bottom">Air Travel</h2>
+            <div class="col-3-content"
+            data-anim="slide-in fade-in" data-origin="bottom"
+            data-bottom="opacity: 0; bottom:-300px;" data-center="opacity: 1; bottom: 0px;"
+            >
+              <h2>Air Travel</h2>
             <!-- svg here for icons -->
-            <p data-anim="slide-in fade-in"
-            data-origin="bottom">
+            <p>
             Designing and building better jet
             engines to withstand heat and
             other pressures, for faster,
             efficient air travel.</p>
+            </div>
+            
           </div>
         </div><!-- section-grid -->
       </div>
@@ -426,7 +482,7 @@
         the computers on your desk, and in your hand. In the new era of computing,
         they'll work faster and smarter – and use less energy.</p>
       </div>
-      <span class="icon-up circle invert block ss-icon ss-standard">navigateup</span>
+      <a class="icon-up circle invert block ss-icon ss-standard" href="#intro">navigateup</a>
     </div>
   </section>
   <!-- /finale -->
@@ -479,7 +535,7 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script -->
 
-
+    
     <!-- build:js({app,.tmp}) scripts/main.js -->
 
     <script src="scripts/vendor/ss-standard.js"></script>

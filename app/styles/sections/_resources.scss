@@ -15,15 +15,7 @@
 
 
 
-.dots {
-  width: 850px;
-  position: absolute;
-  bottom: -265px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 10;
-}
+
 
 .sun {
 	@include abs(20px 0 0 85px); 

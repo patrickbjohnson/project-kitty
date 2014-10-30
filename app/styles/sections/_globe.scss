@@ -19,8 +19,8 @@
 	}
 
 	&-stat {
-	@include abs(0 0 110px 0);
-	width: 225px;
+		@include abs(0 0 110px 0);
+		width: 225px;
 
 	}
 }
@@ -57,3 +57,24 @@
 }
 
 
+.globe-graphic-container {
+	@include circle(870px);
+	position: relative;
+	display: block;
+	top: 35px;
+	margin: 35px auto 0; 
+	overflow: hidden;
+	background: $gray;
+
+	img {
+		width: 185%;
+		margin-top: -210px;
+		// margin-left: -145px;
+	}
+}
+
+.dots {
+	@include abs(0 0px 0 0px);
+	width: 850px;
+	margin: auto;
+}

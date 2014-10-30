@@ -1,18 +1,26 @@
 .section-grid {
 	@include clear; // see mixins.scss
-	margin: auto;
-	text-align: center;
 	position: relative;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
 }
 .col-3 {
 	float: left;
   width: 33%;
   padding: 2em 1em;
+  
+  &-content {
+    position: relative;
+  }
 }
 
+// probably not needed now
 .icon-holder {
-  @include circle(185px); // see mixins.scss
-  margin: 1em auto;
+  // @include circle(185px); // see mixins.scss
+  // margin: 1em auto;
+  // remove the margin got rid of the offset 
+  // for the last icon in each section
 }
 
 
@@ -20,6 +28,7 @@
 	display: block;
 	margin: auto;
 	width: 850px;
+  z-index: z(base-5);
 }
 
 .section-grid-header {
