@@ -5,13 +5,21 @@
 	.section-grid {
 		position: relative;
 		top: 40px;
-		height: 560px;
+		height: 540px;
+		text-align: center;
 	}
+	
+	.section-grid-header h1,
+	.section-grid-header p {
+		@extend %stacked;
+	}
+	.section-grid p {line-height: 1.450;}
 }
 .new-vision-comment  {
   display: block;
   width: 425px;
   margin: 110px auto 80px;
+
 }
 
 .computing-data-insights {position: relative;}

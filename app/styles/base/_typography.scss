@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6, %header {
 }
 
 p {
-  font-size: em(14px);
+  font-size: em(13px);
 }
 a {cursor: pointer;}
 a:hover {text-decoration: none;}
@@ -35,6 +35,11 @@ a:hover {text-decoration: none;}
 %lubalin {
   font-weight: 300;
   font-family: $lubalin-heavy;
+}
+
+%stacked {
+  line-height:1;
+  white-space:pre-line;
 }
 
 h1 { @extend %huge; @extend %lubalin;}
@@ -63,6 +68,8 @@ strong, .bold, %bold {
     display: inline-block;
   }
 }
+
+
 
 small, .small { font-size: em(12px); }
 

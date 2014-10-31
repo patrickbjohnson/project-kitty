@@ -1,13 +1,19 @@
-.resources {
-	height: 540px;
-	z-index: z(base-5);
-}
+.section-resources {height: 570px;}
+
+.resources {z-index: z(base-5);}
 .resources-copy {
-	top: 100px;
+	top: 35px;
 	max-width: 295px;
+	p {
+		@extend %stacked;
+		line-height: 1.5;
 
-	> p > strong { display: inline-block;}
-
+		strong {
+			line-height: 1;
+			display: inline-block;
+		}
+	}
+		
 	.font-40 {
 		top: -10px;
 	}
@@ -18,12 +24,12 @@
 
 
 .sun {
-	@include abs(20px 0 0 85px); 
+	@include abs(0px 0 0 85px); 
 	width: 190px;
 }
 
 .timer {
-	@include abs(200px 0 0 206px);
+	@include abs(95px 0 0 206px);
 	z-index: z(base-5);
 	&-svg {
 		width: 270px;

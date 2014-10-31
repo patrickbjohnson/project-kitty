@@ -1,12 +1,10 @@
-.computation	{height: 460px; }
+.computation	{height: 762px; }
 
 .computation-left {
 	@include rel(20px 0 0 0);
 	width: 470px;
-    overflow: hidden;
-
-    background-image: url('../images/svg/images/svg/circuit-board.svg');
-   p {width: 265px;}
+  overflow: hidden;
+  p {width: 265px;}
 
 
 }
@@ -19,7 +17,7 @@
 .computation-right {
 	@include rel(-35px 0 0 485px);
 	width: 300px;
-    overflow: hidden;
+  overflow: hidden;
 
 }
 
@@ -44,4 +42,21 @@
 .circuit-right {
   @include abs(-290px -130px 0 0);
   width: 572px;
+}
+
+
+.microchip-bg {
+  &-lg {
+    @include abs(-35px 0 0 270px);
+    width: 275px;
+    height: 261px;
+    margin: auto;
+  }
+
+  &-sm {
+    @include abs(70px 0px 0 -60px);
+    width: 235px;
+    height: 230px;
+  }
+  
 }

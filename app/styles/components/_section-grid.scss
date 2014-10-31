@@ -15,14 +15,6 @@
   }
 }
 
-// probably not needed now
-.icon-holder {
-  // @include circle(185px); // see mixins.scss
-  // margin: 1em auto;
-  // remove the margin got rid of the offset 
-  // for the last icon in each section
-}
-
 
 .section-grid.grid-lg {
 	display: block;
@@ -33,6 +25,5 @@
 
 .section-grid-header {
   margin: auto;
-  .new-vision &   {width: 560px;}
-  .new-approach & {width: 330px;}
 }
+

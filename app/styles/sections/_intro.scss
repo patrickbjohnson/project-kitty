@@ -1,17 +1,41 @@
-.intro {
-	margin: 100px auto;
-	text-align:  center;
-	z-index: z(base-5);
-	&-copy {
-		max-width: 425px;
-		margin: 30px auto 85px;
-	}
+.section-intro {height: 735px;}
+
+.intro-header {
+	margin-bottom: 40px;
+	padding: 110px 0 90px 0;
+	background: #999999;
+	color: #fff;
 }
 
 .logo {
 	width: 150px;
 	display: block;
-	margin: auto;
+	margin: 0 auto 35px;
 }
+
+
+.intro {
+	text-align:  center;
+	z-index: z(base-5);
+	&-copy h2 {
+		font-size: em(16px);
+	}
+	&-copy p {
+		font-size: em(10px);
+		white-space: pre-line;
+	}
+}
+
+.start {
+	text-align: center;
+}
+
+.label {
+	display: inherit;
+	font-size: em(10px);
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
 
 

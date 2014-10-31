@@ -1,7 +1,12 @@
-.globe	{
-	height: 950px; 
-	margin-bottom: 250px;
+.section-globe {
+	height: 908px;
+}
 
+
+.globe	{
+	.fact-block {
+		line-height: 1.350;
+	}
 	.fact-block.right {
 		@include abs(295px 0 0 0);
 
@@ -11,7 +16,7 @@
 	}
 	
 	&-desk {
-		@include abs(0 0 34px 270px);
+		@include abs(0 0 -35px 270px);
 		z-index: 5;
 		&-svg {
 			width: 255px;
@@ -35,36 +40,19 @@
 .globe-graphic {
 	position: relative;
 	display: block;
-	// width: 870px;
-	// margin: 3em auto 0;  // for whatever reason, this one wouldn't line up when using an PNG.
-	margin: 35px auto 0;
+	margin: auto;
 
 	img {display: block; margin: auto;}
 }
 
-.microchip-bg {
-	&-lg {
-		@include abs(0 0px -195px -210px);
-		width: 275px;
-		height: 261px;
-		margin: auto;
-	}
 
-	&-sm {
-		@include abs(0 0px -205px -70px);
-		width: 235px;
-		height: 230px;
-	}
-	
-}
 
 
 .globe-graphic-container {
 	@include circle(870px);
 	position: relative;
 	display: block;
-	top: 35px;
-	margin: 35px auto 0; 
+	margin: auto; 
 	overflow: hidden;
 	background: $gray;
 

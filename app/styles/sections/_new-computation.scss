@@ -14,13 +14,14 @@
 }
 
 .new-computation-vision {
-	width: 365px;
+	width: 415px;
 	text-align: left;
 	top: 0;
 
 	h1 {
-		width: 445px;
+		@extend %stacked;
 		margin-bottom: 25px;
+
 	}
 
 	strong {
