@@ -11,6 +11,7 @@
 }
 .footer-branding {
   padding-right: 40px;
+  border-right: 1px solid white;
 }
 
 .footer-logo {
@@ -23,24 +24,41 @@
 
 .footer-meta {
   padding: 5px 25px;
-  border-left: 1px solid white;
-  p { line-height: 1; }
+  
+  p { 
+    margin-bottom: 20px;
+    line-height: 1; 
+  }
   cite { font-size: 11px; }
 }
 
 .footer-social {
 
-  margin: 5px 0;
+  margin: 25px 0;
   a, span {
     display: inline-block;
     vertical-align: middle;
   }
   a {
-    background: white;
-    @include circle(40px);
+    font-size: 2em;
+    line-height: 1;
   }
   span {
     font-size: 11px;
     padding: 0 12px 0 8px;
+    margin-top: -8px;
   }
 }
+
+.footer-links a {
+  color: #fff;
+
+}
+.icon-fb,
+.icon-twitter,
+.icon-googleplus {
+  @include vendor-prefix(transition, color 300ms ease);
+}
+.icon-fb:hover {color: #3b5998;}
+.icon-twitter:hover {color: #55acee;}
+.icon-googleplus:hover {color: #dd4b39;}

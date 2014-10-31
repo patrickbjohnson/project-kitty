@@ -13,7 +13,7 @@
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
-  <link href="http://1.www.s81c.com/common/v17/css/www.css" rel="stylesheet" title="www" type="text/css"/>
+  <link href="https://1.www.s81c.com/common/v17/css/www.css" rel="stylesheet" title="www" type="text/css"/>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/vendor/ss-standard.css">
   <link rel="stylesheet" href="styles/vendor/ss-social-circle.css">
@@ -113,16 +113,16 @@
         </div>
       </div>
     </header>
-    <div class="start">
+    <div class="container start">
         <span class="label">Scroll to begin</span>
-        <a class=" ss-icon ss-standard" href="#resources">
+        <a class="icon-down" href="#resources">
           <img src="images/png/scroll_down_icon.png" alt="">
         </a>
     </div>
   </section>
   <!-- /intro -->
   <section class="section section-resources" id="resources">
-    <div class="container resources">
+    <div class="container resources" id="resources">
       <div class="sun" data-anim="rotate" data-origin="bottom"
         data-bottom="transform: rotate(0deg);" data-center="transform: rotate(360deg)">
         <img src="images/svg/sun.svg" alt="">
@@ -150,13 +150,15 @@
 
             <!-- Middle black circle -->
             <circle cx="130.1" cy="220.4" r="48.4"/>
-            <text id="text" text-anchor="middle" font-family="'helvetica-neue'" font-size="56" x="130.1" y="238.4" fill="#ffffff">1</text>
+            <text id="text" text-anchor="middle" font-family="'helvetica-neue-light'" font-weight="bold" font-size="56" x="130.1" y="238.4" fill="#ffffff">1</text>
         </svg>
       </div>
-      <div class="dots" data-anim="slide-up" data-anchor-target=".resources" data-top=" opacity: 0; top: 0px;" data--200-top="opacity: 1; top: 450px;" data--500-top="opacity:1; top: 450px;" data--800-top="opacity: 1; top: 450px;" data--900-top="opacity: 1; top: 450px;">
+      <div class="dots" data-anim="slide-up" data-anchor-target="#resources" 
+        data-top=" opacity: 0; top: 500px;" 
+        data--300-top="opacity:1; top: -200px;" >
             <img src="images/svg/bytes_small-01.svg" alt="" >
       </div>
-      <div class="resources-copy copy pos-abs" data-anim="slide-in" data-origin="right" data-100-bottom="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;">
+      <div class="resources-copy copy pos-abs" data-anim="slide-in" data-origin="right" data-anchor-target="#resources" data-200-center="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;">
         <h1>Big Data, The New Natural Resource</h1>
         <p>
           <span class="font-24 stacked">Every day 
@@ -169,28 +171,19 @@
         </p>
       </div>
     </div>
-      
-      <!--
-      Basing these animations on the top
-      of the 'resources' section
-      Basically goes from farthest
-      from the top to closest
-      so in this case,
-      700 from the top
-      600 from the top
-      200 from the top
-       -->
   </section>
   <!-- /resources -->
 
   <section class="section section-globe">
-      <div class="container globe">
+      <div class="container globe" id="globe">
         <div class="globe-graphic-container">
           <img
-          data-top="margin-left: -90px;" data-center="margin-left: -145px;"
+          data-anchor-target="#globe"
+          data-200-center="margin-left: -335px;"
+          data-100-top="margin-left: -175px;" 
           src="images/png/updated-map.png" alt="">
         </div>
-        <div class="globe-comment fact-block dark right"
+        <div class="globe-comment fact-block light right"
           data-target-anchor=".globe-graphic-container"
           data-500-center="right: -25px"
           data-200-center="right: 250px;">
@@ -199,9 +192,9 @@
             a phenomenon known as
             <strong>Dark Data –</strong></p>
         </div>
-        <div class="globe-comment fact-block dark left "
+        <div class="globe-comment fact-block light left "
           data-target-anchor=".globe-graphic-container"
-          data-500-center="left: -25px"
+          data-500-center="left: 20px"
           data-100-center="left: 250px;">
           <p>information we gather
             <strong>but don't capitalize on.</strong>
@@ -213,12 +206,19 @@
           data-center="bottom: 0; opacity: 1;">
           <img src="images/svg/man_computer.svg" class="globe-desk-svg" alt="">
         </div>
-        <div class="globe-stat"
-          data-bottom="right: 50px; opacity:0;"
-          data-center="right: 285px; opacity: 1;">
-          <span class="stat"><strong>1%⬇</strong></span>
+        <div class="globe-stat abs-right"
+          >
+          <span class="stat"
+            data-target-anchor="#globe"
+            data-100-bottom="opacity:0;"
+            data-100-center="opacity: 1;"
+          ><strong>1%⬇</strong></span>
           <!-- The arrow here doens't work in IE. What are our options? Could use symbol set font as it has Ie6 compatibl -->
-          <p><strong>Less than one percent</strong>
+          <p
+            data-target-anchor="#globe"
+            data-100-bottom="right: -200px; opacity:0;"
+            data-100-center="right: 0px; opacity: 1;"
+          ><strong>Less than one percent</strong>
             of the data generated every day
             is mined for valuable insights.
           </p>
@@ -236,7 +236,8 @@
           <img class="microchip-bg-sm" src="images/svg/hourglass-sm.svg" alt="" >
         </div>
 
-        <div class="computation-left">
+        <div class="computation-left"
+          data-bottom="opacity:0; left: 5%;" data-center="opacity: 1; left: 0%;">
           <div class="computation-left-copy slide-bg"
             data-anim="slide-in"
             data-origin="left">
@@ -250,7 +251,8 @@
         <div class="computation-right">
           <div class="computation-right-copy slide-bg"
               data-anim="slide-in"
-              data-origin="right">
+              data-origin="right"
+              data-bottom="opacity:0; right: 280px;" data-center="opacity: 1; right: 0px;">
               <p>Now, limitations in traditional computer and chip
                 design are slowing progress – and that's even
                 before you consider the big data phenomenon.
@@ -339,7 +341,7 @@
                   <path id="l-3" d="M467.7,604.2h-16.2c-2.1,0-3.9-2.4-3.9-5.3s1.7-5.3,3.9-5.3h16.2"/>
                 </g>
 
-                <g data-20-center="fill:hsl(200,100%,0%);" data--50-center="fill:hsl(200,100%,50%);">
+                <g data-20-center="transfrom: translateX(-100px); fill:hsl(200,100%,0%);" data--50-center="transfrom: translateX(100px); fill:hsl(200,100%,50%);">
                   <polygon id="arrow" points="555.1,597.8 554.4,578.4 547.4,585.4 516.1,554.1 504.4,566 483.1,544.7 478.5,549.4 504.4,575.2
                     516.1,563.5 542.8,590 535.7,597.1   "/>
                   <g id="chip-graph">
@@ -355,7 +357,10 @@
           </svg>
         </div>   
 
-        <figcaption class="new-computation-comment fact-block light block " data-anim="slide-in" data-origin="bottom">
+        <figcaption class="new-computation-comment fact-block light block " data-anim="slide-in" data-origin="bottom"
+          data-200-bottom="bottom: -100px; opacity: 0"
+          data--150-bottom="bottom: 0px; opacity: 1"
+        >
           <p><strong>The new approach, data-centric design</strong>
             moves much of the processing to the places where the data is stored, whether that's within a single computing system in a network of computers, or far away in sensors tracking the weather or monitoring an energy pipeline.</p>
         </figcaption>
@@ -366,7 +371,7 @@
   <!-- /new-computation -->
 
   <section class="section section-new-vision">
-    <div class="container new-vision">
+    <div class="container new-vision" id="new-vision">
       <div class="section-grid grid-lg fact-block light">
         <div class="section-grid-header">
           <h1>This New Vision Will Take Hold First
@@ -383,9 +388,8 @@
           <img
             data-anim="slide-down"
             data-anchor-target=".icon-holder"
-            data-200-center="top: -300px; opacity: 0;"
-            data-190-center="opacity: 1;"
-            data--15-center="top: -40px;"
+            data-200-center="transform:translateY(-300px); opacity: 0;"
+            data--15-center="transform:translateY(-40px); opacity: 1;"
           class="icon-data icon-data-1" src="images/svg/icon-data.svg" alt="">
         </div>
         <div class="col-3">
@@ -398,10 +402,8 @@
           <img
             data-anim="slide-down"
             data-anchor-target=".icon-holder"
-            data-300-center="opacity: 0;"
-            data-200-center="top: -300px; opacity: 0;"
-            data-190-center="opacity: 1;"
-            data--15-center="top: -40px;"
+            data-200-center="transform:translateY(-300px); opacity: 0;"
+            data--15-center="transform:translateY(-40px); opacity: 1;"
           class="icon-data icon-data-1" src="images/svg/icon-data.svg" alt="">
         </div>
         <div class="col-3">
@@ -414,14 +416,13 @@
           <img
             data-anim="slide-down"
             data-anchor-target=".icon-holder"
-            data-200-center="top: -300px; opacity: 0;"
-            data-190-center="opacity: 1;"
-            data--15-center="top: -30px;"
+            data-200-center="transform:translateY(-300px); opacity: 0;"
+            data--15-center="transform:translateY(-40px); opacity: 1;"
           class="icon-data icon-data-1" src="images/svg/icon-data.svg" alt="">
         </div>
         <div class="server-row" data-anim="custom-svg"
           data-anchor-target=".new-vision .icon-holder"
-          data-200-center="bottom:-200px;" data-140-center="bottom: -10px;">
+          data-300-center="bottom:-200px;" data-100-center="bottom: -10px;">
           <img src="images/svg/server-row.svg" alt="">
         </div>
       </div>
@@ -429,8 +430,9 @@
       <div class="new-vision-comment fact-block light"
         data-anim="slide-in"
         data-origin="bottom"
+
         data-50-bottom=" transform: scale(0)" data--150-bottom="transform: scale(1);">
-        <p data-100-center=" opacity: 0;" data-center="opacity: 1;">So they need computing systems that are designed specifically
+        <p data-300-center=" opacity: 0;" data-200-center="opacity: 1;">So they need computing systems that are designed specifically
           to handle these new tasks. Data-centric design enables computer
           scientists to engineer systems that are optimized for specific jobs
           – improving the speed and quality of insights.</p>
@@ -577,9 +579,9 @@
         <p><strong>Sources:</strong> <cite>Gardner, IBM</cite></p>
 
         <div class="footer-social">
-          <a class="share icon-holder icon-fb" title="Facebook likes"> fb </a><span>1</span>
-          <a class="share icon-holder icon-twitter" title="Tweets:"> tw </a><span>10</span>
-          <a class="share icon-holder icon-googleplus" title="Google Plus shares:">g+</a><span>100</span>
+          <a class="share icon-holder icon-fb ss-icon ss-social" title="Facebook likes">Facebook</a><span>1</span>
+          <a class="share icon-holder icon-twitter ss-icon ss-social" title="Tweets:">Twitter</a><span>10</span>
+          <a class="share icon-holder icon-googleplus ss-icon ss-social" title="Google Plus shares:">googleplus</a><span>100</span>
         </div>
 
         <nav class="footer-links">

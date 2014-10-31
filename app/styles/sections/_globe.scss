@@ -6,17 +6,20 @@
 .globe	{
 	.fact-block {
 		line-height: 1.350;
+		&.light {
+		  background: $c-primary;
+		  color: white;}
 	}
 	.fact-block.right {
-		@include abs(295px 0 0 0);
+		@include abs(265px 0 0 0);
 
 	}
 	.fact-block.left {
-		@include abs(465px 0 0 200px)
+		@include abs(435px 0 0 200px)
 	}
 	
 	&-desk {
-		@include abs(0 0 10px 270px);
+		@include abs(0 0 10px 267px);
 		z-index: 5;
 		&-svg {
 			width: 255px;
@@ -25,16 +28,17 @@
 	}
 
 	&-stat {
-		@include abs(0 0 110px 0);
+		@include abs(0 0 100px 0);
 		width: 225px;
-
+		p {@include rel(10px 0 0 0);}
+		.stat strong {
+			font-size: 1.950em;
+		}
 	}
 }
 
-.globe-stat {
-	.stat strong {
-		font-size: 1.950em;
-	}
+.globe-stat .stat {
+	position: relative;
 }
 
 .globe-graphic {
@@ -53,7 +57,6 @@
 	position: relative;
 	display: block;
 	margin: auto; 
-	overflow: hidden;
 	background: $gray;
 
 	img {

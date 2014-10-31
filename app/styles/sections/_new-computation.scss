@@ -20,29 +20,26 @@
 .new-computation-vision {
 	width: 415px;
 	text-align: left;
-	top: 0;
+	top: 35px;
 
 	h1 {
 		@extend %stacked;
-		margin-bottom: 15px;
-    margin-top: -30px;
-
+		margin: -30px 0 15px;
 	}
 
 	strong {
 		margin: 15px 0 20px;
 		font-size: 14px;
-
-		// fix to em
 	}
 
 
 }
 
 .new-computation-comment {
+	position: relative;
 	width: 370px;
-	strong {margin: 0; font-size: 12px; }
-  p { font-size: 12px; }
+	strong {margin: 0; font-size: 14px; }
+  p { font-size: 13px; }
   &.light {
     background: $c-primary;
     color: white;}
@@ -54,18 +51,12 @@
 
 
 .monitor-img {
-	@include rel(-10px 0 0 0);
-	margin-left: -310px;
-	// width: 485px;
-	// position: relative;
-  // top: -10px;
-	// top: -10px;
-	// left: -72px;
-  // left: -310px;
-  height: 280px;
+	@include rel(-45px 0 -70px 0);
+	margin: 0 0 -70px -229px;
+	width: 638px;
 }
 
 .server-solo {
-	@include abs(290px -40px 0 0);
+	@include abs(300px -40px 0 0);
 	width: 150px;
 }
