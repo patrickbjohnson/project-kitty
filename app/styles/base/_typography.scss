@@ -10,10 +10,10 @@ body, .copy, %copy  {
 }
 
 h1,h2,h3,h4,h5,h6, %header {
-	margin: 0;
-	font-weight: bold;
-	line-height: 1;
-    text-shadow: none;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1;
+  text-shadow: none;
 }
 
 p {
@@ -21,9 +21,10 @@ p {
 }
 a {cursor: pointer;}
 a:hover {text-decoration: none;}
+
  %huge {
 	font-size: em(29px);
-  margin:.5em 0;
+  // margin:.5em 0;
 }
 
 %big {

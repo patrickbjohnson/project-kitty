@@ -16,7 +16,7 @@
 	}
 	
 	&-desk {
-		@include abs(0 0 -35px 270px);
+		@include abs(0 0 10px 270px);
 		z-index: 5;
 		&-svg {
 			width: 255px;

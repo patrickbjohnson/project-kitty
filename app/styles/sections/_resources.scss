@@ -1,14 +1,17 @@
-.section-resources {height: 570px;}
+.resources {
+	// height: 570px;
+	height: 510px;
+	z-index: z(base-5);
+}
 
-.resources {z-index: z(base-5);}
 .resources-copy {
 	top: 35px;
 	max-width: 295px;
 	p {
 		@extend %stacked;
 		line-height: 1.5;
-
-		strong {
+		strong {line-height: 0.8;}
+		> strong {
 			line-height: 1;
 			display: inline-block;
 		}
@@ -41,3 +44,11 @@
 	@include abs(20px 0 0 85px); 
 	width: 190px;
 }
+
+
+.stacked-text > strong {
+	line-height: 0.8;
+}
+
+
+.resources-copy p > strong {margin: 0;}
