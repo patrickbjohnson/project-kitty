@@ -10,9 +10,10 @@
   left: 0;
   width: 1024px;
   height: 5085px;
-  // this sets the scale of the line. 
+  // this sets the scale of the line.
   // increasing this slightly offsets the positioning
   // of everything else
   // with out it the shit is thick as hell
   z-index: z(base);
+  pointer-events: none; // makes it easier to debug all the stuff around it
 }

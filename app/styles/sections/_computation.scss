@@ -1,11 +1,16 @@
 .computation	{height: 742px;}
 
 .computation-left {
-  @include rel(265px 0 0 0);
+  @include abs(265px 0 0 0);
   width: 470px;
   margin-left: 155px;
   overflow: hidden;
-  p {width: 265px;}
+  // p {width: 265px;}
+  z-index: z(base-5);
+
+  p { width: 280px;
+    margin-top: 10px;
+  }
 }
 
 .computation-left-copy {
@@ -14,15 +19,16 @@
 }
 
 .computation-right {
-	@include rel(220px 0 0 485px);
+	@include abs(420px 0 0 505px);
 	width: 300px;
-  overflow: hidden;
+  // overflow: hidden;
 
 }
 
 .computation-right-copy {
   position: relative;
-  width: 270px;
+  // width: 270px;
+  // left: 50px;
 }
 .microchip-loading {
   @include abs(0 -130px 168px 0);
@@ -39,23 +45,23 @@
 }
 
 .circuit-right {
-  @include abs(-25px -125px 0 0);
+  @include abs(-35px -125px 0 0);
   width: 572px;
 }
 
 
 .microchip-bg {
   &-lg {
-    @include abs(-35px 0 0 270px);
+    @include abs(-55px 0 0 270px);
     width: 275px;
     height: 261px;
     margin: auto;
   }
 
   &-sm {
-    @include abs(15px 0 0 -60px);
-    width: 235px;
-    height: 230px;
+    @include abs(25px 0 0 -20px);
+    width: 215px;
+    height: 210px;
   }
-  
+
 }

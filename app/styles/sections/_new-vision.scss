@@ -1,5 +1,5 @@
 .new-vision	{
-	height: 1335px; 
+	height: 1335px;
 	z-index: z(base-5);
 
 	.section-grid {
@@ -7,7 +7,7 @@
 		height: 540px;
 		text-align: center;
 	}
-	
+
 	.section-grid-header h1,
 	.section-grid-header p {
 		@extend %stacked;

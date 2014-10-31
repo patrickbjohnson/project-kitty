@@ -1,10 +1,14 @@
-$helvetica: "helvetica-neue", "Helvetica Neue Light", "Helvetica Neue", 'Helvetica Light', 'Helvetica', Arial, 'Lucida Grande', sans-serif; 
+$helvetica: "helvetica-neue", "Helvetica Neue",'Helvetica', Arial, 'Lucida Grande', sans-serif;
 $lubalin-light: 'lubalin-light';
 $lubalin-heavy: 'lubalin-heavy';
 $light: 300;
 
 $font-size-base: 16px;
 $gray: #E6E6E6;
+
+// change these as needed
+$c-primary: #0af;      //blue
+$c-secondary: #f15807; //orange
 
 // z-index stuffs
 $z-layers: (
