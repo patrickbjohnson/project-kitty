@@ -1,4 +1,4 @@
-.computation	{height: 762px; border: 1px solid red;}
+.section-computation	{height: 762px; border: 1px solid red;}
 
 .computation-left {
   @include rel(265px 0 0 0);
@@ -14,7 +14,7 @@
 }
 
 .computation-right {
-	@include rel(-35px 0 0 485px);
+	@include rel(220px 0 0 485px);
 	width: 300px;
   overflow: hidden;
 
@@ -39,7 +39,7 @@
 }
 
 .circuit-right {
-  @include abs(-290px -130px 0 0);
+  @include abs(-25px -125px 0 0);
   width: 572px;
 }
 
