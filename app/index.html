@@ -23,12 +23,12 @@
   <!-- endbuild -->
   <!-- Bugherd!!! -->
   <script type='text/javascript'>
-  (function (d, t) {
-    var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
-    bh.type = 'text/javascript';
-    bh.src = '//www.bugherd.com/sidebarv2.js?apikey=xgk0v7uaxgeqmjyxyezexq';
-    s.parentNode.insertBefore(bh, s);
-    })(document, 'script');
+  // (function (d, t) {
+  //   var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+  //   bh.type = 'text/javascript';
+  //   bh.src = '//www.bugherd.com/sidebarv2.js?apikey=xgk0v7uaxgeqmjyxyezexq';
+  //   s.parentNode.insertBefore(bh, s);
+  //   })(document, 'script');
   </script>
   <!-- End Bugherd!!! -->
 
@@ -118,7 +118,6 @@
         <a class=" ss-icon ss-standard" href="#resources">
           <img src="images/png/scroll_down_icon.png" alt="">
         </a>
-      </div>
     </div>
   </section>
   <!-- /intro -->
@@ -154,29 +153,8 @@
             <text id="text" text-anchor="middle" font-family="'helvetica-neue'" font-size="56" x="130.1" y="238.4" fill="#ffffff">1</text>
         </svg>
       </div>
-      <!--
-      Basing these animations on the top
-      of the 'resources' section
-      Basically goes from farthest
-      from the top to closest
-      so in this case,
-      700 from the top
-      600 from the top
-      200 from the top
-       -->
-      <div class="dots" data-anim="slide-up"
-
-      data-anchor-target=".resources"
-
-      data-top=" opacity: 0; top: 0px;"
-      data--200-top="opacity: 1; top: 450px;"
-      data--500-top="opacity:1; top: 450px;"
-      data--800-top="opacity: 1; top: 450px;"
-      data--900-top="opacity: 1; top: 450px;"
-
-      >
-        <img src="images/svg/bytes_small-01.svg" alt="" >
-
+      <div class="dots" data-anim="slide-up" data-anchor-target=".resources" data-top=" opacity: 0; top: 0px;" data--200-top="opacity: 1; top: 450px;" data--500-top="opacity:1; top: 450px;" data--800-top="opacity: 1; top: 450px;" data--900-top="opacity: 1; top: 450px;">
+            <img src="images/svg/bytes_small-01.svg" alt="" >
       </div>
       <div class="resources-copy copy pos-abs" data-anim="slide-in" data-origin="right" data-100-bottom="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;">
         <h1>Big Data, The New Natural Resource</h1>
@@ -188,67 +166,71 @@
           <span class="stat font-40">gigabytes</span>
           </span>of data in organizations, via the <strong>Internet of Things</strong> and as a result 
           of our personal digital activities.</span>
-          </p>
-        </div>
+        </p>
+      </div>
     </div>
+      
+      <!--
+      Basing these animations on the top
+      of the 'resources' section
+      Basically goes from farthest
+      from the top to closest
+      so in this case,
+      700 from the top
+      600 from the top
+      200 from the top
+       -->
   </section>
   <!-- /resources -->
 
   <section class="section section-globe">
-    <div class="container globe">
-      <div class="globe-graphic-container">
-        <img
-        data-top="margin-left: -90px;" data-center="margin-left: -145px;"
-        src="images/png/updated-map.png" alt="">
-      </div>
-      <div class="globe-comment fact-block dark right"
-      data-target-anchor=".globe-graphic-container"
-
-      data-500-center="right: -25px"
-      data-200-center="right: 250px;"
-      >
-        <p>This super-abundance
-          of information has created
-          a phenomenon known as
-          <strong>Dark Data –</strong></p>
-      </div>
-
-      <div class="globe-comment fact-block dark left "
-      data-target-anchor=".globe-graphic-container"
-      data-500-center="left: -25px"
-      data-100-center="left: 250px;"
-      >
-        <p>information we gather
-          <strong>but don't capitalize on.</strong></p>
-      </div>
-
-      <div class="globe-desk"
-        data-target-anchor=".globe-graphic-container"
-        data-bottom="bottom: -40px; opacity:0;"
-        data-center="bottom: 0; opacity: 1;"
-      >
-        <img src="images/svg/man_computer.svg" class="globe-desk-svg" alt="">
-      </div>
-
-
-
-      <div class="globe-stat"
-      data-bottom="right: 50px; opacity:0;"
-      data-center="right: 285px; opacity: 1;">
-        <span class="stat"><strong>1%⬇</strong></span>
-        <!-- The arrow here doens't work in IE. What are our options? Could use symbol set font as it has Ie6 compatibl -->
-        <p><strong>Less than one percent</strong>
-          of the data generated every day
-          is mined for valuable insights.</p>
+      <div class="container globe">
+        <div class="globe-graphic-container">
+          <img
+          data-top="margin-left: -90px;" data-center="margin-left: -145px;"
+          src="images/png/updated-map.png" alt="">
         </div>
-
-
-        
+        <div class="globe-comment fact-block dark right"
+          data-target-anchor=".globe-graphic-container"
+          data-500-center="right: -25px"
+          data-200-center="right: 250px;">
+          <p>This super-abundance
+            of information has created
+            a phenomenon known as
+            <strong>Dark Data –</strong></p>
+        </div>
+        <div class="globe-comment fact-block dark left "
+          data-target-anchor=".globe-graphic-container"
+          data-500-center="left: -25px"
+          data-100-center="left: 250px;">
+          <p>information we gather
+            <strong>but don't capitalize on.</strong>
+          </p>
+        </div>
+        <div class="globe-desk"
+          data-target-anchor=".globe-graphic-container"
+          data-bottom="bottom: -40px; opacity:0;"
+          data-center="bottom: 0; opacity: 1;">
+          <img src="images/svg/man_computer.svg" class="globe-desk-svg" alt="">
+        </div>
+        <div class="globe-stat"
+          data-bottom="right: 50px; opacity:0;"
+          data-center="right: 285px; opacity: 1;">
+          <span class="stat"><strong>1%⬇</strong></span>
+          <!-- The arrow here doens't work in IE. What are our options? Could use symbol set font as it has Ie6 compatibl -->
+          <p><strong>Less than one percent</strong>
+            of the data generated every day
+            is mined for valuable insights.
+          </p>
+        </div> 
       </div>
-    </section>
+  </section>
     <!-- /globe -->
+
   <section class="section section-computation">
       <div class="container computation"> 
+        <img class="circuit-left" src="images/svg/circuts_left-01.svg" alt="" >
+        <img class="circuit-right" src="images/svg/circuit-board.svg" alt="" >
         <div class="microchips">
           <img class="microchip-bg-lg" src="images/svg/computer_chip_hour_LG-01.svg" alt="" >
           <img class="microchip-bg-sm" src="images/svg/hourglass-sm.svg" alt="" >
@@ -257,50 +239,33 @@
         <div class="computation-left">
           <div class="computation-left-copy slide-bg"
             data-anim="slide-in"
-            data-origin="left"
-            
-          >
+            data-origin="left">
             <h1>But the current approach to computing has a shelf-life</h1>
             <p>For decades computer scientists have taken
               advantage of advances in silicon chips to rapidly
               expand the capabilities of computers.</p>
           </div>
         </div>
-        <img class="circuit-left" src="images/svg/circuts_left-01.svg" alt="" >
-        <img class="circuit-right" src="images/svg/circuit-board.svg" alt="" >
-
+        
         <div class="computation-right">
           <div class="computation-right-copy slide-bg"
-            data-anim="slide-in"
-            data-origin="right"
-            >
-            <p>Now, limitations in traditional computer and chip
-              design are slowing progress – and that's even
-              before you consider the big data phenomenon.</p>
+              data-anim="slide-in"
+              data-origin="right">
+              <p>Now, limitations in traditional computer and chip
+                design are slowing progress – and that's even
+                before you consider the big data phenomenon.
+              </p>
           </div>
-
         </div>
-        
       </div> 
-  
-
-  <!-- The current mock up is 1024 wide
-  The team shows some images being cut off
-  But if we want that it has to be viewport based
-  or we just use the whole image and make it realtive
-  to the viewport at 1024 instead of cut off
-  Just an example to show the IBM team on -->
-
- 
-
-
   </section>
   <!-- /section-computation -->
+
   <section class="section section-new-computation">
     <div class="container new-computation">
       <figure class="new-computation-illustration">
         <div class="connection circle-lg">
-          <img src="images/svg/icon-connection.svg" alt="">
+            <img src="images/svg/icon-connection.svg" alt="">
         </div>
         <div class="microchip circle-md">
           <img src="images/svg/icon-microchip.svg" alt="">
@@ -311,13 +276,15 @@
       </figure>
       <div class="new-computation-vision abs-right" data-anim="slide-in" data-origin="right">
         <h1 class="stacked">What's Needed is a
-        New Vision for Computing</h1>
+          New Vision for Computing
+        </h1>
         <p>Traditional computing is processor centric – meaning all the data
-        has to be transported repeatedly to a central processor chip.
-        <strong>That's a huge waste of time and energy.</strong></p>
+          has to be transported repeatedly to a central processor chip.
+          <strong>That's a huge waste of time and energy.</strong>
+        </p>
 
         <div class="monitor">
-            <svg class="monitor-img"  version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="808.9px" height="368.4px" viewBox="0.5 424.1 808.9 368.4" xml:space="preserve">
+          <svg class="monitor-img"  version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="808.9px" height="368.4px" viewBox="0.5 424.1 808.9 368.4" xml:space="preserve">
               <style type="text/css">
 
                 .st0{fill:none;stroke:#0af;stroke-width:2px;stroke-miterlimit:10;}
@@ -385,8 +352,9 @@
                   C582.6,519.4,580.1,516.4,577,516.4z M564,602.5c0,2.5-1.7,4.5-3.7,4.5h-67.9c-2,0-3.7-2-3.7-4.5v-63.7c0-2.5,1.7-4.5,3.7-4.5h67.9
                   c2,0,3.7,2,3.7,4.5V602.5z"/>
               </g>
-            </svg>
-        </div>
+          </svg>
+        </div>   
+
         <figcaption class="new-computation-comment fact-block light block " data-anim="slide-in" data-origin="bottom">
           <p><strong>The new approach, data-centric design</strong>
             moves much of the processing to the places where the data is stored, whether that's within a single computing system in a network of computers, or far away in sensors tracking the weather or monitoring an energy pipeline.</p>
@@ -452,17 +420,16 @@
           class="icon-data icon-data-1" src="images/svg/icon-data.svg" alt="">
         </div>
         <div class="server-row" data-anim="custom-svg"
-        data-anchor-target=".new-vision .icon-holder"
-          data-200-center="bottom:-200px;" data-140-center="bottom: -10px;"
-        >
+          data-anchor-target=".new-vision .icon-holder"
+          data-200-center="bottom:-200px;" data-140-center="bottom: -10px;">
           <img src="images/svg/server-row.svg" alt="">
         </div>
       </div>
 
       <div class="new-vision-comment fact-block light"
-      data-anim="slide-in"
-      data-origin="bottom"
-      data-50-bottom=" transform: scale(0)" data--150-bottom="transform: scale(1);">
+        data-anim="slide-in"
+        data-origin="bottom"
+        data-50-bottom=" transform: scale(0)" data--150-bottom="transform: scale(1);">
         <p data-100-center=" opacity: 0;" data-center="opacity: 1;">So they need computing systems that are designed specifically
           to handle these new tasks. Data-centric design enables computer
           scientists to engineer systems that are optimized for specific jobs
@@ -470,17 +437,17 @@
       </div>
       <figure class="computing-data-insights">
         <div class="diagram-half computing" data-anim="slide-in" data-origin="left"
-        data-target-anchor=".computing-data-insights"
-        data-150-bottom="left:0%;"
-        data-150-center="left: 15%;">
+          data-target-anchor=".computing-data-insights"
+          data-150-bottom="left:0%;"
+          data-150-center="left: 15%;">
           <img src="images/svg/diagram-computing.svg" alt="">
           <h1>Data</h1>
         </div>
 
         <div class="diagram-half data" data-anim="slide-in" data-origin="right"
-        data-target-anchor=".computing-data-insights"
-        data-150-bottom="right:0%;"
-        data-150-center="right: 15%;">
+          data-target-anchor=".computing-data-insights"
+          data-150-bottom="right:0%;"
+          data-150-center="right: 15%;">
           <img src="images/svg/diagram-data.svg" alt="">
           <h1>Computing</h1>
         </div>
@@ -492,19 +459,22 @@
           <img src="images/svg/diagram-result.svg" alt="">
         </div>
         <img
-        data-target-anchor=".computing-data-insights"
+          data-target-anchor=".computing-data-insights"
           data-150-bottom="left:30%; opacity: 0;"
           data-150-center="left: 0%; opacity: 1;"
-        class="bytes-bg bytes-bg-lt" src="images/svg/bytes-bg-lt.svg" alt="">
+          class="bytes-bg bytes-bg-lt" 
+          src="images/svg/bytes-bg-lt.svg" alt="">
         <img
-        data-target-anchor=".computing-data-insights"
+          data-target-anchor=".computing-data-insights"
           data-150-bottom="right:30%; opacity: 0;"
           data-150-center="right: 0%; opacity: 1;"
-        class="bytes-bg bytes-bg-rt" src="images/svg/bytes-bg-lt.svg" alt="">
+          class="bytes-bg bytes-bg-rt" 
+          src="images/svg/bytes-bg-lt.svg" alt="">
       </figure>
     </div>
   </section>
   <!-- /section-new-vision -->
+
   <section class="section section-new-approach">
     <div class="container new-approach">
       <div class="section-grid grid-lg fact-block light">

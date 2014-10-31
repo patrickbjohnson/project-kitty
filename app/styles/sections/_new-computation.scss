@@ -47,26 +47,16 @@
 .circle-md {width: 220px; height: 225px;}
 .circle-sm {width: 230px; height: 205px;}
 
-// .monitor {
-// 	position: relative;
-// 	left: 3px;
-// 	margin-top: 5px;
-// 	z-index: z(base-5);
-
-
-// 	.microchip {
-// 		@include abs(230px 0 0 120px);
-// 		width: 125px;
-// 	}
-// }
 
 .monitor-img {
+	@include rel(-10px 0 0 0);
+	margin-left: -310px;
 	// width: 485px;
-	position: relative;
+	// position: relative;
   // top: -10px;
-	top: -10px;
+	// top: -10px;
 	// left: -72px;
-  left: -310px;
+  // left: -310px;
   height: 280px;
 }
 
