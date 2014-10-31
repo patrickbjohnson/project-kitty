@@ -1,12 +1,11 @@
-.computation	{height: 762px; }
+.computation	{height: 762px; border: 1px solid red;}
 
 .computation-left {
-	@include rel(20px 0 0 0);
-	width: 470px;
+  @include rel(265px 0 0 0);
+  width: 470px;
+  margin-left: 155px;
   overflow: hidden;
   p {width: 265px;}
-
-
 }
 
 .computation-left-copy {
@@ -35,7 +34,7 @@
 }
 
 .circuit-left {
-  @include abs(15px 0 0 -180px);
+  @include abs(0 0 -95px -60px);
   width: 530px;
 }
 
@@ -54,7 +53,7 @@
   }
 
   &-sm {
-    @include abs(70px 0px 0 -60px);
+    @include abs(15px 0 0 -60px);
     width: 235px;
     height: 230px;
   }
