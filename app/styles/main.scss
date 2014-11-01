@@ -28,3 +28,9 @@
 @import 'sections/new-vision';
 @import 'sections/resources';
 @import 'sections/footer';
+
+.footer, .header, .section, .menu, .nav, .article {display: block;}
+
+
+// footer {display: block;}
+// section {display: block !important;}

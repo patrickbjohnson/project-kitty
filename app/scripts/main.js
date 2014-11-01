@@ -1,7 +1,24 @@
 'use strict';
 /* global skrollr */
+/* global Modernizr */
 $(document).ready(function(){
-	console.log('ready');
+  // shouldn't have to do this. 
+  // Why isn't Modernizr recognizing and creating these elements?
+
+
+  // check SVG Support
+  // If fails, then use the fallback PNG
+  if(!Modernizr.svg) {
+    $('img[src*="svg"]').attr('src', function() {
+        return $(this).attr('src').replace('.svg', '.png');
+    });
+  }
+
+  if (Modernizr){
+    console.log('it exists');
+  }
+
+
   // smooth scrolling from links. 
   $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
