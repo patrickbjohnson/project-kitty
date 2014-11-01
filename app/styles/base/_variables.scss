@@ -1,4 +1,5 @@
 $helvetica: "helvetica-neue", "Helvetica Neue",'Helvetica', Arial, 'Lucida Grande', sans-serif;
+$helvetica-light: "helvetica-neue-light", "Helvetica Neue",'Helvetica', Arial, 'Lucida Grande', sans-serif;
 $lubalin-light: 'lubalin-light';
 $lubalin-heavy: 'lubalin-heavy';
 $light: 300;
@@ -6,9 +7,16 @@ $light: 300;
 $font-size-base: 16px;
 $gray: #E6E6E6;
 
+
+
 // change these as needed
 $c-primary: #0af;      //blue
-$c-secondary: #f15807; //orange
+$c-secondary: #f15807; //orange 
+// just a quick change so I can present to client in black and white
+.intro-copy h1,
+.finale h1 {
+  color: #fff;
+}
 
 // z-index stuffs
 $z-layers: (

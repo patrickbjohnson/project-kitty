@@ -1,5 +1,4 @@
 .resources {
-	// height: 570px;
 	height: 510px;
 	z-index: z(base-5);
 }
@@ -16,6 +15,11 @@
 			display: inline-block;
 		}
 	}
+
+	.font-24 {
+		top: -10px;
+	}
+	
 		
 	.font-40 {
 		top: -10px;
@@ -32,19 +36,13 @@
 }
 
 .timer {
-	@include abs(95px 0 0 206px);
+	@include abs(95px 0 0 208px);
 	z-index: z(base-5);
 	&-svg {
 		width: 270px;
 		height: 365px;	
 	}
 }
-
-.sun {
-	@include abs(20px 0 0 85px); 
-	width: 190px;
-}
-
 
 .stacked-text > strong {
 	line-height: 0.8;

@@ -4,7 +4,8 @@
 
 	.section-grid {
 		position: relative;
-		height: 540px;
+		top: 20px;
+		height: 560px;
 		text-align: center;
 	}
 
@@ -12,6 +13,8 @@
 	.section-grid-header p {
 		@extend %stacked;
 	}
+
+	.section-grid-header h1 {margin: 20px auto;}
 	.section-grid p {line-height: 1.450;}
 }
 .new-vision-comment  {

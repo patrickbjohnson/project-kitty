@@ -16,20 +16,22 @@
 .computation-left-copy {
   position: relative;
   width: 360px;
+
+  p {width: 250px;}
 }
 
 .computation-right {
-	@include abs(420px 0 0 505px);
+	@include rel(420px 0 0 485px);
 	width: 300px;
-  // overflow: hidden;
-
+  margin-left: 5px;
+  overflow: hidden;
 }
 
 .computation-right-copy {
   position: relative;
-  // width: 270px;
-  // left: 50px;
+  // width: 265px;
 }
+
 .microchip-loading {
   @include abs(0 -130px 168px 0);
   width: 265px;
@@ -40,7 +42,7 @@
 }
 
 .circuit-left {
-  @include abs(0 0 -95px -60px);
+  @include abs(0 0 -110px -60px);
   width: 530px;
 }
 
