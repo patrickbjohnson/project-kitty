@@ -108,8 +108,8 @@
         <div class="intro-copy">
           <h1>A new Vision for Big Data Computation</h1>
           <h2 class="copy">Speeding Up Innovation Through Data-Centric Design</h2>
-          <p>Limitations in traditional computing are slowing progress in business and society. 
-          A new approach to computer design is needed that will accelerate the pace 
+          <p>Limitations in traditional computing are slowing progress in business and society.
+          A new approach to computer design is needed that will accelerate the pace
           of innovation to benefit organizations and individuals alike.</p>
         </div>
       </div>
@@ -154,24 +154,35 @@
             <text id="text" text-anchor="middle" font-family="'helvetica-neue-light'" font-weight="bold" font-size="56" x="130.1" y="238.4" fill="#ffffff">1</text>
         </svg>
       </div>
-      <div class="dots" data-anim="slide-up" data-anchor-target="#resources" 
-        data-top=" opacity: 0; top: 500px;" 
+      <div class="dots" data-anim="slide-up" data-anchor-target="#resources"
+        data-top=" opacity: 0; top: 500px;"
         data--300-top="opacity:1; top: -200px;" >
             <img src="images/svg/bytes_small-01.svg" alt="" >
       </div>
       <div class="resources-copy copy pos-abs" data-anim="slide-in" data-origin="right" data-anchor-target="#resources" data-200-center="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;">
         <h1>Big Data, The New Natural Resource</h1>
         <p>
-          <span class="font-24 stacked">Every day 
+          <span class="font-24 stacked">Every day
           society generates</span>
           <span class="stat stacked-text"><strong>2.5</strong>
           <span class="stat font-60">billion</span>
           <span class="stat font-40">gigabytes</span>
-          </span>of data in organizations, via the <strong>Internet of Things</strong> and as a result 
+          </span>of data in organizations, via the <strong>Internet of Things</strong> and as a result
           of our personal digital activities.</span>
         </p>
       </div>
     </div>
+
+      <!--
+      Basing these animations on the top
+      of the 'resources' section
+      Basically goes from farthest
+      from the top to closest
+      so in this case,
+      700 from the top
+      600 from the top
+      200 from the top
+       -->
   </section>
   <!-- /resources -->
 
@@ -181,7 +192,7 @@
           <img
           data-anchor-target="#globe"
           data-200-center="margin-left: -335px;"
-          data-100-top="margin-left: -175px;" 
+          data-100-top="margin-left: -175px;"
           src="images/png/updated-map.png" alt="">
         </div>
         <div class="globe-comment fact-block light right"
@@ -223,13 +234,13 @@
             of the data generated every day
             is mined for valuable insights.
           </p>
-        </div> 
+        </div>
       </div>
   </section>
     <!-- /globe -->
 
   <section class="section section-computation">
-      <div class="container computation"> 
+      <div class="container computation">
         <img class="circuit-left" src="images/svg/circuts_left-01.svg" alt="" >
         <img class="circuit-right" src="images/svg/circuit-board.svg" alt="" >
         <div class="microchips">
@@ -248,7 +259,7 @@
               expand the capabilities of computers.</p>
           </div>
         </div>
-        
+
         <div class="computation-right">
           <div class="computation-right-copy slide-bg"
               data-anim="slide-in"
@@ -260,7 +271,7 @@
               </p>
           </div>
         </div>
-      </div> 
+      </div>
   </section>
   <!-- /section-computation -->
 
@@ -356,7 +367,7 @@
                   c2,0,3.7,2,3.7,4.5V602.5z"/>
               </g>
           </svg>
-        </div>   
+        </div>
 
         <figcaption class="new-computation-comment fact-block light block " data-anim="slide-in" data-origin="bottom"
           data-200-bottom="bottom: -100px; opacity: 0"
@@ -438,40 +449,44 @@
           scientists to engineer systems that are optimized for specific jobs
           – improving the speed and quality of insights.</p>
       </div>
-      <figure class="computing-data-insights">
+      <figure class="computing-data-insights" data-center="margin-top:0px;" data--500-center="margin-top:0px;">
         <div class="diagram-half computing" data-anim="slide-in" data-origin="left"
           data-target-anchor=".computing-data-insights"
-          data-150-bottom="left:0%;"
-          data-150-center="left: 15%;">
+          data-150-bottom="left[quadratic]:-10%;"
+          data--50-bottom="left: 15%;">
           <img src="images/svg/diagram-computing.svg" alt="">
           <h1>Data</h1>
         </div>
 
         <div class="diagram-half data" data-anim="slide-in" data-origin="right"
           data-target-anchor=".computing-data-insights"
-          data-150-bottom="right:0%;"
-          data-150-center="right: 15%;">
+          data-150-bottom="right[quadratic]:-10%;"
+          data--50-bottom="right: 15%;">
           <img src="images/svg/diagram-data.svg" alt="">
           <h1>Computing</h1>
         </div>
 
 
-        <div class="diagram-result" data-anim="slide-in" data-origin="bottom"
-          data-bottom-top="opacity:0; transform:scale(0);"
-          data-center="opacity:1; transform:scale(1.50);">
+        <div class="diagram-result" style="transform-origin: center; transform: scale(0);"
+          data-anim="slide-in" data-origin="bottom"
+          data-target-anchor=".computing-data-insights"
+          data-250-top="opacity:0; transform:scale(0); margin-top: 200px; "
+          data--230-top="opacity:1; transform:scale(1.50); margin-top: 0px; ">
           <img src="images/svg/diagram-result.svg" alt="">
         </div>
+
+
         <img
           data-target-anchor=".computing-data-insights"
           data-150-bottom="left:30%; opacity: 0;"
           data-150-center="left: 0%; opacity: 1;"
-          class="bytes-bg bytes-bg-lt" 
+          class="bytes-bg bytes-bg-lt"
           src="images/svg/bytes-bg-lt.svg" alt="">
         <img
           data-target-anchor=".computing-data-insights"
           data-150-bottom="right:30%; opacity: 0;"
           data-150-center="right: 0%; opacity: 1;"
-          class="bytes-bg bytes-bg-rt" 
+          class="bytes-bg bytes-bg-rt"
           src="images/svg/bytes-bg-lt.svg" alt="">
       </figure>
     </div>
@@ -549,12 +564,12 @@
         </div>
       </div>
     </div>
-  </section> 
+  </section>
   <!-- /section-new-approach -->
   <section class="finale center">
       <div class="container">
         <div class="finale-description">
-          <h1>Data-Centric Design 
+          <h1>Data-Centric Design
           Will Become Pervasive</h1>
           <p>This approach will spread rapidly to other realms of computing. Social neworking
           websites gather and move vast amounts of data. That's a job for data-centric design.
@@ -637,4 +652,6 @@
     </div>
 
 </body>
+
+
 </html>
