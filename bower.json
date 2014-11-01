@@ -4,7 +4,8 @@
   "dependencies": {
     "jquery": "~1.11.1",
     "modernizr": "~2.8.2",
-    "skrollr": "~0.6.27"
+    "skrollr": "~0.6.27",
+    "skrollr-ie": "~1.0.3"
   },
   "devDependencies": {
     "skrollr": "~0.6.27"
