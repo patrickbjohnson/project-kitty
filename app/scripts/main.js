@@ -10,7 +10,7 @@ $(document).ready(function(){
   // If fails, then use the fallback PNG
   if(!Modernizr.svg) {
     $('img[src*="svg"]').attr('src', function() {
-        return $(this).attr('src').replace('.svg', '.png');
+        return $(this).attr('src').replace(/svg/g, 'png');
     });
   }
 
