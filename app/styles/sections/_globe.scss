@@ -1,6 +1,4 @@
-.section-globe {
-	height: 898px;
-}
+.section-globe {height: 898px;}
 
 
 .globe	{
@@ -32,7 +30,10 @@
 		width: 225px;
 		p {@include rel(10px 0 0 0);}
 		.stat strong {
+			@include rel(0 0 0 -10px);
+			display: inline;
 			font-size: 1.950em;
+			
 		}
 	}
 }
@@ -62,7 +63,6 @@
 	img {
 		width: 185%;
 		margin-top: -210px;
-		// margin-left: -145px;
 	}
 }
 

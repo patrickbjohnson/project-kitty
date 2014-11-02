@@ -2,9 +2,6 @@
 /* global skrollr */
 /* global Modernizr */
 $(document).ready(function(){
-  // shouldn't have to do this. 
-  // Why isn't Modernizr recognizing and creating these elements?
-
 
   // check SVG Support
   // If fails, then use the fallback PNG
@@ -13,10 +10,6 @@ $(document).ready(function(){
     $('img[src*="svg"]').attr('src', function() {
         return $(this).attr('src').replace('.svg', '.png');
     });
-  }
-
-  if (Modernizr){
-    console.log('it exists');
   }
 
 
