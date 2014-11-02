@@ -28,6 +28,9 @@
 	&-stat {
 		@include abs(0 0 100px 0);
 		width: 225px;
+		margin-top: 50px; 
+		margin-left: -5px;
+		
 		p {@include rel(10px 0 0 0);}
 		.stat strong {
 			@include rel(0 0 0 -10px);

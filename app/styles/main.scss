@@ -35,6 +35,11 @@
 .footer, .header, .section, .menu, .nav, .article {display: block;}
 
 
+.ie8 {
+	.server-row img {width: 805px;}
+}
+
+
 
 .ie9 {
   .every-day-society { margin-top: 20px; }
