@@ -8,15 +8,10 @@ html, body {
 body {
   background: #fff;
   font-family: $helvetica;
-  // font-weight: bold;
   color: #333;
 }
 
-section {
-	position: relative;
-	// border: 1px dotted gray;
-	// padding: 2em;
-}
+section {position: relative;}
 
 
 .container {
@@ -24,13 +19,5 @@ section {
 	width: 1024px;
 	margin: auto;
 }
-
-.browsehappy {
-	margin: 0.2em 0;
-	background: #ccc;
-	color: #000;
-	padding: 0.2em 0;
-}
-
 
 

@@ -8,9 +8,10 @@ $(document).ready(function(){
 
   // check SVG Support
   // If fails, then use the fallback PNG
+  // All images will be in the same 'images' folder. 
   if(!Modernizr.svg) {
     $('img[src*="svg"]').attr('src', function() {
-        return $(this).attr('src').replace(/svg/g, 'png');
+        return $(this).attr('src').replace('.svg', '.png');
     });
   }
 
