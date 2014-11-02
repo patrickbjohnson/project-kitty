@@ -2,20 +2,14 @@
 /* global skrollr */
 /* global Modernizr */
 $(document).ready(function(){
-  // shouldn't have to do this. 
-  // Why isn't Modernizr recognizing and creating these elements?
-
 
   // check SVG Support
   // If fails, then use the fallback PNG
+  // All images will be in the same 'images' folder. 
   if(!Modernizr.svg) {
     $('img[src*="svg"]').attr('src', function() {
-        return $(this).attr('src').replace(/svg/g, 'png');
+        return $(this).attr('src').replace('.svg', '.png');
     });
-  }
-
-  if (Modernizr){
-    console.log('it exists');
   }
 
 

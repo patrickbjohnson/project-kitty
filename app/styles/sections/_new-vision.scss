@@ -27,9 +27,15 @@
 .computing-data-insights {position: relative; perspective: 3000px;}
 
 .server-row {
-	@include abs(0 0px -8px 0px);
+	@include abs(0 0px 0px 0px);
 	width: 805px;
+	height: 92px;
 	margin: auto;
+
+	img {
+		width: 805px;
+		height: 92px;
+	}
 }
 
 .diagram-half {

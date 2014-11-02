@@ -29,13 +29,22 @@
 @import 'sections/resources';
 @import 'sections/footer';
 
+
+
+// we need to move these to a IE specific partial
 .footer, .header, .section, .menu, .nav, .article {display: block;}
+
+
+.ie8 {
+	.server-row img {width: 805px;}
+}
 
 
 
 .ie9 {
   .every-day-society { margin-top: 20px; }
   .globe-surface { margin-left: -235px; }
+  .server-row {bottom: -35px !important;}
 }
 
 // footer {display: block;}
