@@ -9,12 +9,12 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="/favicon.ico">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <!-- build:css(.) styles/vendor.css -->
-
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+
 
   <!-- bower:css -->
   <!-- endbower -->
@@ -118,7 +118,7 @@
         data-bottom="transform: rotate(0deg);" data-center="transform: rotate(360deg)">
         <img src="images/sun.svg" alt="">
       </div>
-      <div class="timer" data-anim="custom-svg">
+      <div class="timer" id="timer-holder" data-anim="custom-svg" data-bottom="stroke-miterlimit:1;" data-top="stroke-miterlimit:38;">
         <svg class="timer-svg" id="timer-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 260.5 350" enable-background="new 0 0 260.5 350" xml:space="preserve">
             <circle cx="130.1" cy="3.7" r="4.1"/>
             <rect x="97.7" y="59" fill="#FFFFFF" width="64.8" height="44"/>
@@ -133,15 +133,16 @@
             <circle fill="#FFFFFF" stroke="#000000" stroke-width="30" stroke-miterlimit="10" cx="130.1" cy="220.4" r="114.5"/>
 
             <!-- Animated path -->
-            <path class="s1" fill="#FFFFFF" stroke-width="35" stroke-miterlimit="1" stroke-dasharray="5 10 700"
-            id="timer"  stroke-miterlimit="1"
-            data-top="stroke-dashoffset:0;stroke-miterlimit:38;"
-            data-bottom="stroke-dashoffset:700; stroke-miterlimit:1;"  d="M132.1,146.6
+            <path id="timer" class="s1" fill="#FFFFFF" stroke-width="35" stroke-dasharray="5 10 700"
+            data-anchor-target=".timer"
+            style="stroke-miterlimit:1;"
+            data-top="stroke-dashoffset:0;"
+            data-bottom="stroke-dashoffset:700;"  d="M132.1,146.6
               c40,1.1,72,33.9,72,74.2c0,41-33.2,74.2-74.2,74.2s-74.2-33.2-74.2-74.2c0-40,31.7-72.6,71.3-74.1"/>
 
             <!-- Middle black circle -->
             <circle class="f2" cx="130.1" cy="220.4" r="48.4"/>
-            <text id="text" text-anchor="middle" font-family="'helvetica-neue-light'" font-weight="bold" font-size="56" x="130.1" y="238.4" fill="#ffffff">24</text>
+            <text id="timer-text" text-anchor="middle" font-family="'helvetica-neue-light'" font-weight="bold" font-size="56" x="130.1" y="238.4" fill="#ffffff">1</text>
         </svg>
       </div>
       <div class="dots" data-anim="slide-up" data-anchor-target="#resources"
@@ -212,7 +213,7 @@
         </div>
         <div class="globe-stat abs-right"
           >
-          <span class="stat" 
+          <span class="stat"
           style="margin-top: 50px; left: -10px;text-align:left;"
             data-target-anchor="#globe"
             data-100-bottom="opacity:0;"
@@ -427,7 +428,7 @@
         </div>
         <div class="server-row" data-anim="custom-svg"
           data-anchor-target=".new-vision .icon-holder"
-          data-300-center="bottom:-200px;" data-100-center="bottom: -40px;">
+          data-300-center="bottom:-200px;" data--100-center="bottom: -10px;">
           <img src="images/server-row.svg" alt="">
         </div>
       </div>
@@ -460,14 +461,21 @@
         </div>
 
 
-        <div class="diagram-result" style="transform-origin: center; transform: scale(0);"
+        <!-- <div class="diagram-result"
           data-anim="slide-in" data-origin="bottom"
           data-target-anchor=".computing-data-insights"
-          data-100-top-bottom="opacity:0; transform:scale(0); margin-top:200px; "
-          data-50-top-bottom="opacity:1; transform:scale(1.50); margin-top:0px;">
+          data-100--bottom="opacity:0;  "
+          data--50-bottom="opacity:1; ">
           <img src="images/diagram-result.svg" alt="">
-        </div>
+        </div> -->
 
+        <img
+          style="top: 400px;"
+          data-target-anchor=".computing-data-insights"
+          data--60-center="opacity: 0; transform: scale(0.0,0.0);"
+          data--100-center= "opacity: 1; transform: scale(1.3,1.3);"
+          class="diagram-result"
+          src="images/diagram-result.svg" alt="">
 
         <img
           data-target-anchor=".computing-data-insights"
