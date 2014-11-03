@@ -32,6 +32,7 @@ var $th = $('#timer-holder'),
     th = $th.get(0);
   // skrollr init
 	var s = skrollr.init({
+    // forceHeight: false,
 		render: function(data){
 		//	$('.main-nav').text(data.curTop);
 
