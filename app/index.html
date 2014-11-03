@@ -144,11 +144,15 @@
             <circle class="f2" cx="130.1" cy="220.4" r="48.4"/>
             <text id="timer-text" text-anchor="middle" font-family="'helvetica-neue-light'" font-weight="bold" font-size="56" x="130.1" y="238.4" fill="#ffffff">1</text>
         </svg>
+        <!-- IE 8 and below conditional -->
+        <!--[if lt IE 9]><!-->
+          <!-- <img src="images/timer.png" alt=""> -->
+        <!--<![endif]-->
       </div>
       <div class="dots" data-anim="slide-up" data-anchor-target="#resources"
         data-top=" opacity: 0; top: 500px;"
         data--300-top="opacity:1; top: -200px;" >
-            <img src="images/bytes_small-01.svg" alt="" >
+            <img src="images/bytes_small.svg" alt="" >
       </div>
       <div class="resources-copy copy pos-abs" data-anim="slide-in" data-origin="right" data-anchor-target="#resources" data-200-center="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;">
         <h1>Big Data, The New Natural Resource</h1>
@@ -238,7 +242,7 @@
         <img class="circuit-left" src="images/circuts_left-01.svg" alt="" >
         <img class="circuit-right" src="images/circuit-board.svg" alt="" >
         <div class="microchips">
-          <img class="microchip-bg-lg" src="images/computer_chip_hour_LG-01.svg" alt="" >
+          <img class="microchip-bg-lg" src="images/computer_chip_hour_LG-01.svg" alt="" width="275px" height="261px">
           <img class="microchip-bg-sm" src="images/hourglass-sm.svg" alt="" >
         </div>
 
@@ -292,7 +296,8 @@
         </p>
 
         <div class="monitor">
-          <svg class="monitor-img"  version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="808.9px" height="368.4px" viewBox="0.5 424.1 808.9 368.4" xml:space="preserve">
+          <img class="monitor-img" src="images/monitor-svg.png" alt="">
+          <!-- <svg class="monitor-img"  version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="808.9px" height="368.4px" viewBox="0.5 424.1 808.9 368.4" xml:space="preserve">
               <style type="text/css">
 
                 .st0{fill:none;stroke:#0af;stroke-width:2px;stroke-miterlimit:10;}
@@ -360,7 +365,7 @@
                   C582.6,519.4,580.1,516.4,577,516.4z M564,602.5c0,2.5-1.7,4.5-3.7,4.5h-67.9c-2,0-3.7-2-3.7-4.5v-63.7c0-2.5,1.7-4.5,3.7-4.5h67.9
                   c2,0,3.7,2,3.7,4.5V602.5z"/>
               </g>
-          </svg>
+          </svg> -->
         </div>
 
         <figcaption class="new-computation-comment fact-block light block " data-anim="slide-in" data-origin="bottom"
@@ -619,8 +624,8 @@
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/skrollr/src/skrollr.js"></script>
-  <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+  <!-- // <script src="bower_components/skrollr/src/skrollr.js"></script> -->
+  <!-- // <script src="bower_components/html5shiv/dist/html5shiv.js"></script> -->
   <!-- endbower -->
 
   <!-- endbuild -->
@@ -640,9 +645,11 @@
 
     <script src="scripts/vendor/ss-standard.js"></script>
     <script src="scripts/vendor/ss-social.js"></script>
-  <script src="scripts/vendor/skrollr-ie.js"></script>
+    
     <script src="scripts/main.js"></script>
-
+    <!--[if IE 9]>     
+      <script src="scripts/vendor/skrollr-ie.js"></script>
+     <![endif]-->
     <!-- endbuild -->
     <!-- IBM Scripts  -->
     <div id="ibm-metrics">
