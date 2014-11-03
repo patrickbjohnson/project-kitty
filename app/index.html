@@ -142,7 +142,7 @@
 
             <!-- Middle black circle -->
             <circle class="f2" cx="130.1" cy="220.4" r="48.4"/>
-            <text id="timer-text" text-anchor="middle" font-family="'helvetica-neue-light'" font-weight="bold" font-size="56" x="130.1" y="238.4" fill="#ffffff">1</text>
+            <text id="timer-text" text-anchor="middle" font-family="'helvetica-neue-light'" font-weight="bold" font-size="56" x="130.1" y="238.4" fill="#ffffff">24</text>
         </svg>
         <!-- IE 8 and below conditional -->
         <!--[if lt IE 9]><!-->
@@ -624,8 +624,9 @@
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
-  <!-- // <script src="bower_components/skrollr/src/skrollr.js"></script> -->
-  <!-- // <script src="bower_components/html5shiv/dist/html5shiv.js"></script> -->
+  <script src="bower_components/skrollr/src/skrollr.js"></script>
+  <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+  <script src="scripts/vendor/skrollr-ie.js"></script>
   <!-- endbower -->
 
   <!-- endbuild -->
@@ -648,7 +649,7 @@
     
     <script src="scripts/main.js"></script>
     <!--[if IE 9]>     
-      <script src="scripts/vendor/skrollr-ie.js"></script>
+      
      <![endif]-->
     <!-- endbuild -->
     <!-- IBM Scripts  -->
