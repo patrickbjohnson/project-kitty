@@ -70,7 +70,7 @@
 	width: 275px;
 	margin: auto;
 	z-index: 5;
-	position: fixed;
+	position: absolute;
 	display: block;
 	top: 70px;
 	left: 50%;
@@ -90,6 +90,10 @@
 	// // opacity: 0;
  //  position: fixed;
  //  top : 0;
+}
+
+.ie8 .diagram-result {
+  display: none;
 }
 
 .diagram-half {

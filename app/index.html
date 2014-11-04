@@ -478,8 +478,10 @@
 
         <img
           data-target-anchor="#computing-data-insights"
-          data-bottom="opacity: 0; transform[swing]: scale(0);"
-          data-center="opacity: 1; transform[swing]: scale(1);"
+          data--2-bottom="opacity: 0;  position: fixed; transform[swing]: scale(0);"
+          data-bottom="opacity: 0; position: absolute;  transform[swing]: scale(0);"
+          data-center="opacity: 1; position: fixed; display: block; transform[swing]: scale(1);"
+          data-top="opacity: 1; display: block; position: absolute; transform[swing]: scale(1);"
           class="diagram-result"
           src="images/diagram-result.svg" alt="">
 
@@ -646,10 +648,10 @@
 
     <script src="scripts/vendor/ss-standard.js"></script>
     <script src="scripts/vendor/ss-social.js"></script>
-    
+
     <script src="scripts/main.js"></script>
-    <!--[if IE 9]>     
-      
+    <!--[if IE 9]>
+
      <![endif]-->
     <!-- endbuild -->
     <!-- IBM Scripts  -->
