@@ -15,7 +15,7 @@
 	.fact-block.left {
 		@include abs(435px 0 0 200px)
 	}
-	
+
 	&-desk {
 		@include abs(0 0 10px 267px);
 		z-index: 5;
@@ -28,15 +28,15 @@
 	&-stat {
 		@include abs(0 0 100px 0);
 		width: 225px;
-		margin-top: 50px; 
+		margin-top: 50px;
 		margin-left: -5px;
-		
+
 		p {@include rel(10px 0 0 0);}
 		.stat strong {
 			@include rel(0 0 0 -10px);
 			display: inline;
 			font-size: 1.950em;
-			
+
 		}
 	}
 }
@@ -60,13 +60,29 @@
 	@include circle(870px);
 	position: relative;
 	display: block;
-	margin: auto; 
+	margin: auto;
 	background: $gray;
 
 	img {
 		width: 185%;
 		margin-top: -210px;
+    position:relative;
+    z-index:1;
 	}
+}
+
+
+.ie8 .globe-mask {
+  z-index: 60;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 870px; height: 870px;
+  zoom: 1;
+  background: url(/images/circle-mask.png) transparent no-repeat center;
+     filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr=#00FFFFFF, endColorstr=#00FFFFFF
+    );
 }
 
 .dots {
