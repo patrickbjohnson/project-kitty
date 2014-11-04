@@ -5,17 +5,27 @@ $lubalin-heavy: 'lubalin-heavy';
 $light: 300;
 
 $font-size-base: 16px;
+$white: #fff;
 $gray: #E6E6E6;
+$light-blue: #83CFF4;
+
+// timer colors
+$t-primary: #00619E;
+
+
+// gradient colors
+$gradient-start: #E3EDF4;
+$gradient-stop: #71A7C9;
 
 
 
 // change these as needed
-$c-primary: #0af;      //blue
-$c-secondary: #f15807; //orange 
-// just a quick change so I can present to client in black and white
+$c-primary: #83CFF4;      //blue
+$c-secondary: #DE7226;    //orange 
+
 .intro-copy h1,
 .finale h1 {
-  color: #fff;
+  color: $white;
 }
 
 // z-index stuffs
