@@ -21,7 +21,8 @@
   }
 
   &.light {
-    background: #E6E6E6;
+    background: $light-blue;
+    color: $white;
   }
 
   .globe & {

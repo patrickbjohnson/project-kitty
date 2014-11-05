@@ -67,8 +67,8 @@
   <!-- <nav class="main-nav"></nav> -->
 
 <!--[if lt IE 9]>
-<div style="position: absolute; z-index:0; margin: auto; left: 0; right:0; top: 570px; width: 411px;">
-<img src="images/main_path.png" alt="" class="bg-path" style="position: relative; left: -40px; "/>
+<div class="bg-path-container">
+<img class="bg-path" src="images/main_path.png" alt=""/>
 </div>
 <![endif]-->
 
@@ -108,7 +108,7 @@
     <div class="container start">
         <span class="label">Scroll to begin</span>
         <a class="icon-down" href="#resources">
-          <img src="images/scroll_down_icon.png" alt="">
+          <img src="images/scroll-down.png" alt="">
         </a>
     </div>
   </section>
@@ -121,6 +121,8 @@
       </div>
       <div class="timer" id="timer-holder" data-anim="custom-svg" data-bottom="stroke-miterlimit:1;" data-top="stroke-miterlimit:38;">
 
+
+<!-- NEW timer SVG -->
 <svg version="1.1" baseProfile="basic" id="timer-svg" class="timer-svg"
    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="-50 -90 330 350" xml:space="preserve">
@@ -196,7 +198,7 @@
       <div class="dots" data-anim="slide-up" data-anchor-target="#resources"
         data-top=" opacity: 0; top: 500px;"
         data--300-top="opacity:1; top: -200px;" >
-            <img src="images/bytes_small.svg" alt="" >
+            <img src="images/bytes-small.svg" alt="" >
       </div>
       <div class="resources-copy copy pos-abs" data-anim="slide-in" data-origin="right" data-anchor-target="#resources" data-200-center="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;">
         <h1>Big Data, The New Natural Resource</h1>
@@ -234,7 +236,8 @@
           data-anchor-target="#globe"
           data--200-center="margin-left: -205px;"
           data-200-center="margin-left: 0px;"
-          src="images/updated-map.png" alt="">
+          src="images/updated-map2.png" alt="">
+          <!-- Need an updated version of this -->
         </div>
         <div class="globe-comment fact-block light right"
           data-target-anchor=".globe-graphic-container"
@@ -258,7 +261,7 @@
           data-target-anchor=".globe-graphic-container"
           data-300-center="bottom: -40px; opacity:0;"
           data-100-center="bottom: 0; opacity: 1;">
-          <img src="images/man_computer.svg" class="globe-desk-svg" alt="">
+          <img src="images/man-computer.svg" class="globe-desk-svg" alt="">
         </div>
         <div class="globe-stat abs-right"
           >
@@ -267,8 +270,12 @@
             data-target-anchor="#globe"
             data-100-bottom="opacity:0;"
             data-100-center="opacity: 1;"
-          ><strong>1<span>%</span></strong><img src="images/arrow.png" style="display:inline; width: 90px; height: auto;" class="arrow-down"></span>
-          <!-- The arrow here doens't work in IE. What are our options? Could use symbol set font as it has Ie6 compatibl -->
+          ><strong>1<span>%</span></strong><img
+            data-target-anchor="#globe"
+            data-100-bottom="opacity:0; top: -100px;"
+            data-100-center="opacity: 1; top: 0px;"
+          src="images/arrow.png" style="display:inline-block;position:relative; width: 90px; height: auto;" class="arrow-down"></span>
+          <!-- Need new arrow with colors -->
           <p
             data-target-anchor="#globe"
             data-100-bottom="right: -200px; opacity:0;"
@@ -284,10 +291,10 @@
 
   <section class="section section-computation">
       <div class="container computation">
-        <img class="circuit-left" src="images/circuts_left-01.svg" alt="" >
-        <img class="circuit-right" src="images/circuit-board.svg" alt="" >
+        <img class="circuit-left" src="images/circuits-left.svg" alt="" >
+        <img class="circuit-right" src="images/circuits-right.svg" alt="" >
         <div class="microchips">
-          <img class="microchip-bg-lg" src="images/computer_chip_hour_LG-01.svg" alt="" width="275px" height="261px">
+          <img class="microchip-bg-lg" src="images/hourglass-lg.svg" alt="" width="275px" height="261px">
           <img class="microchip-bg-sm" src="images/hourglass-sm.svg" alt="" >
         </div>
 
@@ -341,8 +348,9 @@
         </p>
 
         <div class="monitor">
-          <img class="monitor-img" src="images/monitor-svg.png" alt="">
-          <!-- <svg class="monitor-img"  version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="808.9px" height="368.4px" viewBox="0.5 424.1 808.9 368.4" xml:space="preserve">
+        <!-- Need updated PNG -->
+          <!-- <img class="monitor-img" src="images/monitor-svg.png" alt=""> -->
+          <svg class="monitor-img"  version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="808.9px" height="368.4px" viewBox="0.5 424.1 808.9 368.4" xml:space="preserve">
               <style type="text/css">
 
                 .st0{fill:none;stroke:#0af;stroke-width:2px;stroke-miterlimit:10;}
@@ -410,7 +418,7 @@
                   C582.6,519.4,580.1,516.4,577,516.4z M564,602.5c0,2.5-1.7,4.5-3.7,4.5h-67.9c-2,0-3.7-2-3.7-4.5v-63.7c0-2.5,1.7-4.5,3.7-4.5h67.9
                   c2,0,3.7,2,3.7,4.5V602.5z"/>
               </g>
-          </svg> -->
+          </svg>
         </div>
 
         <figcaption class="new-computation-comment fact-block light block " data-anim="slide-in" data-origin="bottom"
@@ -428,7 +436,7 @@
 
   <section class="section section-new-vision">
     <div class="container new-vision" id="new-vision">
-      <div class="section-grid grid-lg fact-block light">
+      <div class="section-grid grid-lg">
         <div class="section-grid-header">
           <h1>This New Vision Will Take Hold First
            in Supercomputing</h1>
@@ -439,7 +447,7 @@
           <h2>Laboratories</h2>
           <div class="icon-holder" data-anim="fade-in"
           data-100-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);">
-            <img src="images/laboratory.svg" alt="">
+            <img src="images/icon-laboratory.svg" alt="">
           </div>
           <img
             data-anim="slide-down"
@@ -453,7 +461,7 @@
           <div class="icon-holder" data-anim="fade-in"
           data-100-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);"
           >
-            <img src="images/university.svg" alt="">
+            <img src="images/icon-school.svg" alt="">
           </div>
           <img
             data-anim="slide-down"
@@ -467,7 +475,7 @@
           <div class="icon-holder" data-anim="fade-in"
           data-100-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);"
           >
-            <img class="icon-holder" src="images/business.svg" alt="">
+            <img class="icon-holder" src="images/icon-business.svg" alt="">
           </div>
           <img
             data-anim="slide-down"
@@ -478,7 +486,7 @@
         </div>
         <div class="server-row" data-anim="custom-svg"
           data-anchor-target=".new-vision .icon-holder"
-          data-300-center="bottom:-200px;" data--100-center="bottom: -10px;">
+          data-300-center="bottom:-200px;" data--100-center="bottom: 0px;">
           <img src="images/server-row.svg" alt="">
         </div>
       </div>
@@ -518,15 +526,16 @@
           data--50-bottom="opacity:1; ">
           <img src="images/diagram-result.svg" alt="">
         </div> -->
-
-        <img
+        <div class="diagram-result"
           data-target-anchor="#computing-data-insights"
           data--2-bottom="opacity: 0;  position: fixed; transform[swing]: scale(0);"
           data-bottom="opacity: 0; position: absolute;  transform[swing]: scale(0);"
           data-center="opacity: 1; position: fixed; display: block; transform[swing]: scale(1);"
           data-top="opacity: 1; display: block; position: absolute; transform[swing]: scale(1);"
-          class="diagram-result"
-          src="images/diagram-result.svg" alt="">
+        >
+          <img src="images/diagram-insights.svg" alt="">
+        </div>
+
 
         <img
           data-target-anchor=".computing-data-insights"
@@ -546,8 +555,8 @@
   <!-- /section-new-vision -->
 
   <section class="section section-new-approach">
-    <div class="container new-approach">
-      <div class="section-grid grid-lg fact-block light">
+    <div class="container new-approach" id="new-approach">
+      <div class="section-grid grid-lg">
         <div class="section-grid-header">
           <h1>The New Approach Creates
            a New World of Possibilities</h1>
@@ -555,9 +564,9 @@
 
         <div class="col-3">
           <div class="icon-holder" data-anim="fade-in"
-          data-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);"
+          data-target-anchor="#new-approach" data-bottom="transform: scale(0); " data-25-center="transform: scale(1);"
           >
-            <img src="images/icon-doctor.svg" alt="">
+            <img src="images/icon-healthcare-2.svg" alt="">
           </div>
           <div class="col-3-content" data-anim="slide-in fade-in" data-origin="bottom"
             data-bottom="opacity: 0; top: 300px;" data-center="opacity: 1; top: 0px;"
@@ -575,7 +584,7 @@
 
         <div class="col-3">
           <div class="icon-holder" data-anim="fade-in"
-          data-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);"
+          data-target-anchor="#new-approach" data-bottom="transform: scale(0); " data-25-center="transform: scale(1);"
           >
            <img src="images/icon-energy.svg" alt="">
 
@@ -597,7 +606,7 @@
 
         <div class="col-3">
           <div class="icon-holder" data-anim="fade-in"
-          data-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);"
+          data-target-anchor="#new-approach" data-bottom="transform: scale(0); " data-25-center="transform: scale(1);"
           >
             <img src="images/icon-airline.svg" alt="">
           </div>
@@ -630,7 +639,7 @@
           they'll work faster and smarter – and use less energy.</p>
         </div>
         <a class="icon-up" href="#intro">
-          <img src="images/scroll_up_icon.png" alt="">
+          <img src="images/scroll-up.png" alt="">
         </a>
       </div>
   </section>
@@ -638,7 +647,7 @@
   <footer class="footer invert">
     <div class="container">
       <div class="footer-branding">
-          <img class="footer-logo" style="height:80px; width: auto;" src="images/logo_white-01.svg" alt="">
+        <img class="footer-logo" src="images/ibm-white.svg" alt="">
         <header class="bold block">A New Vision for Big Data Computing</header>
         <small>Speeding Up Innovation Through Data-Centric Design</small>
       </div>

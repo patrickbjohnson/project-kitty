@@ -36,6 +36,7 @@
 
 
 .ie8 {
+  #timer-text {display: none;}
   .globe-desk-svg {width: 255px; height: 248px;}
 	.server-row img {width: 805px;}
   .microchip-bg-lg {width: 275px; width: 261px;}
@@ -49,7 +50,21 @@
     margin: 5px 0 5px -68px;
     width: 472px;
   }
-
+  .bg-path-container {
+    position: absolute; 
+    z-index:2; 
+    margin: auto; 
+    left: 0; right:0; 
+    top: 560px; 
+    width: 411px;
+  }
+  .bg-path {
+    position: relative;
+    left: -43px;
+    height: 5150px;
+    z-index: 1;
+  }
+  .finale {z-index: z(base-10);}
 }
 
 
@@ -59,6 +74,3 @@
   .globe-surface { margin-left: -235px; }
   .server-row {bottom: -35px !important;}
 }
-
-// footer {display: block;}
-// section {display: block !important;}

@@ -5,7 +5,7 @@
 	.fact-block {
 		line-height: 1.350;
 		&.light {
-		  background: $c-primary;
+		  background: $c-secondary;
 		  color: white;}
 	}
 	.fact-block.right {
@@ -18,7 +18,7 @@
 
 	&-desk {
 		@include abs(0 0 10px 267px);
-		z-index: 5;
+		z-index: z(base-5);
 		&-svg {
 			width: 255px;
 			height: 248px;
@@ -30,6 +30,7 @@
 		width: 225px;
 		margin-top: 50px;
 		margin-left: -5px;
+		z-index: z(base-5);
 
 		p {@include rel(10px 0 0 0);}
 		.stat strong {
@@ -61,9 +62,8 @@
 	position: relative;
 	display: block;
 	margin: auto;
-	background: $gray;
-  overflow:hidden;
-
+	background: $light-blue;
+	z-index: z(base);
 	img {
 		width: 185%;
 		margin-top: -210px;
@@ -73,10 +73,9 @@
 }
 
 
- .globe-mask {
+.ie8 .globe-mask {
   z-index: 60;
   content: "";
-  font-size:0;
   display: block;
   position: absolute;
   width: 870px; height: 870px;
