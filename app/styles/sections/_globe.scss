@@ -62,6 +62,7 @@
 	display: block;
 	margin: auto;
 	background: $gray;
+  overflow:hidden;
 
 	img {
 		width: 185%;
@@ -72,9 +73,10 @@
 }
 
 
-.ie8 .globe-mask {
+ .globe-mask {
   z-index: 60;
   content: "";
+  font-size:0;
   display: block;
   position: absolute;
   width: 870px; height: 870px;
