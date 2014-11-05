@@ -42,9 +42,9 @@
 }
 
 .circuit-left {
-  @include abs(0 0 -120px -45px);
-  width: 530px;
-  height: 590px;
+  @include abs(0 0 -140px -65px);
+  width: 531px;
+  height: 628px;
 }
 
 .circuit-right {
@@ -55,7 +55,7 @@
 
 .microchip-bg {
   &-lg {
-    @include abs(-55px 0 0 265px);
+    @include abs(-53px 0 0 263px);
     width: 275px;
     height: 261px;
     margin: auto;
