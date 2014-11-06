@@ -36,19 +36,29 @@
 
 
 .ie8 {
+  .resource-copy > p {
+    width: 100px;
+  }
+  .db strong {width: 300px;}
   #timer-text {display: none;}
   .globe-desk-svg {width: 255px; height: 248px;}
 	.server-row img {width: 805px;}
-  .microchip-bg-lg {width: 275px; width: 261px;}
-  .microchip-bg-sm {width: 215px; height: 210px;}
-  .sever-solo {
-    top: 250px
+  .microchip-bg-lg {
+    width: 275px;
+    z-index: 2;
   }
+  .microchip-bg-sm {width: 215px; height: 210px;}
+  .sever-solo {top: 250px}
   .monitor-img {
-    top: 0;
     position: relative;
-    margin: 5px 0 5px -68px;
-    width: 472px;
+    margin: 40px 0px 0px -70px !important;
+    width: 700px !important;
+    left: -225px !important;
+    bottom: 0 !important;
+  }
+  .circle-md {
+    left: 0px;
+    top: 175px;
   }
   .bg-path-container {
     position: absolute; 
@@ -64,7 +74,14 @@
     height: 5150px;
     z-index: 1;
   }
+  .diagram-result {
+    // hack to fix an issue where
+    // the div was displaying on to of the header
+    position: absolute !important;
+  }
+
   .finale {z-index: z(base-10);}
+
 }
 
 

@@ -112,7 +112,7 @@
     </div>
   </section>
   <!-- /intro -->
-  <section class="section section-resources" id="resources">
+  <section class="section section-resources">
     <div class="container resources" id="resources">
       <div class="sun" data-anim="rotate" data-origin="bottom"
         data-bottom="transform: rotate(0deg);" data-center="transform: rotate(360deg)">
@@ -183,10 +183,9 @@
 </svg>
 
 
-        <!-- IE 8 and below conditional -->
-        <!--[if lt IE 9]><!-->
-          <!-- <img src="images/timer.png" alt=""> -->
-        <!--<![endif]-->
+        <!--[if lt IE 9]>
+          <img src="images/timer.png" alt="">
+        <![endif]-->
       </div>
       <div class="dots" data-anim="slide-up" data-anchor-target="#resources"
         data-top=" opacity: 0; top: 500px;"
@@ -209,16 +208,6 @@
       </div>
     </div>
 
-      <!--
-      Basing these animations on the top
-      of the 'resources' section
-      Basically goes from farthest
-      from the top to closest
-      so in this case,
-      700 from the top
-      600 from the top
-      200 from the top
-       -->
   </section>
   <!-- /resources -->
 
@@ -268,7 +257,7 @@
             data-target-anchor="#globe"
             data-100-bottom="opacity:0; top: -100px;"
             data-100-center="opacity: 1; top: 0px;"
-          src="images/arrow.png" class="arrow-down"></span>
+          src="images/arrow.svg" class="arrow-down"></span>
           <!-- Need new arrow with colors -->
           <p
             data-target-anchor="#globe"
@@ -341,8 +330,11 @@
         </p>
 
         <div class="monitor">
-        <!-- Need updated PNG -->
-          <!-- <img class="monitor-img" src="images/monitor-svg.png" alt=""> -->
+        
+          <!--[if lt IE 9]>
+            <img class="monitor-img" src="images/monitor-circuits2.png" alt="">
+          <![endif]-->
+                  
           <svg class="monitor-img"  version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="808.9px" height="368.4px" viewBox="0.5 424.1 808.9 368.4" xml:space="preserve">
               <style type="text/css">
 
@@ -512,24 +504,23 @@
           data--2-bottom="opacity: 0;  position: fixed; transform[swing]: scale(0);"
           data-bottom="opacity: 0; position: absolute;  transform[swing]: scale(0);"
           data-center="opacity: 1; position: fixed; display: block; transform[swing]: scale(1);"
-          data-top="opacity: 1; display: block; position: absolute; transform[swing]: scale(1);"
-        >
+          data-top="opacity: 1; position: absolute; display: block; transform[swing]: scale(1);">
           <img src="images/diagram-insights.svg" alt="">
         </div>
         <img
-          data-target-anchor=".computing-data-insights"
+          data-target-anchor="#computing-data-insights"
           data-bottom="opacity: 0;  left: 10%;"
           data-center="opacity: 1; left: -7%;"
           data-top="opacity: 1;  left: -45%;"
           class="bytes-bg bytes-bg-lt"
-          src="images/bytes-bg-lt.svg" alt="">
+          src="images/bytes-bg.svg" alt="">
         <img
-          data-target-anchor=".computing-data-insights"
+          data-target-anchor="#computing-data-insights"
           data-bottom="opacity: 0;  right: 10%;"
           data-center="opacity: 1; right: -7%;"
           data-top="opacity: 1;  right: -45%;"
           class="bytes-bg bytes-bg-rt"
-          src="images/bytes-bg-lt.svg" alt="">
+          src="images/bytes-bg.svg" alt="">
       </figure>
     </div>
   </section>
@@ -547,7 +538,7 @@
           <div class="icon-holder" data-anim="fade-in"
           data-target-anchor="#new-approach" data-bottom="transform: scale(0); " data-25-center="transform: scale(1);"
           >
-            <img src="images/icon-healthcare-2.svg" alt="">
+            <img src="images/icon-healthcare.svg" alt="">
           </div>
           <div class="col-3-content" data-anim="slide-in fade-in" data-origin="bottom"
             data-bottom="opacity: 0; top: 300px;" data-center="opacity: 1; top: 0px;"
