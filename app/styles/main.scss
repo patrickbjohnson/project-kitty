@@ -78,18 +78,18 @@
     margin: auto; 
     left: 0; right:0; 
     top: 560px; 
-    width: 411px;
+    width: 1024px;
   }
   .bg-path {
+    display: block;
+    margin: auto;
     position: relative;
-    left: -43px;
+    left: -40px;
     height: 5150px;
     z-index: 1;
   }
   .diagram-result {
-    // hack to fix an issue where
-    // the div was displaying on to of the header
-    position: absolute !important;
+    // position: absolute !important;
   }
 
   .finale {z-index: z(base-10);}
@@ -101,7 +101,7 @@
 .ie9 {
   .every-day-society { margin-top: 20px; }
   .globe-surface { margin-left: -235px; }
-  .server-row {bottom: -35px !important;}
+  // .server-row {bottom: -35px !important;}
    .diagram-result {
     position: absolute !important;
    }
