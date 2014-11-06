@@ -36,12 +36,24 @@
 
 
 .ie8 {
-  .resource-copy > p {
-    width: 100px;
-  }
+  .resources-copy p strong {width: 137px;}
   .db strong {width: 300px;}
+  .timer {left: 208px;}
   #timer-text {display: none;}
   .globe-desk-svg {width: 255px; height: 248px;}
+  .globe-mask {
+    z-index: 60;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 870px; height: 870px;
+    zoom: 1;
+    color: $white;
+    background: url(/images/circle-mask.png) transparent no-repeat center;
+       filter: progid:DXImageTransform.Microsoft.gradient(
+          startColorstr=#00FFFFFF, endColorstr=#00FFFFFF
+      );
+  }
 	.server-row img {width: 805px;}
   .microchip-bg-lg {
     width: 275px;
@@ -90,4 +102,7 @@
   .every-day-society { margin-top: 20px; }
   .globe-surface { margin-left: -235px; }
   .server-row {bottom: -35px !important;}
+   .diagram-result {
+    position: absolute !important;
+   }
 }

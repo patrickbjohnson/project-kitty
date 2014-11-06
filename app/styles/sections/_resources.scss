@@ -35,7 +35,7 @@
 }
 
 .timer {
-	@include abs(95px 0 0 208px);
+	@include abs(95px 0 0 220px);
 	z-index: z(base-5);
 	&-svg {
 		width: 270px;

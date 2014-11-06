@@ -69,9 +69,6 @@
 	img {display: block; margin: auto;}
 }
 
-
-
-
 .globe-graphic-container {
 	@include circle(870px);
 	position: relative;
@@ -88,18 +85,7 @@
 }
 
 
-.ie8 .globe-mask {
-  z-index: 60;
-  content: "";
-  display: block;
-  position: absolute;
-  width: 870px; height: 870px;
-  zoom: 1;
-  background: url(/images/circle-mask.png) transparent no-repeat center;
-     filter: progid:DXImageTransform.Microsoft.gradient(
-        startColorstr=#00FFFFFF, endColorstr=#00FFFFFF
-    );
-}
+.ie8 
 
 .dots {
 	@include abs(0 0px 0 0px);
