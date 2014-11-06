@@ -32,12 +32,27 @@
 		margin-left: -5px;
 		z-index: z(base-5);
 
-		p {@include rel(10px 0 0 0);}
+		p {
+			@include rel(10px 0 0 0);
+			@extend %stacked;
+			line-height: 1.25;
+		}
+		.stat strong,
+		p > strong {
+			display: inline-block;
+			color: $white;
+		}
 		.stat strong {
 			@include rel(0 0 0 -10px);
 			display: inline;
 			font-size: 1.950em;
 
+		}
+		.arrow-down {
+			display:inline-block;
+			position:relative; 
+			width: 90px; 
+			height: auto;
 		}
 	}
 }

@@ -6,30 +6,29 @@
 .resources-copy {
 	top: 15px;
 	max-width: 295px;
-	p {
-		@extend %stacked;
-		line-height: 1.5;
-		strong {line-height: 0.8;}
-		> strong {
-			line-height: 1;
-			display: inline-block;
+
+	.stat.stacked-text {
+		display: inline-block;
+		margin: 10px 0 0 0;
+		letter-spacing: -16px;
+		
+
+		strong {
+			font-size: 174px;
+			margin-left: -8px;
 		}
 	}
-
-	.font-24 {
-		top: -10px;
-	}
+	.font-24 {margin-top: -17px;}
+	.stat.font-40 {top: -5px;}
+	.stat.font-60 {margin-top: -10px; margin-left: -1px;}
 	
-		
-	.font-40 {
-		top: -10px;
+	p {
+		margin-top: -5px;
+		white-space: pre-line;
+		strong {display: inline-block; color: $c-secondary;}
 	}
+
 }
-
-
-
-
-
 .sun {
 	@include abs(0px 0 0 85px); 
 	width: 190px;
@@ -49,4 +48,4 @@
 }
 
 
-.resources-copy p > strong {margin: 0;}
+.resources-copy p > strong {}

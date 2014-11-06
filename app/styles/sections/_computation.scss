@@ -17,7 +17,7 @@
   position: relative;
   width: 360px;
 
-  p {width: 250px;}
+  p {width: 270px;}
 }
 
 .computation-right {
@@ -42,7 +42,7 @@
 }
 
 .circuit-left {
-  @include abs(0 0 -140px -65px);
+  @include abs(0 0 -140px -60px);
   width: 531px;
   height: 628px;
 }

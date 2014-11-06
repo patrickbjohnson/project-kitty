@@ -4,13 +4,19 @@ $lubalin-light: 'lubalin-light';
 $lubalin-heavy: 'lubalin-heavy';
 $light: 300;
 
-$font-size-base: 16px;
+// primary colors
+// they have so many colors...
+
 $white: #fff;
 $gray: #E6E6E6;
 $light-blue: #83CFF4;
-
-// timer colors
+$c-primary: #83CFF4;      //blue
+$c-secondary: #DE7226;    //orange 
 $t-primary: #00619E;
+
+$d-blue: #00619E;
+$d-blue2: #114069; // used in one place I think. 
+$l-blue1: #028ABF;
 
 
 // gradient colors
@@ -18,10 +24,22 @@ $gradient-start: #E3EDF4;
 $gradient-stop: #71A7C9;
 
 
+// helper colors
+// for quickly assigning colors to stuff, especially svgs
+.f1 { fill: $c-primary; }
+.f2 { fill: $c-secondary; }
 
-// change these as needed
-$c-primary: #83CFF4;      //blue
-$c-secondary: #DE7226;    //orange 
+.s1 { stroke: $t-primary; }
+.s2 { stroke: $c-secondary; }
+
+.c1 { color: $c-primary; }
+.c2 { color: $c-secondary; }
+
+.bg1 { background-color: $c-primary; }
+.bg2 { background-color: $c-secondary; }
+
+.db {color: $d-blue;}
+.lb1 {color: $l-blue1;}
 
 .intro-copy h1,
 .finale h1 {
@@ -33,4 +51,8 @@ $z-layers: (
 	'base': 1,
 	'base-5': 5,
 	'base-10': 10
-)
+);
+
+
+// font sizes 
+$font-size-base: 16px;

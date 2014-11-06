@@ -26,14 +26,10 @@ a:hover {text-decoration: none;}
 
  %huge {
 	font-size: 30px;
-  line-height: 1.1;
-  // margin:.5em 0;
+    line-height: 1.1;
 }
 
-%big {
-  font-size: em(26px);
-  // margin-bottom: 24px;
-}
+%big {font-size: em(26px);}
 
 
 %lubalin {
@@ -66,9 +62,10 @@ strong, .bold, %bold {
   p {font-size: em(14px);}
   strong {
     font-family: inherit;
-    font-size: em(52px);
+    font-size: em(56px);
     letter-spacing: -16px;
     display: inline-block;
+    margin-left: -10px;
   }
 }
 
@@ -80,3 +77,4 @@ small, .small { font-size: em(12px); }
 .font-40 {font-size: 40px; position: relative;}
 .font-60 {font-size: 60px; position: relative;}
 .font-heavy {font-family: $lubalin-heavy;}
+.font-light {font-family: $helvetica-light;}

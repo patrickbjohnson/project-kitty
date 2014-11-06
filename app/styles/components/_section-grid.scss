@@ -21,11 +21,22 @@
   
   &-content {
     position: relative;
+    width: 195px;
     height: 150px;
+    margin: auto;
   }
 
   h2 {margin: 15px auto;}
   p {line-height: 1.5}
+
+
+}
+
+
+.new-vision .col-3 h2 {color: $l-blue1;}  
+.new-approach .col-3 {
+  h2 {color: $white;}
+  padding: 1.35em 1em;
 }
 
 
@@ -41,4 +52,3 @@ border-radius: 10px;
 .section-grid-header {
   margin: auto;
 }
-
