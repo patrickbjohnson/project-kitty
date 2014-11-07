@@ -59,11 +59,3 @@ footer header {
   a {color: $white;}
 }
 
-.icon-fb,
-.icon-twitter,
-.icon-googleplus {
-  @include vendor-prefix(transition, color 300ms ease);
-}
-.icon-fb:hover {color: #3b5998;}
-.icon-twitter:hover {color: #55acee;}
-.icon-googleplus:hover {color: #dd4b39;}

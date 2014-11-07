@@ -30,9 +30,13 @@
 }
 
 .share-icons {
-	li {display: inline-block; margin-right: 10px;}
+	li {
+		position: relative;
+		display: inline-block; 
+		margin-right: 10px;
+	}
 	a {color: #000; font-size: em(26px);
-		&:hover{text-decoration: none;}
+		&:hover{text-decoration: none !important;}
 	}
 }
 
@@ -45,4 +49,47 @@
 	text-align: center;
 	z-index: z(base);
 	&:hover {color: $white;}
+}
+
+.footer-social a {color: $white;}
+
+
+
+
+#twitter-widget-0.twitter-share-button,
+#twitter-widget-1.twitter-share-button {
+	position: absolute;
+	left: 2px;
+	top: 5px;
+	width: 23px !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	
+}
+
+.fb_iframe_widget {
+	position: absolute !important;
+	background: red;
+	height: 25px;
+	top: 3px;
+	width: 26px;
+	left: 0;
+	line-height: 1.1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+#___plus_0,
+#___plus_1 {
+	width: 0 !important;
+	> iframe {
+		position: absolute !important;
+		width: 25px !important;
+		top: 4px !important;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+		opacity: 0;
+	}
 }

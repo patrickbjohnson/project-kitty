@@ -44,18 +44,17 @@ var $th = $('#timer-holder'),
 	});
 
 
-  // social sharing
-  // facebook. 
-  $('.icon-fb').on('click', function(e){
-    e.preventDefault();
-    console.log('clicked');
-    FB.ui({
-      method: 'share_open_graph',
-      action_type: 'og.likes',
-      action_properties: JSON.stringify({
-          object:'http://pbj.me',
-      })
-    }, function(response){});
+  // Facebook Shares Count
+  var $fURL = 'http://pbj.me/IBM';
+      $.getJSON( 'http://graph.facebook.com/?id=' + $fURL, function( fbdata ) {
+          $('.fb-counter').text((fbdata.shares));
+      });
 
-  });
+    var $tURL = 'http://pbj.me/IBM';
+      // Twitter Shares Count
+      $.getJSON( 'http://cdn.api.twitter.com/1/urls/count.json?url=' + $tURL + '&callback=?', function( twitdata ) {
+          $('.tw-counter').text( (twitdata.count) );
+      });
+
 });
+
