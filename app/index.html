@@ -21,24 +21,26 @@
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
-  
+
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/vendor/ss-standard.css">
   <link rel="stylesheet" href="styles/vendor/ss-social-circle.css">
   <!-- endbuild -->
 
   <!-- Change the URL here -->
-  <meta property="og:url" content="http://www.example.com" /> 
+  <meta property="og:url" content="http://www.example.com" />
   <!-- Change the Title here -->
   <meta property="og:title" content="IBM Research Inforgraphic" />
   <!-- Change the Description here -->
-  <meta property="og:description" content="IBM Research Inforgraphic" /> 
+  <meta property="og:description" content="IBM Research Inforgraphic" />
   <!-- Change the Image path here to point to IBM servers -->
-  <meta property="og:image" content="images/share-content.jpg" /> 
+  <meta property="og:image" content="images/share-content.jpg" />
 
 
 </head>
 <body>
+
+<!-- this is part one of the facebook stuff -->
 <script>
      window.fbAsyncInit = function() {
        FB.init({
@@ -57,7 +59,7 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
    </script>
-
+<!-- part two is down at line 87 or so -->
 
 
 
@@ -82,8 +84,12 @@
     </div>
   </div>
 
+  <!-- ******************   this is the facbeook thing right here -->
+  <div class="fb-share-button" data-href="http://jackmakesthings.com" data-layout="icon"></div>
+<!-- *************** -->
 
   <aside class="sharing sharing-fixed">
+
     <a class="share-trigger ss-icon">share</a>
     <menu class="share-icons">
       <ul>
@@ -195,7 +201,7 @@
               data-anchor-target="#timer-holder"
               style=" fill: white;stroke-miterlimit:1;"
               data-top="stroke-dashoffset:10;"
-              data-bottom="stroke-dashoffset:950;"  
+              data-bottom="stroke-dashoffset:950;"
               d="M102.9,60.8c43.3,1.2,77.9,36.7,77.9,80.3c0,44.4-35.9,80.3-80.3,80.3s-80.3-35.9-80.3-80.3 c0-43.3,34.3-78.6,82.5-80.2"/>
 
               <!-- circle behind text -->
@@ -216,7 +222,7 @@
         data--300-top="opacity:1; top: -200px;" >
             <img src="images/bytes-small.svg" alt="" >
       </div>
-      <div class="resources-copy copy pos-abs" data-anim="slide-in" data-origin="right" 
+      <div class="resources-copy copy pos-abs" data-anim="slide-in" data-origin="right"
        data-200-center="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;">
         <h1>Big Data, The New Natural Resource</h1>
         <div class="font-24 font-light stacked every-day-society">
