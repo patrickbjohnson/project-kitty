@@ -1,6 +1,7 @@
 'use strict';
 /* global skrollr */
 /* global Modernizr */
+/* global FB */
 $(document).ready(function(){
 
   // check SVG Support
@@ -27,15 +28,13 @@ $(document).ready(function(){
       }
     });
 
+// set up the timer SVG animation
 var txt = $('#timer-text');
 var $th = $('#timer-holder'),
     th = $th.get(0);
   // skrollr init
 	var s = skrollr.init({
-    // forceHeight: false,
 		render: function(data){
-		//	$('.main-nav').text(data.curTop);
-
        var num = Math.ceil(th.style['stroke-miterlimit']);
       	if( num < 25 ) {
           txt.text(num);
@@ -43,4 +42,16 @@ var $th = $('#timer-holder'),
 		}
 
 	});
+
+
+  // social sharing
+  // facebook. 
+  $('.icon-fb').on('click', function(e){
+    e.preventDefault();
+    console.log('clicked');
+    FB.ui({
+      method: 'share',
+      href: 'http://clients.pbj.me/text100/IBM',
+    }, function(response){});
+  });
 });

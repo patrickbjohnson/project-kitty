@@ -12,6 +12,7 @@
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
+  <link href="https://1.www.s81c.com/common/v17/css/www.css" rel="stylesheet" title="www" type="text/css"/>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
 
@@ -20,16 +21,46 @@
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
-  <link href="https://1.www.s81c.com/common/v17/css/www.css" rel="stylesheet" title="www" type="text/css"/>
+  
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/vendor/ss-standard.css">
   <link rel="stylesheet" href="styles/vendor/ss-social-circle.css">
   <!-- endbuild -->
 
+  <!-- Change the URL here -->
+  <meta property="og:url" content="http://www.example.com" /> 
+  <!-- Change the Title here -->
+  <meta property="og:title" content="IBM Research Inforgraphic" />
+  <!-- Change the Description here -->
+  <meta property="og:description" content="IBM Research Inforgraphic" /> 
+  <!-- Change the Image path here to point to IBM servers -->
+  <meta property="og:image" content="images/share-content.jpg" /> 
 
 
 </head>
 <body>
+<script>
+     window.fbAsyncInit = function() {
+       FB.init({
+        // this needs to be IBM appId
+         appId      : '562528817210465',
+         xfbml      : true,
+         version    : 'v2.1'
+       });
+     };
+
+     (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+   </script>
+
+
+
+
   <!-- IBM Nav -->
   <div id="ibm-universal-nav" role="navigation" aria-label="Site map">
     <ul id="ibm-unav-links" role="presentation">
@@ -633,26 +664,14 @@
 
   <!-- endbuild -->
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <!--script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script -->
+    <!-- IBM Analytics Here -->
 
 
     <!-- build:js({app,.tmp}) scripts/main.js -->
 
     <script src="scripts/vendor/ss-standard.js"></script>
     <script src="scripts/vendor/ss-social.js"></script>
-
     <script src="scripts/main.js"></script>
-    <!--[if IE 9]>
-
-     <![endif]-->
     <!-- endbuild -->
     <!-- IBM Scripts  -->
     <div id="ibm-metrics">

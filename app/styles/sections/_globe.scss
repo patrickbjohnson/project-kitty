@@ -84,11 +84,8 @@
 	}
 }
 
-
-.ie8 
-
 .dots {
-	@include abs(0 0px 0 0px);
+	position: relative;
 	width: 850px;
 	margin: auto;
 }
