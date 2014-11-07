@@ -50,8 +50,12 @@ var $th = $('#timer-holder'),
     e.preventDefault();
     console.log('clicked');
     FB.ui({
-      method: 'share',
-      href: 'http://clients.pbj.me/text100/IBM',
+      method: 'share_open_graph',
+      action_type: 'og.likes',
+      action_properties: JSON.stringify({
+          object:'http://pbj.me',
+      })
     }, function(response){});
+
   });
 });
