@@ -4,7 +4,7 @@
 .sharing-fixed {
 	position: fixed;
 	display: block;
-	top: 200px;
+	top: 500px;
 	height: 50px;
 	width: 50px;
 	background: #000;
@@ -22,10 +22,16 @@
 		position: absolute;
 		top: 8px;
 		left: -200px;
-		width: 120px;
+		width: 200px;
 
 		span {font-size: em(6px); text-transform: uppercase; color: #000;}
 	}
+	
+	.fb_iframe_widget {
+		top: -5px;
+	}
+
+
 
 }
 
@@ -51,45 +57,147 @@
 	&:hover {color: $white;}
 }
 
+.footer-social .share-icons li {margin-right: 0;}
 .footer-social a {color: $white;}
 
 
-
-
+#___plus_0 iframe,
+#___plus_1 iframe,
+.fb_iframe_widget iframe,
 #twitter-widget-0.twitter-share-button,
 #twitter-widget-1.twitter-share-button {
-	position: absolute;
-	left: 2px;
-	top: 5px;
-	width: 23px !important;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
-	opacity: 0;
+
+	@include vendor-prefix(transform-origin,top left);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
 	
 }
 
+#___plus_0,
+#___plus_1,
 .fb_iframe_widget {
+	height: 0 !important;
+	width: 0 !important;
+}
+
+ul#share {
+	li {display: inline-block;}
+}
+
+
+
+// grouping social selectors and such
+#twitter-widget-0.twitter-share-button,
+#twitter-widget-1.twitter-share-button,
+.fb_iframe_widget,
+.fb_iframe_widget iframe,
+#___plus_0 iframe,
+#___plus_1 iframe  {
 	position: absolute !important;
-	background: red;
-	height: 25px;
-	top: 3px;
-	width: 26px;
-	left: 0;
-	line-height: 1.1;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
+	width: 20px !important;
+	height: 20px !important;
+	border: none;
+	text-decoration: none;
+	visibility: visible;
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
 	opacity: 0;
 }
 
-#___plus_0,
-#___plus_1 {
-	width: 0 !important;
-	> iframe {
-		position: absolute !important;
-		width: 25px !important;
+
+// social icons for footer
+.footer-social {
+		// facebook iframe
+		.fb_iframe_widget iframe {
+			@include vendor-prefix(transform-origin,top left);
+			left: 0;
+			bottom: 47px;
+			width: 20px !important;
+			height: 20px !important;
+			border: none;
+			
+			// -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+			// filter: alpha(opacity=0);
+			// opacity: 0;
+			text-decoration: none;
+			visibility: visible;
+
+			-webkit-transform: scale(1.5);
+			-moz-transform: scale(1.5);
+			-ms-transform: scale(1.5);
+			-o-transform: scale(1.5);
+			transform: scale(1.5);
+			
+			-webkit-transform-origin: top left;
+			-moz-transform-origin: top left;
+			-ms-transform-origin: top left;
+			transform-origin: top left;
+		}
+		// twitter iframe
+		#twitter-widget-0.twitter-share-button,
+		#twitter-widget-1.twitter-share-button {
+			@include vendor-prefix(transform-origin,top left);
+			-webkit-transform: scale(1.4);
+			-moz-transform: scale(1.4);
+			-ms-transform: scale(1.4);
+			-o-transform: scale(1.4);
+			transform: scale(1.4);
+			
+			-webkit-transform-origin: top left;
+			-moz-transform-origin: top left;
+			-ms-transform-origin: top left;
+			transform-origin: top left;
+			left: 0;
+			bottom: 15px;
+			width: 23px !important;
+		}
+		// googleplus iframe
+		#___plus_0 iframe,
+		#___plus_1 iframe {
+
+			@include vendor-prefix(transform-origin,top left);
+			top: -2px!important;
+			-webkit-transform: scale(1.2);
+			-moz-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			-o-transform: scale(1.2);
+			transform: scale(1.2);
+			
+			-webkit-transform-origin: top left;
+			-moz-transform-origin: top left;
+			-ms-transform-origin: top left;
+			transform-origin: top left;
+		}
+	}
+
+.sharing-fixed {
+	
+	.fb_iframe_widget iframe {
+		left: -12px;
+		bottom: 8px;
+		border: none;
+		text-decoration: none;
+		visibility: visible;
+	}
+	// twitter iframe
+	#twitter-widget-0.twitter-share-button,
+	#twitter-widget-1.twitter-share-button {
+		left: 0;
+		bottom: 15px;
+		width: 23px !important;
+	}
+	// googleplus iframe
+	#___plus_0 iframe,
+	#___plus_1 iframe {
 		top: 4px !important;
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-		filter: alpha(opacity=0);
-		opacity: 0;
 	}
 }

@@ -56,5 +56,7 @@ var $th = $('#timer-holder'),
           $('.tw-counter').text( (twitdata.count) );
       });
 
+  // need google API to add the last counter
+
 });
 
