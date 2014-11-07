@@ -31,7 +31,7 @@
 }
 .sun {
 	@include abs(0px 0 0 85px); 
-	width: 190px;
+	width: 200px;
 }
 
 .timer {
@@ -46,6 +46,5 @@
 .stacked-text > strong {
 	line-height: 0.8;
 }
-
 
 .resources-copy p > strong {}

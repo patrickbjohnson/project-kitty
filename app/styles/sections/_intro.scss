@@ -1,8 +1,8 @@
-.section-intro {height: 735px;}
+.section-intro {height: 735px; z-index: z(base-5);}
 
 .intro-header {
 	margin-bottom: 40px;
-	padding: 110px 0 90px 0;
+	padding:135px;
 	color: $white;
 	background: #2dacd8; /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -14,8 +14,6 @@
 	background: -ms-linear-gradient(top,  #2dacd8 0%,#01629f 99%); /* IE10+ */
 	background: linear-gradient(to bottom,  #2dacd8 0%,#01629f 99%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2dacd8', endColorstr='#01629f',GradientType=0 ); /* IE6-8 */
-
-
 }
 
 .logo {
@@ -32,11 +30,12 @@
 		margin-bottom: 15px;
 	}
 	&-copy h2 {
-		font-size: em(16px);
 		margin-bottom: 10px;
+		font-size: em(16px);
+		line-height: 1.5;
 	}
 	&-copy p {
-		font-size: em(10px);
+		font-size: em(12px);
 		white-space: pre-line;
 	}
 }
