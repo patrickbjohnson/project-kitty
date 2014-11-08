@@ -1,18 +1,21 @@
 .footer {
   @include clear;
   padding: 50px;
+
+  .container {
+    display: table;
+    width: 1024px;
+  }
 }
 
 
 
 .footer-branding, .footer-meta {
-  float: left;
+  display: table-cell;
   vertical-align: middle;
 }
-.footer-branding {
-  padding-right: 40px;
-  
-}
+
+.footer-branding {width: 360px;}
 
 .footer-logo {
   margin-bottom: 20px;
@@ -20,13 +23,8 @@
   width: 135px;
 }
 
-footer header {
-  padding-top: 15px;
-}
-
-
 .footer-meta {
-  padding: 5px 25px;
+  padding: 15px 25px;
   border-left: 1px solid white;
   
   p { 
@@ -37,8 +35,6 @@ footer header {
 }
 
 .footer-social {
-
-  margin: 25px 0;
   a, span {
     display: inline-block;
     vertical-align: middle;

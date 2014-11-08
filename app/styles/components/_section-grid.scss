@@ -1,6 +1,6 @@
 .section-grid {
-	@include clear; // see mixins.scss
-	position: relative;
+  @include clear;
+  position: relative;
   margin: auto;
   text-align: center;
   overflow: hidden;
@@ -14,7 +14,19 @@
   background: linear-gradient(to bottom, rgba(227,237,244,1) 0%, rgba(113,167,201,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3edf4', endColorstr='#71a7c9', GradientType=0 );
 }
-.col-3 {
+
+.section-grid-header {margin: auto;}
+
+.section-grid.grid-lg {
+  display: block;
+  margin: auto;
+  width: 850px;
+  z-index: z(base-5);
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.grid-col {
 	float: left;
   width: 33%;
   padding: 2em 1em;
@@ -28,27 +40,16 @@
 
   h2 {margin: 15px auto;}
   p {line-height: 1.5}
-
-
 }
 
 
-.new-vision .col-3 h2 {color: $l-blue1;}  
-.new-approach .col-3 {
+.new-vision .grid-col h2 {color: $l-blue1;}  
+.new-approach .grid-col {
   h2 {color: $white;}
   padding: 1.35em 1em;
 }
 
 
-.section-grid.grid-lg {
-	display: block;
-	margin: auto;
-	width: 850px;
-  z-index: z(base-5);
-  padding: 1em;
-border-radius: 10px;
-}
 
-.section-grid-header {
-  margin: auto;
-}
+
+

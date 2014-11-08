@@ -1,55 +1,45 @@
-.computation	{height: 742px;}
+.computation	{
+  height: 742px;
+  
+  .left {
+    @include abs(265px 0 0 0);
+    width: 470px;
+    margin-left: 155px;
+    overflow: hidden;
+    z-index: z(base-5);
 
-.computation-left {
-  @include abs(265px 0 0 0);
-  width: 470px;
-  margin-left: 155px;
-  overflow: hidden;
-  z-index: z(base-5);
+    p { width: 280px;
+      margin-top: 10px;
+    }
+  }
 
-  p { width: 280px;
-    margin-top: 10px;
+  .right {
+    @include rel(420px 0 0 485px);
+    width: 300px;
+    margin-left: 5px;
+    overflow: hidden;
+  }
+  
+  .lt-copy, 
+  .rt-copy {position: relative;}
+  .lt-copy {
+    width: 360px;
+
+    p {width: 270px;}
   }
 }
 
-.computation-left-copy {
-  position: relative;
-  width: 360px;
-
-  p {width: 270px;}
+.circuit {
+  &-left-bg {
+    @include abs(0 0 -140px -60px);
+    width: 531px;
+    height: 628px;
+  } 
+  &-right-bg {
+    @include abs(-35px -125px 0 0);
+    width: 572px;
+  }
 }
-
-.computation-right {
-	@include rel(420px 0 0 485px);
-	width: 300px;
-  margin-left: 5px;
-  overflow: hidden;
-}
-
-.computation-right-copy {
-  position: relative;
-}
-
-.microchip-loading {
-  @include abs(0 -130px 168px 0);
-  width: 265px;
-}
-.microchip-loading-sm {
-  @include abs(220px 185px 0 0);
-  width: 190px;
-}
-
-.circuit-left {
-  @include abs(0 0 -140px -60px);
-  width: 531px;
-  height: 628px;
-}
-
-.circuit-right {
-  @include abs(-35px -125px 0 0);
-  width: 572px;
-}
-
 
 .microchip-bg {
   &-lg {

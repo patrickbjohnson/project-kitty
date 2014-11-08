@@ -1,34 +1,44 @@
 .resources {
 	height: 510px;
 	z-index: z(base-5);
-}
 
-.resources-copy {
-	top: 15px;
-	max-width: 295px;
-
+	.right.copy {
+		top: 15px;
+		max-width: 295px;
+	}
 	.stat.stacked-text {
 		display: inline-block;
 		margin: 10px 0 0 0;
 		letter-spacing: -16px;
-		
-
-		strong {
-			font-size: 174px;
-			margin-left: -8px;
-		}
 	}
+
+	.stat.stacked-text.db {
+		font-size: 174px;
+		margin-left: -8px;
+		width: 210px;
+	}
+
+	.stacked-text > strong {line-height: 0.8;}
+
 	.font-24 {margin-top: -17px;}
-	.stat.font-40 {top: -5px;}
+	.stat.font-39 {top: -5px;}
 	.stat.font-60 {margin-top: -10px; margin-left: -1px;}
 	
 	p {
 		margin-top: -5px;
 		white-space: pre-line;
-		strong {display: inline-block; color: $c-secondary;}
-	}
+		strong {
+			width: 138px;
+			display: inline-block; 
+			color: $c-secondary;
 
+		}
+	}
 }
+
+
+// graphics
+
 .sun {
 	@include abs(0px 0 0 85px); 
 	width: 200px;
@@ -43,8 +53,7 @@
 	}
 }
 
-.stacked-text > strong {
-	line-height: 0.8;
-}
 
-.resources-copy p > strong {}
+
+
+

@@ -1,6 +1,4 @@
 .section-globe {height: 898px;}
-
-
 .globe	{
 	.fact-block {
 		line-height: 1.350;
@@ -8,12 +6,38 @@
 		  background: $c-secondary;
 		  color: white;}
 	}
-	.fact-block.right {
-		@include abs(265px 0 0 0);
 
+	.arrow-down {
+		display:inline-block;
+		position:relative; 
+		width: 90px; 
+		height: 89px;
 	}
-	.fact-block.left {
-		@include abs(435px 0 0 200px)
+	
+	.fact-block.right {@include abs(265px 0 0 0);}
+	.fact-block.left {@include abs(435px 0 0 200px)}
+
+	&-wrap {
+		@include circle(870px);
+		position: relative;
+		display: block;
+		margin: auto;
+		background: $light-blue;
+		z-index: z(base);
+		img {
+			width: 185%;
+			margin-top: -210px;
+	    position:relative;
+	    z-index:1;
+		}
+	}
+
+	&-graphic {
+	position: relative;
+	display: block;
+	margin: auto;
+
+		img {display: block; margin: auto;}
 	}
 
 	&-desk {
@@ -37,50 +61,20 @@
 			@extend %stacked;
 			line-height: 1.25;
 		}
+		
+		.stat {position: relative;}
+
 		.stat strong,
 		p > strong {
 			display: inline-block;
 			color: $white;
 		}
+
 		.stat strong {
 			@include rel(0 0 0 -10px);
 			display: inline;
 			font-size: 1.950em;
-
-		}
-		.arrow-down {
-			display:inline-block;
-			position:relative; 
-			width: 90px; 
-			height: 89px;
-		}
-	}
-}
-
-.globe-stat .stat {
-	position: relative;
-}
-
-.globe-graphic {
-	position: relative;
-	display: block;
-	margin: auto;
-
-	img {display: block; margin: auto;}
-}
-
-.globe-graphic-container {
-	@include circle(870px);
-	position: relative;
-	display: block;
-	margin: auto;
-	background: $light-blue;
-	z-index: z(base);
-	img {
-		width: 185%;
-		margin-top: -210px;
-    position:relative;
-    z-index:1;
+		}	
 	}
 }
 
