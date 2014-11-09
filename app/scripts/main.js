@@ -52,19 +52,6 @@ $(document).ready(function(){
 
       // need google API to add the last counter
 
-      $(window).scroll(function() {
-        var $footerPos = $('.footer');
-        var $sharingFixed = $('.sharing-fixed');
-        var $sF = $sharingFixed.offset().top - $(window).scrollTop();
-        var $wO = $footerPos.offset().top - $(window).scrollTop();
-
-        console.log($sF);
-
-        
-        
-      });
-
-
 
 });
 
