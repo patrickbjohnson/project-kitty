@@ -59,6 +59,10 @@ $(document).ready(function(){
             $('.gp-counter').text(val);
         });
 
+        $('.share-trigger').on('click', function(e){
+          e.preventDefault();
+          $(this).next().toggleClass('open');
+        });
 });
 
   

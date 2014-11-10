@@ -118,7 +118,7 @@
     data-start="opacity: 1;" 
     data-250-end="opacity:1;" 
     data-100-end="opacity:0;">
-    <a class="share-trigger ss-icon">share</a>
+    <a class="ss-icon share-trigger" href="#">share</a>
     <menu class="share-icons">
       <ul>
         <li>
@@ -149,6 +149,8 @@
   <img class="bg-path" src="images/main_path.png" alt=""/>
   </div>
   <![endif]-->
+
+<div class="page-wrapper">
   <svg class="path" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 485.8 5065" enable-background="new 0 0 407.1 5100" xml:space="preserve">
 
     <polyline id="main-line" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="242.9,0 242.9,197.2 76.7,197.2
@@ -332,7 +334,7 @@
   </section>
     <!-- /globe -->
 
-  <section class="section section-computation" style="background-image: url(images/circuits-right.svg); background-repeat: no-repeat; background-position: 130% top;">
+  <section class="section section-computation" >
       <div class="container computation">
         <div class="microchips">
           <img class="microchip-bg-lg" src="images/hourglass-lg.svg" alt="" width="275px" height="261px">
@@ -340,7 +342,7 @@
         </div>
         <div class="circuit">
           <img class="circuit-left-bg" src="images/circuits-left.svg" alt="" >
-          <!-- <img class="circuit-right-bg" src="images/circuits-right.svg" alt="" > -->
+          <img class="circuit-right-bg" src="images/circuits-right.svg" alt="" >
         </div>
         <div class="left"
           data-bottom="opacity:0; left: 5%;" data-center="opacity: 1; left: 0%;">
@@ -661,6 +663,9 @@
       </div>
   </section>
   <!-- /finale -->
+</div>
+
+  
   <footer class="footer invert">
     <div class="container">
       <div class="footer-branding">
@@ -694,11 +699,6 @@
   </footer>
   <!-- /footer -->
  
-  <!-- IBM Scripts  -->
-  <!-- <div id="ibm-metrics">
-    <script src="//www.ibm.com/common/stats/stats.js"
-    type="text/javascript">//</script>
-  </div> -->
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -712,20 +712,13 @@
   <script src="scripts/vendor/ss-social.js"></script>
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
-
-    
   
-      <!-- Bugherd!!! -->
-  <script type='text/javascript'>
-  // (function (d, t) {
-  //   var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
-  //   bh.type = 'text/javascript';
-  //   bh.src = '//www.bugherd.com/sidebarv2.js?apikey=xgk0v7uaxgeqmjyxyezexq';
-  //   s.parentNode.insertBefore(bh, s);
-  //   })(document, 'script');
-  </script>
-  <!-- End Bugherd!!! -->
-
+  <!-- IBM Scripts  -->
+  <div id="ibm-metrics">
+    <script src="//www.ibm.com/common/stats/stats.js"
+    type="text/javascript"></script>
+  </div>
+  <script src="//1.www.s81c.com/common/js/dojo/www.js" type="text/javascript"></script>
   
   
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>

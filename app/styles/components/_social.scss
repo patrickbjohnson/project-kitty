@@ -15,26 +15,25 @@
 	border-bottom-right-radius: 15px;
 	text-align: center;
 
-	&:hover > .share-icons {
-		color: red;
-		left: 60px;
-	}
+	// &:hover > .share-icons {
+	// 	color: red;
+	// 	left: 60px;
+	// }
 	.share-icons {
 		@include vendor-prefix(transition, all 500ms ease);
 		position: absolute;
 		top: 8px;
 		left: -200px;
 		width: 120px;
-
+		display: block;
+		background: red;
+		
 		span {font-size: em(6px); text-transform: uppercase; color: #000;}
 	}
 	
 	.fb_iframe_widget {
 		top: -5px;
 	}
-
-
-
 }
 
 .share-icons {
@@ -47,16 +46,21 @@
 		&:hover{text-decoration: none !important;}
 	}
 }
+.share-icons.open {
+	left: 60px;
+}
+
 
 .share-trigger {
-	position: relative;
-	top: 2px;
 	font-size: 1.5em;
+	padding: 10px;
 	color: $white;
-	line-height: 50px;
+	line-height: 55px;
 	text-align: center;
 	z-index: z(base);
-	&:hover {color: $white;}
+	cursor: pointer;
+	&:hover,
+	&:visited {color: $white;}
 }
 
 .footer-social .share-icons li {margin-right: 0;}
@@ -110,9 +114,9 @@ ul#share {
 	text-decoration: none;
 	visibility: visible;
 	
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-	filter: alpha(opacity=50);
-	opacity: 0;
+	// -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	// filter: alpha(opacity=50);
+	// opacity: 0;
 }
 
 
