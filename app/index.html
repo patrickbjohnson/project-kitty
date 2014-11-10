@@ -26,8 +26,10 @@
    <!-- SEO -->
    <meta name="author" content="IBM Research">
    <meta name="description" content="IBM Big Computing Data Infographic this is a description that needs to be filled by the client">
-   <link rel="canonical" href="http://pbj.me/IBM/">
+
    <!-- This needs to be changed to IBM -->
+   <link rel="canonical" href="http://www.research.ibm.com">
+   <!-- ^^^^^^^This needs to be changed to IBM -->
 
    <!-- 
 
@@ -56,13 +58,11 @@
       TWitter Social Meta Data
 
     -->
-
-
-   <!-- Social: Twitter -->
    <meta name="twitter:card" content="summary_large_image">
    <meta name="twitter:site" content="IBM Research">
    <meta name="twitter:creator" content="@ibmresearch">
    <meta name="twitter:title" content="As #bigdata transforms science and business, #IBM showcases how data-centric systems offer more usable insights from all data. #hpc">
+   <meta name="twitter:url" content="www.google.com">
    <!-- This needs to be changed to IBM -->
    <meta name="twitter:description" content="As #bigdata transforms science and business, #IBM showcases how data-centric systems offer more usable insights from all data. #hpc">
    <!-- This needs to be changed to IBM -->
@@ -75,8 +75,6 @@
       Google Plus Social Meta Data
 
     -->
-
-   <!-- Social: Google+ / Schema.org  -->
    <link rel="author" href="https://plus.google.com/+IBMLabs/">
    <link rel="publisher" href="https://plus.google.com/+IBMLabs/">
    <meta itemprop="name" content="Infographic: Why data centric computing is crucial in the era of #bigdata by @ibmResearch. #hpc">
@@ -86,29 +84,13 @@
    <meta itemprop="image" content="http://pbj.me/IBM/images/dfc4737a.share-content.jpg">
    <!-- This needs to be changed to IBM -->
 
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
  </head>
  <body>
- <!-- Twitter Script -->
- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
- <!-- Facebook Script -->
- <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-       // this needs to be IBM appId
-        appId      : '562528817210465',
-        xfbml      : true,
-        version    : 'v2.1'
-      });
-    };
-    (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "//connect.facebook.net/en_US/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-  </script>
+
+
+<!-- IBM TO CHANGE APP ID -->
+
 
 
   <!-- IBM Nav -->
@@ -131,13 +113,33 @@
       </form>
     </div>
   </div>
-  <aside class="sharing sharing-fixed" data-start="opacity: 1;" data-250-end="opacity:1;" data-100-end="opacity:0;">
+
+  <aside class="sharing sharing-fixed" 
+    data-start="opacity: 1;" 
+    data-250-end="opacity:1;" 
+    data-100-end="opacity:0;">
     <a class="share-trigger ss-icon">share</a>
     <menu class="share-icons">
       <ul>
-        <li><a class="ss-icon ss-social icon-fb" href="#" title="Share on Facebook">facebook<div class="fb-share-button" data-href="http://www.research." data-layout="button"></div></a></li>
-        <li><a class="ss-icon ss-social icon-twitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fresearch.ibm.com/articles/datacentricdesign&via=ibmresearch" data-via="IBMResearch" data-related="pbj" data-hashtags="ibm" title="Share on Twitter">twitter</a><a href="https://twitter.com/share" class="twitter-share-button" data-via="patrickbjohnson"></a></li>
-        <li><a class="ss-icon ss-social icon-googleplus" <a class="ss-icon ss-social icon-googleplus" href="https://plus.google.com/share?url=http://pbj.me/IBM" onclick="window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=200,width=600');return false" title="Share on Google">googleplus</a></li>
+        <li>
+        <a class="ss-icon ss-social icon-fb" href="#" title="Share on Facebook">facebook
+          <div class="fb-share-button" data-href="http://www.research.ibm.com" data-layout="button"></div>
+        </a></li>
+
+        <li>
+          <a class="ss-icon ss-social icon-twitter" href="#" >twitter</a>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="As #bigdata transforms science and business, #IBM showcases how data-centric systems offer more usable insights from all data" data-via="ibmresearch" data-related="ibmresearch" data-hashtags="hpc"></a>
+        </li>
+        <li>
+          <!-- 
+          Need to change the link here from 
+          http://pbj.me/IBM to whatever they are using 
+          -->
+          <a class="ss-icon ss-social icon-googleplus" href="https://plus.google.com/share?url=http://pbj.me/IBM" onclick="window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=200,width=600');return false" title="Share on Google">googleplus</a>
+          </li>
+          <li>
+            <div id="tweet-ex"></div>
+          </li>
       </ul>
     </menu>
   </aside>
@@ -485,7 +487,9 @@
             <h2>Laboratories</h2>
             <div >
               <img class="icon-holder" data-anim="fade-in"
-            data-100-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);" src="images/icon-laboratory.svg" alt="">
+            data-100-bottom="transform: scale(0);" 
+            data-100-center="transform: scale(1);" 
+            src="images/icon-laboratory.svg" alt="">
             </div>
             <img
               data-anim="slide-down"
@@ -497,7 +501,8 @@
         <div class="grid-col">
           <h2>Universities</h2>
           <div class="icon-holder" data-anim="fade-in"
-          data-100-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);"
+            data-100-bottom="transform: scale(0);"
+            data-100-center="transform: scale(1);"
           >
             <img src="images/icon-school.svg" alt="">
           </div>
@@ -511,7 +516,8 @@
         <div class="grid-col">
           <h2>Businesses</h2>
           <div class="icon-holder" data-anim="fade-in"
-          data-100-bottom="transform: scale(0); " data--100-bottom="transform: scale(1);"
+          data-100-bottom="transform: scale(0);" 
+          data-100-center="transform: scale(1);"
           >
             <img class="icon-holder" src="images/icon-business.svg" alt="">
           </div>
@@ -589,7 +595,7 @@
         <div class="grid-col">
           <div class="icon-holder" data-anim="fade-in"
           data-100-bottom="transform: scale(0);" 
-          data--100-bottom="transform: scale(1);"
+          data-100-center="transform: scale(1);"
           >
             <img src="images/icon-healthcare.svg" alt="">
           </div>
@@ -607,7 +613,7 @@
         <div class="grid-col">
           <div class="icon-holder" data-anim="fade-in"
             data-100-bottom="transform: scale(0);" 
-            data--100-bottom="transform: scale(1);"
+            data-100-center="transform: scale(1);"
           ><img src="images/icon-energy.svg" alt="">
           </div>
           <div class="grid-col-content" data-anim="slide-in fade-in" 
@@ -623,8 +629,8 @@
 
         <div class="grid-col">
           <div class="icon-holder" data-anim="fade-in"
-           data-100-bottom="transform: scale(0);" 
-            data--100-bottom="transform: scale(1);"
+            data-100-bottom="transform: scale(0);" 
+            data-100-center="transform: scale(1);" 
           >
             <img src="images/icon-airline.svg" alt="">
           </div>
@@ -667,9 +673,19 @@
         <div class="footer-social">
           <menu class="share-icons">
             <ul>
-              <li><a class="ss-icon ss-social icon-fb" href="#" title="Share on Facebook">facebook<div class="fb-share-button" data-href="http://pbj.me" data-layout="button"></div></a><span class="fb-counter"></span></li>
-              <li><a class="ss-icon ss-social icon-twitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fresearch.ibm.com/articles/datacentricdesign&via=ibmresearch" data-via="IBMResearch" data-related="pbj" data-hashtags="ibm" title="Share on Twitter">twitter</a><a href="https://twitter.com/share" class="twitter-share-button" data-via="patrickbjohnson"></a><span class="tw-counter"></span></li>
-              <li><a class="ss-icon ss-social icon-googleplus" <a class="ss-icon ss-social icon-googleplus" href="https://plus.google.com/share?url=http://pbj.me/IBM" onclick="window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=200,width=600');return false" title="Share on Google">googleplus</a><span class="gp-counter"></span></li>
+              <li>
+                <a class="ss-icon ss-social icon-fb" href="#" title="Share on Facebook">facebook<div class="fb-share-button" data-href="http://www.research.ibm.com" data-layout="button"></div>
+                </a>
+                <span class="fb-counter"></span>
+                </li>
+              <li>
+                <a href="#" class="ss-icon ss-social icon-twitter">twitter</a>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-text="As #bigdata transforms science and business, #IBM showcases how data-centric systems offer more usable insights from all data" data-via="ibmresearch" data-related="ibmresearch" data-hashtags="hpc" class="ss-icon ss-social icon-twitter">twitter</a><span class="tw-counter"></span>
+              </li>
+              <li>
+                <a class="ss-icon ss-social icon-googleplus" href="https://plus.google.com/share?url=http://pbj.me/IBM" onclick="window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=200,width=600');return false" title="Share on Google">googleplus</a>
+                <span class="gp-counter"></span>
+              </li>
             </ul>
           </menu>
         </div>
@@ -709,6 +725,29 @@
   //   })(document, 'script');
   </script>
   <!-- End Bugherd!!! -->
+
+  
+  
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <!-- IBM TO CHANGE APP ID -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '562528817210465',
+        xfbml      : true,
+        version    : 'v2.2'
+      });
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+   <div id="fb-root"></div>
 
 </body>
 

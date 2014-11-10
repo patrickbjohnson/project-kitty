@@ -33,7 +33,7 @@
 
 // we need to move these to a IE specific partial
 .footer, .header, .section, .menu, .nav, .article {display: block;}
-
+.section {width: 100%;}
 
 .ie8 {
   .resources-copy p strong {width: 137px;}

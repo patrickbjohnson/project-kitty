@@ -2,6 +2,7 @@
 /* global skrollr */
 /* global Modernizr */
 /* global FB */
+/* global twttr */
 $(document).ready(function(){
   if(!Modernizr.svg) {
     $('img[src*="svg"]').attr('src', function() {
@@ -39,24 +40,32 @@ $(document).ready(function(){
       });
 
       // Facebook Shares Count
-      var $fURL = 'http://pbj.me/IBM';
+      var $fURL = $('.fb-share-button').data('href');
           $.getJSON( 'http://graph.facebook.com/?id=' + $fURL, function( fbdata ) {
               $('.fb-counter').text((fbdata.shares));
           });
 
-        var $tURL = 'http://pbj.me/IBM';
+        var $bURL = $('link[rel="canonical"]').attr('href');
           // Twitter Shares Count
-          $.getJSON( 'http://cdn.api.twitter.com/1/urls/count.json?url=' + $tURL + '&callback=?', function( twitdata ) {
+          $.getJSON( 'http://cdn.api.twitter.com/1/urls/count.json?url=' + $bURL + '&callback=?', function( twitdata ) {
               $('.tw-counter').text( (twitdata.count) );
           });
 
       // need google API to add the last counter
-
+        
+        $.getJSON( 'https://plusone.google.com/_/+1/fastbutton?url=http://clients.pbj.me/text100/IBM', function( gdata ) {
+            console.log(gdata);
+            var val = $('#aggregateCount').text();
+            $('.gp-counter').text(val);
+        });
 
 });
 
   
   
+
+
+
 
 
 
