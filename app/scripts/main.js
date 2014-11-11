@@ -56,7 +56,7 @@ $(document).ready(function(){
 
       // need google API to add the last counter
         
-        $.getJSON( 'https://plusone.google.com/_/+1/fastbutton?url=http://clients.pbj.me/text100/IBM', function( gdata ) {
+        $.getJSON( 'https://plusone.google.com/_/+1/fastbutton?url=http://www.research.ibm.com/articles/datacentricdesign/', function( gdata ) {
             console.log(gdata);
             var val = $('#aggregateCount').text();
             $('.gp-counter').text(val);
