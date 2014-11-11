@@ -14,11 +14,6 @@
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 	text-align: center;
-
-	.share-icons {
-		
-	
-	}
 }
 
 .share-icons {
@@ -29,6 +24,7 @@
 	width: 120px;
 	height: 40px;
 	display: block;
+	z-index: -1;
 
 	li {
 		position: relative;
@@ -42,21 +38,19 @@
 		&:hover{text-decoration: none !important;}
 	}
 }
-.share-icons.open {
-	left: 60px;
-}
+.share-icons.open {left: 60px;}
 
 
-.share-trigger {
+a.share-trigger {
 	font-size: 1.5em;
 	padding: 10px;
 	color: $white;
 	line-height: 55px;
 	text-align: center;
-	z-index: z(base);
+	z-index: z(base-10);
 	cursor: pointer;
-	&:hover,
-	&:visited {color: $white;}
+	text-decoration: none;
+	
 }
 
 .footer-social .share-icons li {margin-right: 0;}
@@ -163,6 +157,7 @@ ul#share {
 			width: auto;
 			left: auto;
 			top: auto;
+			z-index: 1;
 		}
 
 		.fb_iframe_widget {

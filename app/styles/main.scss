@@ -9,7 +9,6 @@
 @import 'base/base';
 @import 'base/typography';
 
-
 // reusable components
 @import 'components/blocks';
 @import 'components/icons';
@@ -29,83 +28,7 @@
 @import 'sections/resources';
 @import 'sections/footer';
 
+// IE and media queries. 
+@import 'helpers/ie';
+@import 'components/media-queries';
 
-
-// we need to move these to a IE specific partial
-.footer, .header, .section, .menu, .nav, .article {display: block;}
-.section {width: 100%;}
-
-.ie8 {
-  .resources-copy p strong {width: 137px;}
-  .db strong {width: 300px;}
-  .timer {left: 208px;}
-  #timer-text {display: none;}
-  .globe-desk-svg {width: 255px; height: 248px;}
-  .globe-mask {
-    z-index: 60;
-    content: "";
-    display: block;
-    position: absolute;
-    width: 870px; height: 870px;
-    zoom: 1;
-    color: $white;
-    background: url(/images/circle-mask.png) transparent no-repeat center;
-       filter: progid:DXImageTransform.Microsoft.gradient(
-          startColorstr=#00FFFFFF, endColorstr=#00FFFFFF
-      );
-  }
-	.server-row img {width: 805px;}
-  .microchip-bg-lg {
-    width: 275px;
-    z-index: 2;
-  }
-  .microchip-bg-sm {width: 215px; height: 210px;}
-  .sever-solo {top: 250px}
-  .monitor-img {
-    position: relative;
-    margin: 40px 0px 0px -70px !important;
-    width: 700px !important;
-    left: -225px !important;
-    bottom: 0 !important;
-  }
-  .microchip {
-    left: 0px;
-    top: 175px;
-  }
-  .bg-path-container {
-    position: absolute; 
-    z-index:2; 
-    margin: auto; 
-    left: 0; right:0; 
-    top: 560px; 
-    width: 1024px;
-  }
-  .bg-path {
-    display: block;
-    margin: auto;
-    position: relative;
-    left: -40px;
-    height: 5150px;
-    z-index: 1;
-  }
-  .diagram-result {
-    // position: absolute !important;
-  }
-
-  .finale {z-index: z(base-10);}
-
-}
-
-
-
-.ie9 {
-  .every-day-society { margin-top: 20px; }
-  .globe-surface { margin-left: -235px; }
-  // .server-row {bottom: -35px !important;}
-   .diagram-result {
-    position: absolute !important;
-   }
-}
-
-
-#ibm-search-form input#q {box-sizing: content-box !important;}

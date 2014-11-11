@@ -1,0 +1,272 @@
+@media only screen and (min-width : 320px) and (max-width : 568px) {
+  body {height: 100% !important;}
+  .container  {width: 100%;}
+    
+  .sharing-fixed {display: none;}
+
+  .intro-header {margin-bottom: 0;}
+
+  .section-intro,
+  .resources,
+  .section-globe,
+  .computation,
+  .new-computation,
+  .new-approach,
+  .new-vision  {height: auto;}
+  
+
+  // resources 
+  .timer {
+    display: block;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: auto;
+  }
+  .timer-svg {
+    display: block;
+    margin: auto;    
+    margin-left: 70px;
+  }
+
+  #resources .right.copy {
+    text-align: center;
+    top:  auto!important;
+    right: auto!important;
+    left: auto!important;
+    opacity: 1 !important;
+    position: relative;
+    width: 100%;
+    max-width: 385px;
+  }
+
+  #resources p strong {
+    display: inline;
+    width: auto;
+  }
+
+
+
+  // globe
+  .globe {
+    .fact-block.light.right {
+      margin-top: 15px;
+    }
+    .fact-block.light.right,
+    .fact-block.light.left  {
+      width: 95%;
+      position: relative;
+      left: auto !important;
+      right: auto !important;
+      display: block;
+      margin: 15px auto;
+      top: auto;
+    }
+
+    .globe-stat {
+      position: relative;
+      height: auto;
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      bottom: auto;
+      color: red;
+      left: auto;
+      margin-bottom: 25px;
+
+      strong, p {color: $d-blue;}
+
+      p {
+        display: block; 
+        position: relative;
+        left: auto !important;
+        opacity: 1 !important; 
+        top: auto !important;
+      }
+
+      img {
+        opacity: 1 !important;
+        bottom: auto !important;
+      }
+    }
+  }
+
+  // computation
+
+
+  .computation .left {
+    position: relative;
+    top: auto;
+    left: auto !important;
+    right: auto !important;
+    opacity: 1 !important;
+    width: 95% !important;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .computation .right {
+    position: relative;
+    display: block;
+    top: auto;
+    left: auto;
+    width: 95%;
+     margin: auto ;
+     text-align: center;
+
+  }
+  .computation {
+    .lt-copy {
+      width: auto;
+
+      p {margin: auto; width:auto;}
+    }
+
+    .rt-copy {
+      position: relative;
+      display: block;
+      opacity: 1 !important;
+      right: auto !important;
+      left: auto !important;
+     
+
+
+       p {margin: auto ;}
+    }
+  }
+   
+
+  .new-approach {
+    margin-bottom: 100px;
+
+    .grid-col {
+      height: 400px !important;
+    }
+  }
+    
+
+   .new-vision .section-grid.grid-lg {padding-bottom: 50px;}
+   .new-approach .section-grid.grid-lg {padding-bottom: 120px;}
+  .new-approach .section-grid.grid-lg,
+  .new-vision .section-grid.grid-lg {
+    width: 95% !important;
+    height: auto !important;
+    .grid-col {
+      display: block;
+      width: 100%;
+      height: 270px;
+      > img {display: none!important;}
+      .icon-holder {
+        -webkit-transform: scale(1) !important;
+        -moz-transform: scale(1) !important;
+        -ms-transform: scale(1) !important;
+        -o-transform: scale(1) !important;
+        transform: scale(1) !important;
+      }
+      .grid-col-content {
+        position: relative;
+        display: block;
+        opacity: 1 !important;
+        top: auto !important;
+      }
+    }
+
+    .server-row {
+      display: none;
+    }
+  }
+
+  .new-vision-comment {
+    margin: 25px auto;
+    width: 95%;
+    -webkit-transform: scale(1) !important;
+    -moz-transform: scale(1) !important;
+    -ms-transform: scale(1) !important;
+    -o-transform: scale(1) !important;
+    transform: scale(1) !important;
+  }
+
+  // new computation
+
+  .new-computation .right {
+      position: relative;
+      width: 100%;
+      right: auto;
+      left: auto;
+      text-align: center;
+      margin-bottom: 25px;
+
+      figcaption {
+        margin: 0 auto;
+      }
+
+      figcaption {
+        position: relative;
+        bottom: auto !important;
+        width: 95%;
+        opacity: 1 !important;
+      }
+    }
+  
+  .icons {
+    width: 100%;
+    height: auto;
+    top: auto;
+    margin: 25px auto;
+    text-align: center;
+    .connection,
+    .microchip, 
+    .server {
+      display: inline-block;
+      position: relative;
+      width: 30%;
+      height: 100px;
+      top: auto;
+      left: auto;
+    }
+    .microchip {
+      top: auto;
+      left: auto;
+      margin: 0 5px;
+    }
+  }
+  
+
+  // finale
+  .icon-up {display: none;}
+  .finale-description {
+    width: 95%;
+    padding: 50px 0;
+  }
+
+
+  // footer
+  .footer .container {
+    display: block;
+    width: 100% !important;
+
+    .footer-branding, 
+    .footer-meta {
+      display: block;
+      text-align: center;
+    }
+    .footer-meta {
+      border-left: 0;
+      margin-top: 25px;
+    }
+  }
+
+  .section-intro > .container,
+  .dots,
+  #ibm-universal-nav,
+  .globe-wrap,
+  .microchips,
+  .globe-desk,
+  .circuit,
+  .sun,
+  .monitor,
+  .server-solo,
+  .computing-data-insights,
+  .path {display: none !important; height: 0;}
+}

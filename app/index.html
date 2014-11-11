@@ -5,9 +5,17 @@
 <!--[if gt IE 9 | !IE]><!--> <html class="no-js">             <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>project kitty</title>
+
+  <!-- TODO #1: Update page title -->
+  <title>IBM - A New Vision for Big Data Computing</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
+  <!-- 
+  TODO #2: Decide which 'meta viewport tag you want to use' 
+  * first one displays scaled back layout (IE - like a zoomed out webpage) 
+  ** second on displays mobile layout ** currently second one is in use
+  -->
+  <!-- <meta name="viewport" content="width=device-width"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
   <link rel="shortcut icon" href="/favicon.ico">
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="bower_components/modernizr/modernizr.js"></script>
@@ -24,76 +32,54 @@
   <!-- endbuild -->
 
    <!-- SEO -->
+   <!-- TODO #3: Update General SEO Information as neccesary -->
    <meta name="author" content="IBM Research">
-   <meta name="description" content="IBM Big Computing Data Infographic this is a description that needs to be filled by the client">
+   <meta name="description" content="#IBM showcases how data centric systems offer more insights from #bigdata. http://www.research.ibm.com/ #hpc">
 
-   <!-- This needs to be changed to IBM -->
+   <!-- TODO #4: MUST UPDATE TO APPROPRIATE WEBSITE URL FOR SEO AND SOCIAL INTEGRATIONS -->
    <link rel="canonical" href="http://www.research.ibm.com">
-   <!-- ^^^^^^^This needs to be changed to IBM -->
 
-   <!-- 
-
-      Facebook Social Meta Data
-
-    -->
-   <!-- Social: Facebook / Open Graph -->
+   <!-- TODO #5: Update Facebok Social Integrations -->
+   <!-- Facebook Meta Data-->
    <meta property="fb:admins" content="">
    <!-- This needs to be changed to IBM Research Facebook admin ID if IBM wants to display that information -->
    <meta property="fb:app_id" content="106878175272">
-   <!-- This is currently IBM Research Facebook page ID -->
+   <!-- TODO #6: Update Facebook “go:title” tag with IBM URL ** VERY IMPORTANT ** -->
    <meta property="og:url" content="http://pbj.me/IBM/">
-   <!-- This needs to be changed to IBM -->
    <meta property="og:type" content="website">
-   <meta property="og:title" content="#BigData computing, driven by data centric computer design, will generate better insights in areas such as healthcare, energy and air travel. #hpc">
-
+   <meta property="og:title" content="#IBM showcases how data centric systems offer more insights from #bigdata. http://www.research.ibm.com/ #hpc">
+    
+    <!-- TODO #7: Update Facebook “og:image” tag with IBM hosted image URL ** VERY IMPORTANT **-->
    <meta property="og:image" content="http://pbj.me/IBM/images/dfc4737a.share-content.jpg"/>
-   <!-- This needs to be changed to IBM -->
-   <meta property="og:description" content="#BigData computing, driven by data centric computer design, will generate better insights in areas such as healthcare, energy and air travel. #hpc">
-   <!-- This needs to be changed to IBM -->
+   
+   <meta property="og:description" content="#IBM showcases how data centric systems offer more insights from #bigdata. http://www.research.ibm.com/ #hpc">
    <meta property="og:site_name" content="IBM Research">
 
 
-   <!-- 
-
-      TWitter Social Meta Data
-
-    -->
+   <!-- TWitter Meta Data -->
    <meta name="twitter:card" content="summary_large_image">
    <meta name="twitter:site" content="IBM Research">
    <meta name="twitter:creator" content="@ibmresearch">
-   <meta name="twitter:title" content="As #bigdata transforms science and business, #IBM showcases how data-centric systems offer more usable insights from all data. #hpc">
-   <meta name="twitter:url" content="www.google.com">
-   <!-- This needs to be changed to IBM -->
-   <meta name="twitter:description" content="As #bigdata transforms science and business, #IBM showcases how data-centric systems offer more usable insights from all data. #hpc">
-   <!-- This needs to be changed to IBM -->
+   <meta name="twitter:title" content="#IBM showcases how data centric systems offer more insights from #bigdata. http://www.research.ibm.com/ #hpc">
+   <meta name="twitter:url" content="www.research.ibm.com">
+   <meta name="twitter:description" content="#IBM showcases how data centric systems offer more insights from #bigdata. http://www.research.ibm.com/ #hpc">
+   <!-- TODO #9: Update Twitter “content” meta data to IBM hosted image URL ** VERY IMPORTANT **-->
    <meta name="twitter:image:src" content="http://pbj.me/IBM/images/dfc4737a.share-content.jpg">
-   <!-- This needs to be changed to IBM -->
 
 
-   <!-- 
-
-      Google Plus Social Meta Data
-
-    -->
+   <!-- Google Plus Meta Data-->
+   <!-- TODO #10: Update Google + SEO content  -->
    <link rel="author" href="https://plus.google.com/+IBMLabs/">
    <link rel="publisher" href="https://plus.google.com/+IBMLabs/">
-   <meta itemprop="name" content="Infographic: Why data centric computing is crucial in the era of #bigdata by @ibmResearch. #hpc">
+   <meta itemprop="name" content="#IBM showcases how data centric systems offer more insights from #bigdata. http://www.research.ibm.com/ #hpc">
    <!-- This needs to be changed to IBM -->
-   <meta itemprop="description" content="Infographic: Why data centric computing is crucial in the era of #bigdata by @ibmResearch. #hpc">
-   <!-- This needs to be changed to IBM -->
+   <meta itemprop="description" content="#IBM showcases how data centric systems offer more insights from #bigdata. http://www.research.ibm.com/ #hpc">
+    <!-- TODO #11: Update Google + "content” meta data to IBM hosted image URL ** VERY IMPORTANT **-->
    <meta itemprop="image" content="http://pbj.me/IBM/images/dfc4737a.share-content.jpg">
-   <!-- This needs to be changed to IBM -->
 
     
  </head>
- <body>
-
-
-<!-- IBM TO CHANGE APP ID -->
-
-
-
-  <!-- IBM Nav -->
+ <body  id="skrollr-body">
   <div id="ibm-universal-nav" role="navigation" aria-label="Site map">
     <ul id="ibm-unav-links" role="presentation">
       <li id="ibm-home"><a href="http://www.ibm.com/us/en/" tabindex="0">IBM®</a></li>
@@ -113,7 +99,6 @@
       </form>
     </div>
   </div>
-
   <aside class="sharing sharing-fixed" 
     data-start="opacity: 1;" 
     data-250-end="opacity:1;" 
@@ -122,23 +107,27 @@
     <menu class="share-icons">
       <ul>
         <li>
+        <!-- TODO: #12:  Change the 'data-href' link to proper IBM link as necessary-->
         <a class="ss-icon ss-social icon-fb" href="#" title="Share on Facebook">facebook
           <div class="fb-share-button" data-href="http://www.research.ibm.com" data-layout="button"></div>
         </a></li>
 
         <li>
           <a class="ss-icon ss-social icon-twitter" href="#" >twitter</a>
-          <a href="https://twitter.com/share" class="twitter-share-button" data-text="As #bigdata transforms science and business, #IBM showcases how data-centric systems offer more usable insights from all data" data-via="ibmresearch" data-related="ibmresearch" data-hashtags="hpc"></a>
+          <!-- TODO: #13:  
+          Change the 'data-text' to appropriate text for Twitter share
+          Change the 'data-via' to appropriate 'via' username
+          Change the 'data-related' to appropriate related user account for Twitter sharing dialog box.
+          Change the 'data-hashtags' to appropriate hasthag
+          -->
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="#IBM showcases how data centric systems offer more insights from #bigdata. http://www.research.ibm.com/ #hpc"  data-related="ibmresearch" data-hashtags="hpc bigdata"></a>
         </li>
         <li>
           <!-- 
-          Need to change the link here from 
-          http://pbj.me/IBM to whatever they are using 
+          TODO #14: Change the 'href' link from https://plus.google.com/share?url=http://pbj.me/IBM to 
+          https://plus.google.com/share?url=URL-GOES-HERE
           -->
           <a class="ss-icon ss-social icon-googleplus" href="https://plus.google.com/share?url=http://pbj.me/IBM" onclick="window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=200,width=600');return false" title="Share on Google">googleplus</a>
-          </li>
-          <li>
-            <div id="tweet-ex"></div>
           </li>
       </ul>
     </menu>
@@ -149,8 +138,6 @@
   <img class="bg-path" src="images/main_path.png" alt=""/>
   </div>
   <![endif]-->
-
-<div class="page-wrapper">
   <svg class="path" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 485.8 5065" enable-background="new 0 0 407.1 5100" xml:space="preserve">
 
     <polyline id="main-line" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="242.9,0 242.9,197.2 76.7,197.2
@@ -191,12 +178,13 @@
   <section class="section section-resources">
     <div class="container resources" id="resources">
       <div class="sun" 
-        data-anim="rotate" data-origin="bottom"
         data-bottom="transform: rotate(0deg);" 
         data-center="transform: rotate(360deg)">
         <img src="images/sun.svg" alt="">
       </div>
-      <div class="timer" id="timer-holder" data-anim="custom-svg" data-bottom="stroke-miterlimit:1;" data-top="stroke-miterlimit:38;">
+      <div class="timer" id="timer-holder"
+        data-bottom="stroke-miterlimit:1;" 
+        data-top="stroke-miterlimit:38;">
           <svg version="1.1" baseProfile="basic" id="timer-svg" class="timer-svg"
              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="-50 -90 330 350" xml:space="preserve">
@@ -258,8 +246,9 @@
           <![endif]-->
       </div>
       
-      <div class="right copy pos-abs" data-anim="slide-in"     data-origin="right"
-          data-200-center="opacity:0; right: 0px;" data-center="opacity: 1; right: 210px;">
+      <div class="right copy pos-abs"
+          data-200-center="opacity:0; right: 0px;" 
+          data-center="opacity: 1; right: 210px;">
         <h1>Big Data, The New Natural Resource</h1>
         <h2 class="font-24 font-light stacked every-day-society">
           Every day
@@ -272,7 +261,7 @@
           of our personal digital activities.</p>
       </div>
 
-      <div class="dots" data-anim="slide-up" data-anchor-target="#resources"
+      <div class="dots" data-anchor-target="#resources"
         data-top=" opacity: 0; top: 500px;"
         data--300-top="opacity:1; top: -200px;" >
             <img src="images/bytes-small.svg" alt="" >
@@ -318,7 +307,6 @@
         <div class="globe-stat abs-right">
           <span class="stat"
           ><strong>1<span>%</span></strong><img
-            
             data-100-bottom="opacity: 0; bottom: 100px"
             data-100-center="opacity: 1; bottom: 0px;"
             src="images/arrow.svg" class="arrow-down"></span>
@@ -332,7 +320,7 @@
         </div>
       </div>
   </section>
-    <!-- /globe -->
+  <!-- /globe -->
 
   <section class="section section-computation" >
       <div class="container computation">
@@ -343,13 +331,14 @@
         <div class="circuit">
           <img class="circuit-left-bg" src="images/circuits-left.svg" alt="" >
           <img class="circuit-right-bg" src="images/circuit-right-alt.svg" alt="" >
-          <img class="circuit-right-sm" src="images/circuit-load-sm.svg" alt="" >
+          <img class="circuit-right-sm" src="images/circuit-load-xs.svg" alt="" >
+          <img class="circuit-connector" src="images/circuit-connector.svg" alt="" >
+          <img class="circuit-right-xs" src="images/circuit-load-sm.svg" alt="" >
         </div>
         <div class="left"
-          data-bottom="opacity:0; left: 5%;" data-center="opacity: 1; left: 0%;">
-          <div class="lt-copy slide-bg"
-            data-anim="slide-in"
-            data-origin="left">
+          data-bottom="opacity:0; left: 5%;" 
+          data-center="opacity: 1; left: 0%;">
+          <div class="lt-copy slide-bg">
             <h1>But the current approach to computing has a shelf-life</h1>
             <p>For decades, computer scientists have taken
             advantage of advances in silicon chips
@@ -359,8 +348,6 @@
 
         <div class="right">
           <div class="rt-copy slide-bg"
-              data-anim="slide-in"
-              data-origin="right"
               data-bottom="opacity:0; right: 280px;" data-center="opacity: 1; right: 0px;">
               <p>Now, limitations in traditional computer and chip
               design are slowing progress—and that’s even
@@ -378,7 +365,7 @@
           <img class="microchip" src="images/icon-microchip.svg" alt="">
           <img class="server" src="images/icon-server.svg" alt="">
       </figure>
-      <div class="right abs-right" data-anim="slide-in" data-origin="right">
+      <div class="right abs-right">
         <h1 class="stacked">What's Needed is a
           New Vision for Computing
         </h1>
@@ -391,7 +378,6 @@
           <!--[if lt IE 9]>
             <img class="monitor-img" src="images/monitor-circuits2.png" alt="">
           <![endif]-->
-
           <svg class="monitor-img"  version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="808.9px" height="368.4px" viewBox="0.5 424.1 808.9 368.4" xml:space="preserve">
               <style type="text/css">
 
@@ -411,7 +397,6 @@
                 <polyline id="line-12" class="st1" points="530.3,497.7 577.1,450.9 577.1,441.2  "/>
                 <polyline id="line-11" class="st1" points="499.4,493.2 499.4,453.1 412,453.1 405.1,446.1  "/>
               </g>
-
               <g id="lines_1_" style="stroke-dasharray:1000;" data-center="stroke-dashoffset:1000;" data--100-top="stroke-dashoffset:0;">
                 <polyline id="line-6" class="st0" points="526.4,648.1 502,672.3 502,695.9   "/>
                 <polyline id="line-5" class="st0" points="557.8,644.9 580.9,667.6 642.9,667.6 642.9,695.9   "/>
@@ -463,11 +448,10 @@
           </svg>
         </div>
 
-        <figcaption class="fact-block light block " data-anim="slide-in" data-origin="bottom"
+        <figcaption class="fact-block light block"
           data-200-bottom="bottom: -100px; opacity: 0"
           data--150-bottom="bottom: 0px; opacity: 1"
         >
-
           <p><strong>The new approach, data centric design, </strong>
             moves much of the processing to the places where the data is stored, whether that’s within a single computing system, in a network of computers, or far away in sensors tracking the weather or monitoring an energy pipeline.</p>
         </figcaption>
@@ -489,13 +473,12 @@
         <div class="grid-col">
             <h2>Laboratories</h2>
             <div >
-              <img class="icon-holder" data-anim="fade-in"
+              <img class="icon-holder"
             data-100-bottom="transform: scale(0);" 
             data-100-center="transform: scale(1);" 
             src="images/icon-laboratory.svg" alt="">
             </div>
             <img
-              data-anim="slide-down"
               data-anchor-target=".icon-holder"
               data-200-center="transform:translateY(-400px); opacity: 0;"
               data--25-center="transform:translateY(-50px); opacity: 1;"
@@ -503,14 +486,13 @@
         </div>
         <div class="grid-col">
           <h2>Universities</h2>
-          <div class="icon-holder" data-anim="fade-in"
+          <div class="icon-holder"
             data-100-bottom="transform: scale(0);"
             data-100-center="transform: scale(1);"
           >
             <img src="images/icon-school.svg" alt="">
           </div>
           <img
-            data-anim="slide-down"
             data-anchor-target=".icon-holder"
             data-200-center="transform:translateY(-400px); opacity: 0;"
             data--25-center="transform:translateY(-50px); opacity: 1;"
@@ -518,20 +500,19 @@
         </div>
         <div class="grid-col">
           <h2>Businesses</h2>
-          <div class="icon-holder" data-anim="fade-in"
+          <div class="icon-holder"
           data-100-bottom="transform: scale(0);" 
           data-100-center="transform: scale(1);"
           >
             <img class="icon-holder" src="images/icon-business.svg" alt="">
           </div>
           <img
-            data-anim="slide-down"
             data-anchor-target=".icon-holder"
             data-200-center="transform:translateY(-400px); opacity: 0;"
             data--15-center="transform:translateY(-50px); opacity: 1;"
           class="icon-data icon-data-1" src="images/icon-data.svg" alt="">
         </div>
-        <div class="server-row" data-anim="custom-svg"
+        <div class="server-row"
           data-anchor-target=".new-vision .icon-holder"
           data-300-center="bottom:-200px;" data--100-center="bottom: 0px;">
           <img src="images/server-row@2x.gif" alt="">
@@ -539,25 +520,23 @@
       </div>
 
       <div class="new-vision-comment fact-block light"
-        data-anim="slide-in"
-        data-origin="bottom"
-
-        data-50-bottom=" transform: scale(0)" data--150-bottom="transform: scale(1);">
+        data-50-bottom=" transform: scale(0)" 
+        data--150-bottom="transform: scale(1);">
         <p data-300-center=" opacity: 0;" data-200-center="opacity: 1;">So they need computing systems that are designed specifically to handle these new tasks. Data centric design enables computer scientists to engineer systems that are optimized for specific jobs
         —improving the speed and quality of insights.</p>
       </div>
       <figure class="computing-data-insights" style="background-image: url(images/bytes-bg.svg); background-repeat: no-repeat; background-position: 0% 50%; background-size: 50% auto;" id="computing-data-insights" data-center="margin-top:0px; background-position: 0% 50%;" data--500-center="margin-top:0px; background-position: 100% 50%;">
         <div class="diagram-half computing" data-anim="slide-in" data-origin="left"
           data-anchor-target="#computing-data-insights"
-          data-150-bottom="left[quadratic]:0%;"
-          data--50-bottom="left: 15%;">
+          data--5-bottom="left[quadratic]:0%;"
+          data--75-bottom="left: 15%;">
           <img src="images/diagram-computing.svg" alt="">
         </div>
 
         <div class="diagram-half data" data-anim="slide-in" data-origin="right"
           data-anchor-target="#computing-data-insights"
-          data-150-bottom="right[quadratic]:0%;"
-          data--50-bottom="right: 15%;">
+          data--5-bottom="right[quadratic]:0%;"
+          data--75-bottom="right: 15%;">
           <img src="images/diagram-data.svg" alt="">
         </div>
         <div class="diagram-result"
@@ -566,22 +545,22 @@
           data-bottom="opacity: 0; position: absolute;  transform[swing]: scale(0);"
           data-50-center="opacity: 1; position: absolute; display: block; transform[swing]: scale(1);"
           >
+           
           <img src="images/diagram-insights.svg" alt="">
+
         </div>
-      <!--  <img
-          data-anchor-target="#computing-data-insights"
-          data-bottom="opacity: 0;  left: 10%;"
-          data-center="opacity: 1; left: -7%;"
-          data-top="opacity: 1;  left: -45%;"
-          class="bytes-bg bytes-bg-lt"
-          src="images/bytes-bg.svg" alt="">
         <img
-          data-anchor-target="#computing-data-insights"
-          data-bottom="opacity: 0;  right: 10%;"
-          data-center="opacity: 1; right: -7%;"
-          data-top="opacity: 1;  right: -45%;"
-          class="bytes-bg bytes-bg-rt"
-          src="images/bytes-bg.svg" alt=""> -->
+           data-anchor-target="#computing-data-insights"
+           data-bottom="opacity: 0;  left: 10%;"
+           data-center="opacity: 1; left: 0%;"
+           class="bytes-bg bytes-bg-lt"
+           src="images/bytes-bg.svg" alt="">
+         <img
+           data-anchor-target="#computing-data-insights"
+           data-bottom="opacity: 0;  right: 10%;"
+           data-center="opacity: 1; right: 0%;"
+           class="bytes-bg bytes-bg-rt"
+           src="images/bytes-bg.svg" alt="">
       </figure>
     </div>
   </section>
@@ -596,14 +575,13 @@
         </div>
 
         <div class="grid-col">
-          <div class="icon-holder" data-anim="fade-in"
+          <div class="icon-holder"
           data-100-bottom="transform: scale(0);" 
           data-100-center="transform: scale(1);"
           >
             <img src="images/icon-healthcare.svg" alt="">
           </div>
-          <div class="grid-col-content" data-anim="slide-in fade-in" 
-          data-origin="bottom"
+          <div class="grid-col-content"
           data-100-bottom="opacity: 0; top: 300px;" 
           data-100-center="opacity: 1; top: 0px;"
           >
@@ -614,13 +592,12 @@
         </div>
 
         <div class="grid-col">
-          <div class="icon-holder" data-anim="fade-in"
+          <div class="icon-holder"
             data-100-bottom="transform: scale(0);" 
             data-100-center="transform: scale(1);"
           ><img src="images/icon-energy.svg" alt="">
           </div>
-          <div class="grid-col-content" data-anim="slide-in fade-in" 
-          data-origin="bottom"
+          <div class="grid-col-content"
           data-100-bottom="opacity: 0; top: 300px;" 
           data-100-center="opacity: 1; top: 0px;"
           >
@@ -631,21 +608,19 @@
         </div>
 
         <div class="grid-col">
-          <div class="icon-holder" data-anim="fade-in"
+          <div class="icon-holder"
             data-100-bottom="transform: scale(0);" 
             data-100-center="transform: scale(1);" 
           >
             <img src="images/icon-airline.svg" alt="">
           </div>
-          <div class="grid-col-content" data-anim="slide-in fade-in" 
-          data-origin="bottom"
+          <div class="grid-col-content"
           data-100-bottom="opacity: 0; top: 300px;" 
           data-100-center="opacity: 1; top: 0px;"
           >
             <h2>Air Travel</h2>
             <p>Designing and building better jet engines to withstand heat and other pressures, for faster, efficient air travel.</p>
           </div>
-
         </div>
       </div>
     </div>
@@ -661,13 +636,10 @@
           Will Become Pervasive</h1>
           <p>This approach will spread rapidly to other realms of computing. Social networking Web sites gather and move vast amounts of data. That’s a job for data centric design. The same is true of e-commerce.  The new approach will have major impacts on marketing, financial management and product development. Eventually, it will transform the computer on your desk and in your hand. In the new era of computing, they will work faster and smarter. They’ll move less data. And they’ll use less energy. </p>
         </div>
-        
       </div>
   </section>
   <!-- /finale -->
-</div>
 
-  
   <footer class="footer invert">
     <div class="container">
       <div class="footer-branding">
@@ -681,15 +653,26 @@
           <menu class="share-icons">
             <ul>
               <li>
+                <!-- TODO: #15:  Change the 'data-href' link to proper IBM link as necessary-->
                 <a class="ss-icon ss-social icon-fb" href="#" title="Share on Facebook">facebook<div class="fb-share-button" data-href="http://www.research.ibm.com" data-layout="button"></div>
                 </a>
                 <span class="fb-counter"></span>
                 </li>
               <li>
                 <a href="#" class="ss-icon ss-social icon-twitter">twitter</a>
-                <a href="https://twitter.com/share" class="twitter-share-button" data-text="As #bigdata transforms science and business, #IBM showcases how data-centric systems offer more usable insights from all data" data-via="ibmresearch" data-related="ibmresearch" data-hashtags="hpc" class="ss-icon ss-social icon-twitter">twitter</a><span class="tw-counter"></span>
+                <!-- TODO: #16:  
+                Change the 'data-text' to appropriate text for Twitter share
+                Change the 'data-via' to appropriate 'via' username
+                Change the 'data-related' to appropriate related user account for Twitter sharing dialog box.
+                Change the 'data-hashtags' to appropriate hasthag
+                -->
+                <a href="https://twitter.com/share" class="twitter-share-button" data-text="#IBM showcases how data centric systems offer more insights from #bigdata. http://www.research.ibm.com/ #hpc"  data-related="ibmresearch" data-hashtags="hpc bigdata" class="ss-icon ss-social icon-twitter">twitter</a><span class="tw-counter"></span>
               </li>
               <li>
+                <!-- 
+                TODO #17: Change the 'href' link from https://plus.google.com/share?url=http://pbj.me/IBM to 
+                https://plus.google.com/share?url=URL-GOES-HERE
+                -->
                 <a class="ss-icon ss-social icon-googleplus" href="https://plus.google.com/share?url=http://pbj.me/IBM" onclick="window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=200,width=600');return false" title="Share on Google">googleplus</a>
                 <span class="gp-counter"></span>
               </li>
@@ -724,7 +707,8 @@
   
   
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-  <!-- IBM TO CHANGE APP ID -->
+  
+  <!-- TODO #18: Update the 'appID' number with appropriate Facebook Developer API Key -->
   <script>
     window.fbAsyncInit = function() {
       FB.init({

@@ -1,20 +1,9 @@
-// .section-computation {
-//   background-image: url(../../images/circuits-right.svg);
-//   background-repeat: no-repeat;
-//   background-position: 100% -30px;
-//   width: 1300px !important;
-//   margin: auto;
-// }
-
-// .section-computation {background-image: url(images/circuits-right.svg); background-repeat: no-repeat; background-position: 130% top;}
-
 .computation	{
   height: 742px;
   
   .left {
     @include abs(265px 0 0 0);
     width: 470px;
-    // margin-left: 155px;
     margin-left: 175px;
     overflow: hidden;
     z-index: z(base-5);
@@ -45,24 +34,29 @@
     @include abs(0 0 -140px -60px);
     width: 531px;
     height: 628px;
-    // bottom: -115px;
-    // left: 0;
-    // position: absolute;
-    // width: 475px;
   } 
   &-right-bg {
-    // @include abs(-35px -125px 0 0);
-    // width: 572px;
     top: -28px;
     right: 25px;
     position: absolute;
     width: 420px;
   }
+  &-right-xs {
+    @include abs(391px 0px 0 0);
+    width: 140px;
+    z-index: z(base);
+  }
+
   &-right-sm {
-    position: absolute;
-right: 0px;
-top: 391px;
-width: 140px;
+    @include abs(0  94px 40px 0);
+    width: 253px;
+    height: 188px;
+  }
+  .circuit-connector {
+    @include abs(522px 5px 0 0);
+    width: 133px;
+    height: 470px;
+
   }
 }
 

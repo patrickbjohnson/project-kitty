@@ -10,6 +10,9 @@ $(document).ready(function(){
     });
   }
 
+  if (Modernizr.touch) {
+    alert('For optimal exerpience, please visit this site from a desktop browser.');
+  }
   // smooth scrolling from links.
   $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
