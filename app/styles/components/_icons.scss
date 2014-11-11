@@ -9,8 +9,8 @@
   position: relative;
 }
 .icon-up {
-	position: absolute;
+  position: relative;
+	display: inline-block;
   top: -25px;
-	left: 0;
-	right: 0;
+  margin: auto;
 }

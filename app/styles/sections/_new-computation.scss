@@ -53,6 +53,6 @@
 }
 
 .server-solo {
-	@include abs(300px -40px 0 0);
-	width: 150px;
+	@include abs(300px 0px 0 0);
+	width: 105px;
 }

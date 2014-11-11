@@ -1,11 +1,8 @@
 .footer {
   @include clear;
-  padding: 50px;
+  padding: 50px 0;
 
-  .container {
-    display: table;
-    width: 1024px;
-  }
+  .container { display: table; width: 1024px;}
 }
 
 .footer-branding, .footer-meta {
